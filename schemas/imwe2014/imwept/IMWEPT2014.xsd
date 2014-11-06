@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!--   									 lokale versie   						-->
+<!--								 IMWEPT2014 versie 1.0.0RC1         -->
+<!-- =================================================================== -->
+<!-- Remote versie op:	nog niet gepubliceerd																										 -->
+<!-- =================================================================== -->
+<!-- Geonovum, Beheerorganisatie RO-Standaarden. http://ro-standaarden.geonovum.nl -->
+<!-- =================================================================== -->
+<!-- 2014-09-11 Versie 1.0.0RC1 -->
+<!-- enumwaarde Tekstobjecttype_WN:welstandsregels -> welstandstekst -->
+<!-- 2014-09-01 Versie 1.0.0b1 gepubliceerd -->
+<!-- IMWEPT2014 aangepast op basis van IMROPT2012 v1.0.1 -->
+<!-- IMWEPT2014 gegenereerd op basis van UML					-->
+<!-- =================================================================== -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:imwept="http://www.geonovum.nl/imwe/pt/2014/1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" targetNamespace="http://www.geonovum.nl/imwe/pt/2014/1.0" elementFormDefault="qualified" version="1.0.0RC1">
+	<import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/1999/xlink.xsd"/>
+	<import namespace="http://www.w3.org/1999/xhtml" schemaLocation="IMWEPT2014-xhtml.xsd"/>
+	<!-- ================================================================= -->
+	<element name="FeatureCollectionIMWEPT" type="imwept:FeatureCollectionIMWEPTType"/>
+	<complexType name="FeatureCollectionIMWEPTType">
+		<sequence>
+			<element ref="imwept:TekstMetadata"/>
+			<element ref="imwept:TekstObject" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<!-- =============================================================== -->
+	<element name="TekstMetadata" type="imwept:TekstMetadataType"/>
+	<complexType name="TekstMetadataType">
+		<sequence>
+			<element name="identificatie" type="string"/>
+			<element name="verwijzingNaarPlangebied" type="string"/>
+			<element name="typePlan" type="string"/>
+			<element name="naam" type="string"/>
+			<element name="beleidsmatigVerantwoordelijkeOverheid" type="string"/>
+			<element name="naamOverheid" type="string"/>
+			<element name="overheidsCode" type="string"/>
+			<element name="creatiedatum" type="string"/>
+			<element name="naamPraktijkrichtlijn" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="TekstMetadataPropertyType">
+		<attributeGroup ref="xlink:simpleAttrs"/>
+	</complexType>
+	<simpleType name="Tekstobjecttype_WNType">
+		<restriction base="string">
+			<enumeration value="welstandstekst"/>
+			<enumeration value="bijlage"/>
+			<enumeration value="bijlagen"/>
+			<enumeration value="deel"/>
+			<enumeration value="document"/>
+			<enumeration value="hoofdstuk"/>
+			<enumeration value="overig"/>
+			<enumeration value="paragraaf"/>
+			<enumeration value="subparagraaf"/>
+			<enumeration value="subsubparagraaf"/>
+			<enumeration value="subsubsubparagraaf"/>
+		</restriction>
+	</simpleType>
+	<element name="TekstObject" type="imwept:TekstObjectType"/>
+	<complexType name="TekstObjectType">
+		<sequence>
+			<element name="identificatie" type="string"/>
+			<element name="verwijzingNaarPlangebied" type="string"/>
+			<element name="volgnummer" type="integer"/>
+			<element name="niveau" type="integer"/>
+			<element name="type" type="imwept:Tekstobjecttype_WNType"/>
+			<element name="titel" type="imwept:TitelInfoPropertyType"/>
+			<element name="externeVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="tekst" type="string" minOccurs="0"/>
+			<element name="tekstMetadata" type="imwept:TekstMetadataPropertyType" minOccurs="0"/>
+			<element name="ouderID" type="imwept:TekstObjectPropertyType"/>
+			<element name="interneVerwijzing" type="imwept:TekstObjectPropertyType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="TekstObjectPropertyType">
+		<attributeGroup ref="xlink:simpleAttrs"/>
+	</complexType>
+	<element name="TitelInfo" type="imwept:TitelInfoType"/>
+	<complexType name="TitelInfoType">
+		<sequence>
+			<element name="label" type="string" minOccurs="0"/>
+			<element name="nummer" type="string" minOccurs="0"/>
+			<element name="naam" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="TitelInfoPropertyType">
+		<sequence>
+			<element ref="imwept:TitelInfo"/>
+		</sequence>
+	</complexType>
+	<!-- toegevoegd -->
+	<group name="rotext.content">
+		<choice>
+			<group ref="xhtml:xhtml.List.class"/>
+			<group ref="xhtml:xhtml.Block.class"/>
+			<element ref="imwept:verwijderd"/>
+			<element ref="imwept:toegevoegd"/>
+		</choice>
+	</group>
+	<group name="rolink.content">
+		<choice>
+			<group ref="xhtml:xhtml.InlNoAnchor.mix"/>
+		</choice>
+	</group>
+	<attributeGroup name="listextra.attlist">
+		<attribute name="type" type="string"/>
+	</attributeGroup>
+	<attributeGroup name="rolinkExtern.attlist">
+		<attribute name="link" type="string"/>
+		<attributeGroup ref="xlink:simpleAttrs"/>
+		<attributeGroup ref="xhtml:xhtml.Common.attrib"/>
+	</attributeGroup>
+	<attributeGroup name="rolinkIntern.attlist">
+		<attribute name="autoUpdate" type="boolean"/>
+		<attributeGroup ref="imwept:rolinkExtern.attlist"/>
+	</attributeGroup>
+	<complexType name="rolinkExtern.type" mixed="true">
+		<group ref="imwept:rolink.content"/>
+		<attributeGroup ref="imwept:rolinkExtern.attlist"/>
+	</complexType>
+	<complexType name="rolinkIntern.type" mixed="true">
+		<group ref="imwept:rolink.content"/>
+		<attributeGroup ref="imwept:rolinkIntern.attlist"/>
+	</complexType>
+	<complexType name="romixed.type" mixed="true">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<group ref="imwept:rotext.content"/>
+			<group ref="imwept:rolink.content"/>
+		</choice>
+	</complexType>
+	<element name="interneVerwijzing" type="imwept:rolinkIntern.type"/>
+	<element name="externeVerwijzing" type="imwept:rolinkExtern.type"/>
+	<element name="verwijderd" type="imwept:romixed.type"/>
+	<element name="toegevoegd" type="imwept:romixed.type"/>
+	<element name="voetnoot" type="string"/>
+	<complexType name="rotext.type" mixed="true">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<group ref="imwept:rotext.content"/>
+		</choice>
+	</complexType>
+</schema>

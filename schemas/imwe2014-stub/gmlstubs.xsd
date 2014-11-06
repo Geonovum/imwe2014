@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!-- STUBBED VERSIE van gml/3.2.1.2/gml.xsd tbv generatie IMWE proefbestanden  -->
+<!-- Just van den Broecke okt 2014 -->
+<!-- =================================================================== -->
+<schema targetNamespace="http://geonovum.nl/simplegml" xmlns:gml="http://geonovum.nl/simplegml"
+		xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema"
+		elementFormDefault="qualified" version="3.2.1">
+
+    <element name="description" type="string">
+   		<annotation>
+   			<documentation>The value of this property is a text description of the object. gml:description uses
+   				gml:StringOrRefType as its content model, so it may contain a simple text string content, or carry a
+   				reference to an external description. The use of gml:description to reference an external description
+   				has been deprecated and replaced by the gml:descriptionReference property.
+   			</documentation>
+   		</annotation>
+   	</element>
+   	<element name="name" type="string">
+   		<annotation>
+   			<documentation>The gml:name property provides a label or identifier for the object, commonly a descriptive
+   				name. An object may have several names, typically assigned by different authorities. gml:name uses the
+   				gml:CodeType content model. The authority for a name is indicated by the value of its (optional)
+   				codeSpace attribute. The name may or may not be unique, as determined by the rules of the organization
+   				responsible for the codeSpace. In common usage there will be one name per authority, so a processing
+   				application may select the name from its preferred codeSpace.
+   			</documentation>
+   		</annotation>
+   	</element>
+   	<attribute name="id" type="ID">
+   		<annotation>
+   			<documentation>The attribute gml:id supports provision of a handle for the XML element representing a GML
+   				Object. Its use is mandatory for all GML objects. It is of XML type ID, so is constrained to be unique
+   				in the XML document within which it occurs.
+   			</documentation>
+   		</annotation>
+   	</attribute>
+
+    <!-- Geometry Placeholders -->
+    <simpleType name="SurfacePropertyType">
+        <restriction base="string">
+            <enumeration value="SurfacePropertyType"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="MultiSurfacePropertyType">
+        <restriction base="string">
+            <enumeration value="MultiSurfacePropertyType"/>
+        </restriction>
+    </simpleType>
+
+    <element name="AbstractObject" abstract="true">
+  		<annotation>
+  			<documentation>This element has no type defined, and is therefore implicitly (according to the rules of W3C
+  				XML Schema) an XML Schema anyType. It is used as the head of an XML Schema substitution group which
+  				unifies complex content and certain simple content elements used for datatypes in GML, including the
+  				gml:AbstractGML substitution group.
+  			</documentation>
+  		</annotation>
+  	</element>
+  	<element name="AbstractGML" type="gml:AbstractGMLType" abstract="true" substitutionGroup="gml:AbstractObject">
+  		<annotation>
+  			<documentation>The abstract element gml:AbstractGML is "any GML object having identity". It acts as the head
+  				of an XML Schema substitution group, which may include any element which is a GML feature, or other
+  				object, with identity. This is used as a variable in content models in GML core and application schemas.
+  				It is effectively an abstract superclass for all GML objects.
+  			</documentation>
+  		</annotation>
+  	</element>
+  	<complexType name="AbstractGMLType" abstract="true">
+  		<sequence>
+  			<group ref="gml:StandardObjectProperties"/>
+  		</sequence>
+  		<attribute ref="gml:id" use="required"/>
+  	</complexType>
+  	<group name="StandardObjectProperties">
+  		<sequence>
+  			<!--<element ref="gml:metaDataProperty" minOccurs="0" maxOccurs="unbounded"/>-->
+  			<!--<element ref="gml:description" minOccurs="0"/>-->
+  			<!--<element ref="gml:descriptionReference" minOccurs="0"/>-->
+  			<!--<element ref="gml:identifier" minOccurs="0"/>-->
+  			<!--<element ref="gml:name" minOccurs="0" maxOccurs="unbounded"/>-->
+  		</sequence>
+  	</group>
+  	<attributeGroup name="AssociationAttributeGroup">
+  		<annotation>
+  			<documentation>XLink components are the standard method to support hypertext referencing in XML. An XML
+  				Schema attribute group, gml:AssociationAttributeGroup, is provided to support the use of Xlinks as the
+  				method for indicating the value of a property by reference in a uniform manner in GML.
+  			</documentation>
+  		</annotation>
+  			<!--<annotation>-->
+  				<!--<appinfo>deprecated</appinfo>-->
+  			<!--</annotation>-->
+  	</attributeGroup>
+  	<attributeGroup name="OwnershipAttributeGroup">
+  		<annotation>
+  			<documentation>Encoding a GML property inline vs. by-reference shall not imply anything about the
+  				"ownership" of the contained or referenced GML Object, i.e. the encoding style shall not imply any
+  				"deep-copy" or "deep-delete" semantics. To express ownership over the contained or referenced GML
+  				Object, the gml:OwnershipAttributeGroup attribute group may be added to object-valued property elements.
+  				If the attribute group is not part of the content model of such a property element, then the value may
+  				not be "owned".
+  				When the value of the owns attribute is "true", the existence of inline or referenced object(s) depends
+  				upon the existence of the parent object.
+  			</documentation>
+  		</annotation>
+  		<!--<attribute name="owns" type="boolean" default="false"/>-->
+  	</attributeGroup>
+
+
+    <complexType name="AbstractFeatureType" abstract="true">
+   		<annotation>
+   			<documentation>The basic feature model is given by the gml:AbstractFeatureType.
+   				The content model for gml:AbstractFeatureType adds two specific properties suitable for geographic
+   				features to the content model defined in gml:AbstractGMLType.
+   				The value of the gml:boundedBy property describes an envelope that encloses the entire feature instance,
+   				and is primarily useful for supporting rapid searching for features that occur in a particular location.
+   				The value of the gml:location property describes the extent, position or relative location of the
+   				feature.
+   			</documentation>
+   		</annotation>
+   		<complexContent>
+   			<extension base="gml:AbstractGMLType">
+   				<sequence>
+   					<!--<element ref="gml:boundedBy" minOccurs="0"/>-->
+   					<!--<element ref="gml:location" minOccurs="0"/>-->
+   				</sequence>
+   			</extension>
+   		</complexContent>
+   	</complexType>
+   	<element name="AbstractFeature" type="gml:AbstractFeatureType" abstract="true" substitutionGroup="gml:AbstractGML">
+   		<annotation>
+   			<documentation>This abstract element serves as the head of a substitution group which may contain any
+   				elements whose content model is derived from gml:AbstractFeatureType. This may be used as a variable in
+   				the construction of content models.
+   				gml:AbstractFeature may be thought of as "anything that is a GML feature" and may be used to define
+   				variables or templates in which the value of a GML property is "any feature". This occurs in particular
+   				in a GML feature collection where the feature member properties contain one or multiple copies of
+   				gml:AbstractFeature respectively.
+   			</documentation>
+   		</annotation>
+   	</element>
+    <complexType name="AbstractFeatureMemberType" abstract="true">
+   		<annotation>
+   			<documentation>To create a collection of GML features, a property type shall be derived by extension from
+   				gml:AbstractFeatureMemberType.
+   				By default, this abstract property type does not imply any ownership of the features in the collection.
+   				The owns attribute of gml:OwnershipAttributeGroup may be used on a property element instance to assert
+   				ownership of a feature in the collection. A collection shall not own a feature already owned by another
+   				object.
+   			</documentation>
+   		</annotation>
+   		<sequence/>
+   		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   	</complexType>
+</schema>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!--                                       IMWE2014-1.0.0RC1                                                                      -->
+<!-- =================================================================== -->
+<!-- Remote versie op:																											 -->
+<!-- nog doen                                                -->
+<!-- =================================================================== -->
+<!-- Geonovum, Beheerorganisatie RO-Standaarden. http://ro-standaarden.geonovum.nl -->
+<!-- =================================================================== -->
+<!-- Versie info -->
+<!-- 20140917 aanpassing -->
+<!-- 1) De enum Idealisatie_3 vervangen door Idealisatie_2 -->
+<!-- deze bevat geen waarde cartografisch figuur -->
+<!-- 2) FeatureCollectionIMRO -> FeatureCollectionIMWE -->
+<!-- 3) WelstandsNota -> Welstandsnota -->
+<!-- 20140827 gepubliceerd -->
+<!-- Reguliere expressie voor NotEmptyString toegevoegd. String begint niet met een spatie, tab, return, new line -->
+<!-- =================================================================== -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+        xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0"
+        targetNamespace="http://www.geonovum.nl/imwe/2014/1.0"
+        elementFormDefault="qualified"
+        version="1.0.0RC1">
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<!-- ================================================================= -->
+	<annotation>
+		<appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+			<gmlsf:ComplianceLevel>2</gmlsf:ComplianceLevel>
+		</appinfo>
+	</annotation>
+	<!-- ================================================================= -->
+	<element name="FeatureCollectionIMWE" type="imwe:FeatureCollectionIMWEType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="FeatureCollectionIMWEType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence minOccurs="0" maxOccurs="unbounded">
+					<element name="featureMember">
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence>
+										<element ref="gml:AbstractFeature"/>
+									</sequence>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- =============================================================== -->
+	<simpleType name="RuimtelijkPlanOfBesluit_WNType">
+		<restriction base="string">
+			<enumeration value="welstandsnota"/>
+		</restriction>
+	</simpleType>
+	<element name="TekstReferentieNG_WN" type="imwe:TekstReferentieNG_WNType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="TekstReferentieNG_WNType">
+		<sequence>
+			<element name="verwijzingNaarTekst" type="imwe:NotEmptyString"/>
+			<element name="typeTekst" type="imwe:TeksttypeNG_WNType"/>
+		</sequence>
+	</complexType>
+	<complexType name="TekstReferentieNG_WNPropertyType">
+		<sequence>
+			<element ref="imwe:TekstReferentieNG_WN"/>
+		</sequence>
+	</complexType>
+	<simpleType name="IllustratieType">
+		<restriction base="string">
+			<enumeration value="afbeelding"/>
+			<enumeration value="kaart"/>
+		</restriction>
+	</simpleType>
+	<element name="Welstandsobject" type="imwe:WelstandsobjectType" substitutionGroup="imwe:Planobject"/>
+	<complexType name="WelstandsobjectType">
+		<complexContent>
+			<extension base="imwe:PlanobjectType">
+				<sequence>
+					<element name="naam" type="imwe:NotEmptyString"/>
+					<element name="kleinBouwwerk" type="boolean" default="false"/>
+					<element name="verwijzingNaarTekstInfo" type="imwe:TekstReferentieO_WNPropertyType" maxOccurs="unbounded"/>
+					<element name="verwijzingNaarIllustratieInfo" type="imwe:IllustratiereferentiePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="cartografieInfo" type="imwe:CartografieInfoPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="beginTijd" type="date"/>
+					<element name="eindTijd" type="date" minOccurs="0"/>
+					<element name="begrenzing" type="imwe:GeometrieWNobjectPropertyType" maxOccurs="unbounded"/>
+					<element name="welstandsNota" type="imwe:WelstandsnotaPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="WelstandsobjectPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:Welstandsobject"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Illustratiereferentie" type="imwe:IllustratiereferentieType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="IllustratiereferentieType">
+		<sequence>
+			<element name="verwijzingNaarIllustratie" type="imwe:NotEmptyString"/>
+			<element name="typeIllustratie" type="imwe:IllustratieType"/>
+		</sequence>
+	</complexType>
+	<complexType name="IllustratiereferentiePropertyType">
+		<sequence>
+			<element ref="imwe:Illustratiereferentie"/>
+		</sequence>
+	</complexType>
+	<element name="PlanstatusEnDatum" type="imwe:PlanstatusEnDatumType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="PlanstatusEnDatumType">
+		<sequence>
+			<element name="planstatus" type="imwe:PlanstatusType"/>
+			<element name="datum" type="date"/>
+		</sequence>
+	</complexType>
+	<complexType name="PlanstatusEnDatumPropertyType">
+		<sequence>
+			<element ref="imwe:PlanstatusEnDatum"/>
+		</sequence>
+	</complexType>
+	<simpleType name="RuimtelijkPlanobject_WNType">
+		<restriction base="string">
+			<enumeration value="welstandsgebied"/>
+			<enumeration value="welstandsniveau"/>
+			<enumeration value="welstandsobject"/>
+		</restriction>
+	</simpleType>
+	<element name="Plangebied" type="imwe:PlangebiedType" abstract="true" substitutionGroup="imwe:PlanologischGebied"/>
+	<complexType name="PlangebiedType" abstract="true">
+		<complexContent>
+			<extension base="imwe:PlanologischGebiedType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PlangebiedPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:Plangebied"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="GeoObject" type="imwe:GeoObjectType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="GeoObjectType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="identificatie" type="imwe:NEN3610IDPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeoObjectPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:GeoObject"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<simpleType name="TeksttypeG_WNType">
+		<restriction base="string">
+			<enumeration value="beschrijving"/>
+			<enumeration value="gebiedscriteria"/>
+			<enumeration value="overig"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Idealisatie_2Type">
+		<restriction base="string">
+			<enumeration value="exact"/>
+			<enumeration value="indicatief"/>
+		</restriction>
+	</simpleType>
+	<element name="PlanologischGebied" type="imwe:PlanologischGebiedType" abstract="true" substitutionGroup="imwe:GeoObject"/>
+	<complexType name="PlanologischGebiedType" abstract="true">
+		<complexContent>
+			<extension base="imwe:GeoObjectType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PlanologischGebiedPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:PlanologischGebied"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="NEN3610ID" type="imwe:NEN3610IDType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="NEN3610IDType">
+		<sequence>
+			<element name="namespace" type="imwe:NotEmptyString"/>
+			<element name="lokaalID" type="imwe:NotEmptyString"/>
+			<element name="versie" type="imwe:NotEmptyString" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="NEN3610IDPropertyType">
+		<sequence>
+			<element ref="imwe:NEN3610ID"/>
+		</sequence>
+	</complexType>
+	<element name="ExternPlanReferentieWN_WN" type="imwe:ExternPlanReferentieWN_WNType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="ExternPlanReferentieWN_WNType">
+		<sequence>
+			<element name="naamExternPlan" type="imwe:NotEmptyString"/>
+			<element name="idnExternPlan" type="imwe:NotEmptyString" minOccurs="0"/>
+			<element name="rolExternPlan" type="imwe:RolExternPlanWN_WNType"/>
+		</sequence>
+	</complexType>
+	<complexType name="ExternPlanReferentieWN_WNPropertyType">
+		<sequence>
+			<element ref="imwe:ExternPlanReferentieWN_WN"/>
+		</sequence>
+	</complexType>
+	<element name="Welstandsniveau" type="imwe:WelstandsniveauType" substitutionGroup="imwe:Planobject"/>
+	<complexType name="WelstandsniveauType">
+		<complexContent>
+			<extension base="imwe:PlanobjectType">
+				<sequence>
+					<element name="naam" type="imwe:NotEmptyString"/>
+					<element name="verwijzingNaarTekstInfo" type="imwe:TekstReferentieNG_WNPropertyType" maxOccurs="unbounded"/>
+					<element name="verwijzingNaarIllustratieInfo" type="imwe:IllustratiereferentiePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="cartografieInfo" type="imwe:CartografieInfoPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="beginTijd" type="date"/>
+					<element name="eindTijd" type="date" minOccurs="0"/>
+					<element name="begrenzing" type="imwe:GeometrieWNobjectPropertyType" maxOccurs="unbounded"/>
+					<element name="welstandsNota" type="imwe:WelstandsnotaPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="WelstandsniveauPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:Welstandsniveau"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="OndergrondReferentie" type="imwe:OndergrondReferentieType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="OndergrondReferentieType">
+		<sequence>
+			<element name="ondergrondtype" type="imwe:OndergrondenType"/>
+			<element name="ondergronddatum" type="date"/>
+		</sequence>
+	</complexType>
+	<complexType name="OndergrondReferentiePropertyType">
+		<sequence>
+			<element ref="imwe:OndergrondReferentie"/>
+		</sequence>
+	</complexType>
+	<element name="TekstReferentieG_WN" type="imwe:TekstReferentieG_WNType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="TekstReferentieG_WNType">
+		<sequence>
+			<element name="verwijzingNaarTekst" type="imwe:NotEmptyString"/>
+			<element name="typeTekst" type="imwe:TeksttypeG_WNType"/>
+		</sequence>
+	</complexType>
+	<complexType name="TekstReferentieG_WNPropertyType">
+		<sequence>
+			<element ref="imwe:TekstReferentieG_WN"/>
+		</sequence>
+	</complexType>
+	<simpleType name="TeksttypeWN_WNType">
+		<restriction base="string">
+			<enumeration value="document"/>
+			<enumeration value="bijlage(n)"/>
+		</restriction>
+	</simpleType>
+	<element name="GeometrieWNgebied" type="imwe:GeometrieWNgebiedType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="GeometrieWNgebiedType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="geometrie" type="gml:MultiSurfacePropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeometrieWNgebiedPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:GeometrieWNgebied"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<simpleType name="PlanstatusType">
+		<restriction base="string">
+			<enumeration value="geconsolideerd"/>
+		</restriction>
+	</simpleType>
+	<element name="CartografieInfo" type="imwe:CartografieInfoType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="CartografieInfoType">
+		<sequence>
+			<element name="kaartnummer" type="imwe:NotEmptyString"/>
+			<element name="kaartnaam" type="imwe:NotEmptyString"/>
+			<element name="symboolcode" type="imwe:NotEmptyString" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="CartografieInfoPropertyType">
+		<sequence>
+			<element ref="imwe:CartografieInfo"/>
+		</sequence>
+	</complexType>
+	<element name="Planobject" type="imwe:PlanobjectType" abstract="true" substitutionGroup="imwe:PlanologischGebied"/>
+	<complexType name="PlanobjectType" abstract="true">
+		<complexContent>
+			<extension base="imwe:PlanologischGebiedType">
+				<sequence>
+					<element name="typePlanobject" type="imwe:RuimtelijkPlanobject_WNType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PlanobjectPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:Planobject"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<simpleType name="Overheden_GType">
+		<restriction base="string">
+			<enumeration value="deelgemeente/stadsdeel"/>
+		</restriction>
+	</simpleType>
+	<element name="TekstReferentieO_WN" type="imwe:TekstReferentieO_WNType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="TekstReferentieO_WNType">
+		<sequence>
+			<element name="verwijzingNaarTekst" type="imwe:NotEmptyString"/>
+			<element name="typeTekst" type="imwe:TeksttypeO_WNType"/>
+		</sequence>
+	</complexType>
+	<complexType name="TekstReferentieO_WNPropertyType">
+		<sequence>
+			<element ref="imwe:TekstReferentieO_WN"/>
+		</sequence>
+	</complexType>
+	<simpleType name="RolExternPlanWN_WNType">
+		<restriction base="string">
+			<enumeration value="als mutatie opgenomen"/>
+			<enumeration value="ter vervanging van extern plan"/>
+			<enumeration value="in extern plan/besluit uit te werken"/>
+			<enumeration value="in extern plan/besluit uitgewerkt"/>
+			<enumeration value="informatie in extern plan/besluit"/>
+			<enumeration value="ten gevolge van extern plan/besluit"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="TeksttypeNG_WNType">
+		<restriction base="string">
+			<enumeration value="beschrijving"/>
+		</restriction>
+	</simpleType>
+	<element name="Welstandsgebied" type="imwe:WelstandsgebiedType" substitutionGroup="imwe:Planobject"/>
+	<complexType name="WelstandsgebiedType">
+		<complexContent>
+			<extension base="imwe:PlanobjectType">
+				<sequence>
+					<element name="naam" type="imwe:NotEmptyString"/>
+					<element name="verwijzingNaarTekstInfo" type="imwe:TekstReferentieG_WNPropertyType" maxOccurs="unbounded"/>
+					<element name="verwijzingNaarIllustratieInfo" type="imwe:IllustratiereferentiePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="cartografieInfo" type="imwe:CartografieInfoPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="beginTijd" type="date"/>
+					<element name="eindTijd" type="date" minOccurs="0"/>
+					<element name="begrenzing" type="imwe:GeometrieWNobjectPropertyType" maxOccurs="unbounded"/>
+					<element name="welstandsNota" type="imwe:WelstandsnotaPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="WelstandsgebiedPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:Welstandsgebied"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Welstandsnota" type="imwe:WelstandsnotaType" substitutionGroup="imwe:Plangebied"/>
+	<complexType name="WelstandsnotaType">
+		<complexContent>
+			<extension base="imwe:PlangebiedType">
+				<sequence>
+					<element name="typePlan" type="imwe:RuimtelijkPlanOfBesluit_WNType"/>
+					<element name="beleidsmatigVerantwoordelijkeOverheid" type="imwe:Overheden_GType"/>
+					<element name="naamOverheid" type="imwe:NotEmptyString"/>
+					<element name="naam" type="imwe:NotEmptyString"/>
+					<element name="locatieNaam" type="imwe:NotEmptyString" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="planstatusInfo" type="imwe:PlanstatusEnDatumPropertyType"/>
+					<element name="besluitnummer" type="imwe:NotEmptyString" minOccurs="0"/>
+					<element name="verwijzingNaarVaststellingsbesluit" type="imwe:NotEmptyString" minOccurs="0"/>
+					<element name="verwijzingNaarTekstInfo" type="imwe:TekstReferentieWN_WNPropertyType" maxOccurs="2"/>
+					<element name="ondergrondInfo" type="imwe:OndergrondReferentiePropertyType" maxOccurs="unbounded"/>
+					<element name="verwijzingNaarIllustratieInfo" type="imwe:IllustratiereferentiePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="verwijzingNaarExternPlanInfo" type="imwe:ExternPlanReferentieWN_WNPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="verwijzingNorm" type="imwe:NotEmptyString"/>
+					<element name="beginTijd" type="date"/>
+					<element name="eindTijd" type="date" minOccurs="0"/>
+					<element name="begenzing" type="imwe:GeometrieWNgebiedPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="WelstandsnotaPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:Welstandsnota"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="GeometrieWNobject" type="imwe:GeometrieWNobjectType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="GeometrieWNobjectType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="geometrie" type="gml:SurfacePropertyType"/>
+					<element name="idealisatie" type="imwe:Idealisatie_2Type"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeometrieWNobjectPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:GeometrieWNobject"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="MetadataIMWEbestand" type="imwe:MetadataIMWEbestandType" substitutionGroup="gml:AbstractFeature"/>
+	<complexType name="MetadataIMWEbestandType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="datasetTitel" type="imwe:NotEmptyString"/>
+					<element name="creatiedatum" type="date"/>
+					<element name="bronbeheerder" type="imwe:NotEmptyString"/>
+					<element name="codeerVerantwoordelijke" type="imwe:NotEmptyString"/>
+					<element name="naamApplicatieschema" type="imwe:NotEmptyString"/>
+					<element name="codeReferentiesysteem" type="imwe:NotEmptyString"/>
+					<element name="toepassingsschaal" type="integer"/>
+					<element name="applicatieIdentificatie" type="imwe:NotEmptyString"/>
+					<element name="versieXMLschema" type="imwe:NotEmptyString"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="MetadataIMWEbestandPropertyType">
+		<sequence minOccurs="0">
+			<element ref="imwe:MetadataIMWEbestand"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="TekstReferentieWN_WN" type="imwe:TekstReferentieWN_WNType" substitutionGroup="gml:AbstractObject"/>
+	<complexType name="TekstReferentieWN_WNType">
+		<sequence>
+			<element name="verwijzingNaarTekst" type="imwe:NotEmptyString"/>
+			<element name="typeTekst" type="imwe:TeksttypeWN_WNType"/>
+		</sequence>
+	</complexType>
+	<complexType name="TekstReferentieWN_WNPropertyType">
+		<sequence>
+			<element ref="imwe:TekstReferentieWN_WN"/>
+		</sequence>
+	</complexType>
+	<simpleType name="TeksttypeO_WNType">
+		<restriction base="string">
+			<enumeration value="beschrijving"/>
+			<enumeration value="objectcriteria"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="OndergrondenType">
+		<restriction base="string">
+			<enumeration value="grootschalige basiskaart (GBK)"/>
+			<enumeration value="basisregistratie grootschalige topografie (BGT)"/>
+			<enumeration value="basisregistratie topografie (BRT)"/>
+			<enumeration value="basisregistratie kadaster (BRK)"/>
+		</restriction>
+	</simpleType>
+	<!-- datatype NotEmptyString om gebruik lege stringwaarden te voorkomen -->
+	<simpleType name="NotEmptyString">
+		<restriction base="string">
+			<pattern value="[^ \t\r\n]{1}.*"/>
+			<!-- string is niet leeg -->
+			<!-- string begint niet met een spatie, tab, return, new line -->
+		</restriction>
+	</simpleType>
+</schema>

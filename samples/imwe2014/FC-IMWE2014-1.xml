@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imwe:FeatureCollectionIMWE
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0"
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xsi:schemaLocation="
+        http://www.opengis.net/gml/3.2 ../../schemas/gml/3.2.1.2/gml.xsd
+        http://www.geonovum.nl/imwe/2014/1.0 ../../schemas/imwe2014/IMWE2014.xsd"
+        gml:id="string1">
+    <imwe:featureMember>
+        <imwe:Welstandsgebied gml:id="string2">
+            <imwe:identificatie>
+                <imwe:NEN3610ID>
+                    <imwe:namespace>string</imwe:namespace>
+                    <imwe:lokaalID>string</imwe:lokaalID>
+                    <!--Optional:-->
+                    <imwe:versie>string</imwe:versie>
+                </imwe:NEN3610ID>
+            </imwe:identificatie>
+            <imwe:typePlanobject>welstandsgebied</imwe:typePlanobject>
+            <imwe:naam>string</imwe:naam>
+            <!--1 or more repetitions:-->
+            <imwe:verwijzingNaarTekstInfo>
+                <imwe:TekstReferentieG_WN>
+                    <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+                    <imwe:typeTekst>gebiedscriteria</imwe:typeTekst>
+                </imwe:TekstReferentieG_WN>
+            </imwe:verwijzingNaarTekstInfo>
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarIllustratieInfo>
+                <imwe:Illustratiereferentie>
+                    <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
+                    <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+                </imwe:Illustratiereferentie>
+            </imwe:verwijzingNaarIllustratieInfo>
+            <!--Zero or more repetitions:-->
+            <imwe:cartografieInfo>
+                <imwe:CartografieInfo>
+                    <imwe:kaartnummer>string</imwe:kaartnummer>
+                    <imwe:kaartnaam>string</imwe:kaartnaam>
+                    <!--Optional:-->
+                    <imwe:symboolcode>string</imwe:symboolcode>
+                </imwe:CartografieInfo>
+            </imwe:cartografieInfo>
+            <imwe:beginTijd>2014-09-19</imwe:beginTijd>
+            <!--Optional:-->
+            <imwe:eindTijd>2006-08-19+02:00</imwe:eindTijd>
+            <!--1 or more repetitions:-->
+            <imwe:begrenzing>
+                <imwe:GeometrieWNobject gml:id="string3">
+                    <imwe:geometrie>
+                        <gml:Surface gml:id="string3.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
+                            <gml:patches>
+                                <gml:PolygonPatch interpolation="planar">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList srsName="urn:x-ogc:def:crs:EPSG:28992" srsDimension="2">
+                                                176277.233 316252.829 176275.592 316263.71 176278.911 316264.141
+                                                176278.381 316267.621 176283.333 316268.316 176285.081 316268.561
+                                                176284.673
+                                                316268.501 176285.689 316261.741 176282.702 316261.289 176283.083
+                                                316258.766
+                                                176283.83000000002 316253.822 176277.233 316252.829
+                                            </gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </gml:Surface>
+                    </imwe:geometrie>
+                    <imwe:idealisatie>exact</imwe:idealisatie>
+                </imwe:GeometrieWNobject>
+            </imwe:begrenzing>
+            <imwe:welstandsNota>
+                <imwe:Welstandsnota gml:id="string4">
+                    <imwe:identificatie>
+                        <imwe:NEN3610ID>
+                            <imwe:namespace>string</imwe:namespace>
+                            <imwe:lokaalID>string</imwe:lokaalID>
+                            <!--Optional:-->
+                            <imwe:versie>string</imwe:versie>
+                        </imwe:NEN3610ID>
+                    </imwe:identificatie>
+                    <imwe:typePlan>welstandsnota</imwe:typePlan>
+                    <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
+                    <imwe:naamOverheid>string</imwe:naamOverheid>
+                    <imwe:naam>string</imwe:naam>
+                    <!--Zero or more repetitions:-->
+                    <imwe:locatieNaam>string</imwe:locatieNaam>
+                    <imwe:planstatusInfo>
+                        <imwe:PlanstatusEnDatum>
+                            <imwe:planstatus>geconsolideerd</imwe:planstatus>
+                            <imwe:datum>2013-12-21+01:00</imwe:datum>
+                        </imwe:PlanstatusEnDatum>
+                    </imwe:planstatusInfo>
+                    <!--Optional:-->
+                    <imwe:besluitnummer>string</imwe:besluitnummer>
+                    <!--Optional:-->
+                    <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
+                    <!--1 to 2 repetitions:-->
+                    <imwe:verwijzingNaarTekstInfo>
+                        <imwe:TekstReferentieWN_WN>
+                            <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+                            <imwe:typeTekst>bijlage(n)</imwe:typeTekst>
+                        </imwe:TekstReferentieWN_WN>
+                    </imwe:verwijzingNaarTekstInfo>
+                    <!--1 or more repetitions:-->
+                    <imwe:ondergrondInfo>
+                        <imwe:OndergrondReferentie>
+                            <imwe:ondergrondtype>basisregistratie kadaster (BRK)</imwe:ondergrondtype>
+                            <imwe:ondergronddatum>2016-02-20+01:00</imwe:ondergronddatum>
+                        </imwe:OndergrondReferentie>
+                    </imwe:ondergrondInfo>
+                    <!--Zero or more repetitions:-->
+                    <imwe:verwijzingNaarIllustratieInfo>
+                        <imwe:Illustratiereferentie>
+                            <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
+                            <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+                        </imwe:Illustratiereferentie>
+                    </imwe:verwijzingNaarIllustratieInfo>
+                    <!--Zero or more repetitions:-->
+                    <imwe:verwijzingNaarExternPlanInfo>
+                        <imwe:ExternPlanReferentieWN_WN>
+                            <imwe:naamExternPlan>string</imwe:naamExternPlan>
+                            <!--Optional:-->
+                            <imwe:idnExternPlan>string</imwe:idnExternPlan>
+                            <imwe:rolExternPlan>ten gevolge van extern plan/besluit</imwe:rolExternPlan>
+                        </imwe:ExternPlanReferentieWN_WN>
+                    </imwe:verwijzingNaarExternPlanInfo>
+                    <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
+                    <imwe:beginTijd>2018-12-28+01:00</imwe:beginTijd>
+                    <!--Optional:-->
+                    <imwe:eindTijd>2017-11-01+01:00</imwe:eindTijd>
+                    <imwe:begenzing>
+                        <imwe:GeometrieWNgebied gml:id="string5">
+                            <imwe:geometrie>
+                                <gml:MultiSurface gml:id="string5.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
+                                    <gml:surfaceMember>
+                                        <gml:Surface gml:id="string5.1.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
+                                            <gml:patches>
+                                                <gml:PolygonPatch interpolation="planar">
+                                                    <gml:exterior>
+                                                        <gml:LinearRing>
+                                                            <gml:posList srsName="urn:x-ogc:def:crs:EPSG:28992"
+                                                                         srsDimension="2">
+                                                                176731.538 314881.081 176696.938 314882.86100000003
+                                                                176694.681
+                                                                314881.31200000003 176691.861 314880.159 176688.856
+                                                                314879.655 176685.814
+                                                                314879.824 176682.883 314880.657 176680.207 314882.115
+                                                                176677.918 314884.126
+                                                                176676.663 314885.726 176675.25400000002 314888.428
+                                                                176674.475 314891.374
+                                                                176674.362 314894.419 176674.662 314896.43 176675.657
+                                                                314899.31 176677.261
+                                                                314901.901 176679.395 314904.075 176681.695
+                                                                314905.58400000003 176682.375
+                                                                314918.799 176676.418 314919.105 176678.109 314951.976
+                                                                176682.939 314951.728
+                                                                176683.539 314963.395 176731.272 314960.939
+                                                                176731.64800000002 314968.253
+                                                                176746.999 314967.463 176747.20500000002
+                                                                314971.47000000003 176765.412
+                                                                314970.533 176757.312 314813.087 176740.881
+                                                                314813.93200000003 176718.229
+                                                                314815.098 176721.0 314868.954 176730.888 314868.445
+                                                                176731.538 314881.081
+                                                            </gml:posList>
+                                                        </gml:LinearRing>
+                                                    </gml:exterior>
+                                                </gml:PolygonPatch>
+                                            </gml:patches>
+                                        </gml:Surface>
+                                    </gml:surfaceMember>
+                                    <gml:surfaceMember>
+                                         <gml:Surface gml:id="string5.1.2" srsName="urn:x-ogc:def:crs:EPSG:28992">
+                                             <gml:patches>
+                                                 <gml:PolygonPatch interpolation="planar">
+                                                     <gml:exterior>
+                                                         <gml:LinearRing>
+                                                             <gml:posList srsName="urn:x-ogc:def:crs:EPSG:28992"
+                                                                          srsDimension="2">
+                                                                 176718.903 315340.92100000003 176718.574 315344.32 176718.01 315350.137
+                                                                 176727.834 315351.155 176728.386 315345.234 176728.953 315339.141
+                                                                 176729.49300000002 315333.351 176730.063 315327.228 176730.636 315321.082
+                                                                 176720.912 315320.177 176720.317 315326.32 176719.721 315332.441 176719.163
+                                                                 315338.229 176719.085 315339.036 176715.517 315338.683 176715.329 315340.537
+                                                                 176718.903 315340.92100000003
+                                                             </gml:posList>
+                                                         </gml:LinearRing>
+                                                     </gml:exterior>
+                                                 </gml:PolygonPatch>
+                                             </gml:patches>
+                                         </gml:Surface>
+                                     </gml:surfaceMember>
+                                </gml:MultiSurface>
+                            </imwe:geometrie>
+                        </imwe:GeometrieWNgebied>
+                    </imwe:begenzing>
+                </imwe:Welstandsnota>
+            </imwe:welstandsNota>
+        </imwe:Welstandsgebied>
+    </imwe:featureMember>
+</imwe:FeatureCollectionIMWE>
