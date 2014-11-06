@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!-- Proefbestand voor IMWE2014. Dit bestand is opgebouwd uit Welstands* elementen -->
+<!-- die gegenereerd zijn vanuit de IMWE2014 XSDs (zie schemas/imwe2014-stub) -->
+<!-- en daarna hier met de hand bewerkt.-->
+
+<!-- Just van den Broecke okt 2014 -->
+<!-- =================================================================== -->
 <imwe:FeatureCollectionIMWE
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0"
