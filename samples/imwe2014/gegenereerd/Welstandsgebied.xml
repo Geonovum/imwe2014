@@ -1,112 +1,114 @@
-<imwe:Welstandsgebied gml:id="string" xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0" xmlns:gml="http://geonovum.nl/simplegml">
-  <imwe:identificatie>
-    <imwe:NEN3610ID>
-      <imwe:namespace>string</imwe:namespace>
-      <imwe:lokaalID>string</imwe:lokaalID>
-      <!--Optional:-->
-      <imwe:versie>string</imwe:versie>
-    </imwe:NEN3610ID>
-  </imwe:identificatie>
-  <imwe:typePlanobject>welstandsgebied</imwe:typePlanobject>
-  <imwe:naam>string</imwe:naam>
-  <!--1 or more repetitions:-->
-  <imwe:verwijzingNaarTekstInfo>
-    <imwe:TekstReferentieG_WN>
-      <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
-      <imwe:typeTekst>gebiedscriteria</imwe:typeTekst>
-    </imwe:TekstReferentieG_WN>
-  </imwe:verwijzingNaarTekstInfo>
-  <!--Zero or more repetitions:-->
-  <imwe:verwijzingNaarIllustratieInfo>
-    <imwe:Illustratiereferentie>
-      <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
-      <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
-    </imwe:Illustratiereferentie>
-  </imwe:verwijzingNaarIllustratieInfo>
-  <!--Zero or more repetitions:-->
-  <imwe:cartografieInfo>
-    <imwe:CartografieInfo>
-      <imwe:kaartnummer>string</imwe:kaartnummer>
-      <imwe:kaartnaam>string</imwe:kaartnaam>
-      <!--Optional:-->
-      <imwe:symboolcode>string</imwe:symboolcode>
-    </imwe:CartografieInfo>
-  </imwe:cartografieInfo>
-  <imwe:beginTijd>2014-09-19</imwe:beginTijd>
-  <!--Optional:-->
-  <imwe:eindTijd>2006-08-19+02:00</imwe:eindTijd>
-  <!--1 or more repetitions:-->
-  <imwe:begrenzing>
-    <imwe:GeometrieWNobject gml:id="string">
-      <imwe:geometrie>SurfacePropertyType</imwe:geometrie>
-      <imwe:idealisatie>exact</imwe:idealisatie>
-    </imwe:GeometrieWNobject>
-  </imwe:begrenzing>
-  <imwe:welstandsNota>
-    <imwe:Welstandsnota gml:id="string">
-      <imwe:identificatie>
+<imwe:Welstandsgebied gml:id="string" xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0"
+                      xmlns:gml="http://geonovum.nl/simplegml">
+    <imwe:identificatie>
         <imwe:NEN3610ID>
-          <imwe:namespace>string</imwe:namespace>
-          <imwe:lokaalID>string</imwe:lokaalID>
-          <!--Optional:-->
-          <imwe:versie>string</imwe:versie>
+            <imwe:namespace>string</imwe:namespace>
+            <imwe:lokaalID>string</imwe:lokaalID>
+            <!--Optional:-->
+            <imwe:versie>string</imwe:versie>
         </imwe:NEN3610ID>
-      </imwe:identificatie>
-      <imwe:typePlan>welstandsnota</imwe:typePlan>
-      <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
-      <imwe:naamOverheid>string</imwe:naamOverheid>
-      <imwe:naam>string</imwe:naam>
-      <!--Zero or more repetitions:-->
-      <imwe:locatieNaam>string</imwe:locatieNaam>
-      <imwe:planstatusInfo>
-        <imwe:PlanstatusEnDatum>
-          <imwe:planstatus>geconsolideerd</imwe:planstatus>
-          <imwe:datum>2013-12-21+01:00</imwe:datum>
-        </imwe:PlanstatusEnDatum>
-      </imwe:planstatusInfo>
-      <!--Optional:-->
-      <imwe:besluitnummer>string</imwe:besluitnummer>
-      <!--Optional:-->
-      <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
-      <!--1 to 2 repetitions:-->
-      <imwe:verwijzingNaarTekstInfo>
-        <imwe:TekstReferentieWN_WN>
-          <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
-          <imwe:typeTekst>bijlage(n)</imwe:typeTekst>
-        </imwe:TekstReferentieWN_WN>
-      </imwe:verwijzingNaarTekstInfo>
-      <!--1 or more repetitions:-->
-      <imwe:ondergrondInfo>
-        <imwe:OndergrondReferentie>
-          <imwe:ondergrondtype>basisregistratie kadaster (BRK)</imwe:ondergrondtype>
-          <imwe:ondergronddatum>2016-02-20+01:00</imwe:ondergronddatum>
-        </imwe:OndergrondReferentie>
-      </imwe:ondergrondInfo>
-      <!--Zero or more repetitions:-->
-      <imwe:verwijzingNaarIllustratieInfo>
+    </imwe:identificatie>
+    <imwe:typePlanobject>welstandsgebied</imwe:typePlanobject>
+    <imwe:naam>string</imwe:naam>
+    <!--1 or more repetitions:-->
+    <imwe:verwijzingNaarTekstInfo>
+        <imwe:TekstReferentieG_WN>
+            <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+            <imwe:typeTekst>gebiedscriteria</imwe:typeTekst>
+        </imwe:TekstReferentieG_WN>
+    </imwe:verwijzingNaarTekstInfo>
+    <!--Zero or more repetitions:-->
+    <imwe:verwijzingNaarIllustratieInfo>
         <imwe:Illustratiereferentie>
-          <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
-          <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+            <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
+            <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
         </imwe:Illustratiereferentie>
-      </imwe:verwijzingNaarIllustratieInfo>
-      <!--Zero or more repetitions:-->
-      <imwe:verwijzingNaarExternPlanInfo>
-        <imwe:ExternPlanReferentieWN_WN>
-          <imwe:naamExternPlan>string</imwe:naamExternPlan>
-          <!--Optional:-->
-          <imwe:idnExternPlan>string</imwe:idnExternPlan>
-          <imwe:rolExternPlan>ten gevolge van extern plan/besluit</imwe:rolExternPlan>
-        </imwe:ExternPlanReferentieWN_WN>
-      </imwe:verwijzingNaarExternPlanInfo>
-      <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
-      <imwe:beginTijd>2018-12-28+01:00</imwe:beginTijd>
-      <!--Optional:-->
-      <imwe:eindTijd>2017-11-01+01:00</imwe:eindTijd>
-      <imwe:begenzing>
-        <imwe:GeometrieWNgebied gml:id="string">
-          <imwe:geometrie>MultiSurfacePropertyType</imwe:geometrie>
-        </imwe:GeometrieWNgebied>
-      </imwe:begenzing>
-    </imwe:Welstandsnota>
-  </imwe:welstandsNota>
+    </imwe:verwijzingNaarIllustratieInfo>
+    <!--Zero or more repetitions:-->
+    <imwe:cartografieInfo>
+        <imwe:CartografieInfo>
+            <imwe:kaartnummer>string</imwe:kaartnummer>
+            <imwe:kaartnaam>string</imwe:kaartnaam>
+            <!--Optional:-->
+            <imwe:symboolcode>string</imwe:symboolcode>
+        </imwe:CartografieInfo>
+    </imwe:cartografieInfo>
+    <imwe:beginTijd>2014-09-19</imwe:beginTijd>
+    <!--Optional:-->
+    <imwe:eindTijd>2006-08-19+02:00</imwe:eindTijd>
+    <!--1 or more repetitions:-->
+    <imwe:begrenzing>
+        <imwe:GeometrieWNobject gml:id="string">
+            <imwe:geometrie>SurfacePropertyType</imwe:geometrie>
+            <imwe:idealisatie>exact</imwe:idealisatie>
+        </imwe:GeometrieWNobject>
+    </imwe:begrenzing>
+    <imwe:welstandsNota>
+        <imwe:Welstandsnota gml:id="string">
+            <imwe:identificatie>
+                <imwe:NEN3610ID>
+                    <imwe:namespace>string</imwe:namespace>
+                    <imwe:lokaalID>string</imwe:lokaalID>
+                    <!--Optional:-->
+                    <imwe:versie>string</imwe:versie>
+                </imwe:NEN3610ID>
+            </imwe:identificatie>
+            <imwe:typePlan>welstandsnota</imwe:typePlan>
+            <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel
+            </imwe:beleidsmatigVerantwoordelijkeOverheid>
+            <imwe:naamOverheid>string</imwe:naamOverheid>
+            <imwe:naam>string</imwe:naam>
+            <!--Zero or more repetitions:-->
+            <imwe:locatieNaam>string</imwe:locatieNaam>
+            <imwe:planstatusInfo>
+                <imwe:PlanstatusEnDatum>
+                    <imwe:planstatus>geconsolideerd</imwe:planstatus>
+                    <imwe:datum>2013-12-21+01:00</imwe:datum>
+                </imwe:PlanstatusEnDatum>
+            </imwe:planstatusInfo>
+            <!--Optional:-->
+            <imwe:besluitnummer>string</imwe:besluitnummer>
+            <!--Optional:-->
+            <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
+            <!--1 to 2 repetitions:-->
+            <imwe:verwijzingNaarTekstInfo>
+                <imwe:TekstReferentieWN_WN>
+                    <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+                    <imwe:typeTekst>bijlage(n)</imwe:typeTekst>
+                </imwe:TekstReferentieWN_WN>
+            </imwe:verwijzingNaarTekstInfo>
+            <!--1 or more repetitions:-->
+            <imwe:ondergrondInfo>
+                <imwe:OndergrondReferentie>
+                    <imwe:ondergrondtype>basisregistratie kadaster (BRK)</imwe:ondergrondtype>
+                    <imwe:ondergronddatum>2016-02-20+01:00</imwe:ondergronddatum>
+                </imwe:OndergrondReferentie>
+            </imwe:ondergrondInfo>
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarIllustratieInfo>
+                <imwe:Illustratiereferentie>
+                    <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
+                    <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+                </imwe:Illustratiereferentie>
+            </imwe:verwijzingNaarIllustratieInfo>
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarExternPlanInfo>
+                <imwe:ExternPlanReferentieWN_WN>
+                    <imwe:naamExternPlan>string</imwe:naamExternPlan>
+                    <!--Optional:-->
+                    <imwe:idnExternPlan>string</imwe:idnExternPlan>
+                    <imwe:rolExternPlan>ten gevolge van extern plan/besluit</imwe:rolExternPlan>
+                </imwe:ExternPlanReferentieWN_WN>
+            </imwe:verwijzingNaarExternPlanInfo>
+            <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
+            <imwe:beginTijd>2018-12-28+01:00</imwe:beginTijd>
+            <!--Optional:-->
+            <imwe:eindTijd>2017-11-01+01:00</imwe:eindTijd>
+            <imwe:begenzing>
+                <imwe:GeometrieWNgebied gml:id="string">
+                    <imwe:geometrie>MultiSurfacePropertyType</imwe:geometrie>
+                </imwe:GeometrieWNgebied>
+            </imwe:begenzing>
+        </imwe:Welstandsnota>
+    </imwe:welstandsNota>
 </imwe:Welstandsgebied>

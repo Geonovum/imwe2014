@@ -14,24 +14,40 @@
         http://www.opengis.net/gml/3.2 ../../schemas/gml/3.2.1.2/gml.xsd
         http://www.geonovum.nl/imwe/2014/1.0 ../../schemas/imwe2014/IMWE2014.xsd"
         gml:id="string1">
+
     <imwe:featureMember>
-        <imwe:Welstandsgebied gml:id="string2">
+        <imwe:MetadataIMWEbestand gml:id="NL.IMWE.1709.MetadataIMWEbestand">
+            <imwe:datasetTitel>string</imwe:datasetTitel>
+            <imwe:creatiedatum>2008-09-29</imwe:creatiedatum>
+            <imwe:bronbeheerder>string</imwe:bronbeheerder>
+            <imwe:codeerVerantwoordelijke>string</imwe:codeerVerantwoordelijke>
+            <imwe:naamApplicatieschema>string</imwe:naamApplicatieschema>
+            <imwe:codeReferentiesysteem>string</imwe:codeReferentiesysteem>
+            <imwe:toepassingsschaal>100</imwe:toepassingsschaal>
+            <imwe:applicatieIdentificatie>string</imwe:applicatieIdentificatie>
+            <imwe:versieXMLschema>string</imwe:versieXMLschema>
+        </imwe:MetadataIMWEbestand>
+    </imwe:featureMember>
+
+    <imwe:featureMember>
+        <imwe:Welstandsniveau gml:id="NL.IMWE.1709.WelstandsNiveauGebied.23">
             <imwe:identificatie>
                 <imwe:NEN3610ID>
-                    <imwe:namespace>string</imwe:namespace>
-                    <imwe:lokaalID>string</imwe:lokaalID>
-                    <!--Optional:-->
-                    <imwe:versie>string</imwe:versie>
+                    <imwe:namespace>NL.IMWE</imwe:namespace>
+                    <imwe:lokaalID>1709.WelstandsNiveauGebied.23</imwe:lokaalID>
+
+                    <!--Optional: niet in PlanObjecten-->
+                    <!--<imwe:versie>string</imwe:versie>-->
                 </imwe:NEN3610ID>
             </imwe:identificatie>
-            <imwe:typePlanobject>welstandsgebied</imwe:typePlanobject>
+            <imwe:typePlanobject>welstandsniveau</imwe:typePlanobject>
             <imwe:naam>string</imwe:naam>
             <!--1 or more repetitions:-->
             <imwe:verwijzingNaarTekstInfo>
-                <imwe:TekstReferentieG_WN>
+                <imwe:TekstReferentieNG_WN>
                     <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
-                    <imwe:typeTekst>gebiedscriteria</imwe:typeTekst>
-                </imwe:TekstReferentieG_WN>
+                    <imwe:typeTekst>beschrijving</imwe:typeTekst>
+                </imwe:TekstReferentieNG_WN>
             </imwe:verwijzingNaarTekstInfo>
             <!--Zero or more repetitions:-->
             <imwe:verwijzingNaarIllustratieInfo>
@@ -54,158 +70,442 @@
             <imwe:eindTijd>2006-08-19+02:00</imwe:eindTijd>
             <!--1 or more repetitions:-->
             <imwe:begrenzing>
-                <imwe:GeometrieWNobject gml:id="string3">
+                <imwe:GeometrieWNobject gml:id="NL.IMWE.1709.WelstandsNiveauGebied.23.GeometrieWNobject">
                     <imwe:geometrie>
-                        <gml:Surface gml:id="string3.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
-                            <gml:patches>
-                                <gml:PolygonPatch interpolation="planar">
-                                    <gml:exterior>
-                                        <gml:LinearRing>
-                                            <gml:posList srsName="urn:x-ogc:def:crs:EPSG:28992" srsDimension="2">
-                                                176277.233 316252.829 176275.592 316263.71 176278.911 316264.141
-                                                176278.381 316267.621 176283.333 316268.316 176285.081 316268.561
-                                                176284.673
-                                                316268.501 176285.689 316261.741 176282.702 316261.289 176283.083
-                                                316258.766
-                                                176283.83000000002 316253.822 176277.233 316252.829
-                                            </gml:posList>
-                                        </gml:LinearRing>
-                                    </gml:exterior>
-                                </gml:PolygonPatch>
-                            </gml:patches>
-                        </gml:Surface>
+                        <gml:Surface gml:id="NL.IMWE.1709.WelstandsNiveauGebied.23.geometrie" srsName='EPSG:28992'>
+                             <gml:patches>
+                                 <gml:PolygonPatch>
+                                     <gml:exterior>
+                                         <gml:LinearRing>
+                                             <gml:posList srsDimension='2' count='33'>101281.7070632331 406253.6795041818
+                                                 101259.5199873568 406267.7348005354 101271.1959873559 406304.4148005425
+                                                 101280.750987363 406319.6798005281 101281.1979873599 406322.7708005487
+                                                 101278.0179873677 406324.0778005301 101265.4599873545 406322.127800542
+                                                 101230.1201967718 406325.258506733 101226.4799873652 406348.3768004953
+                                                 101245.2739873649 406351.5478004991 101242.6699873628 406369.6558005392
+                                                 101242.2399873557 406380.3388005077 101240.3649873556 406392.5438005506
+                                                 101244.3679873617 406417.5588005364 101248.2629873576 406434.3378005206
+                                                 101256.0729873599 406460.9058005392 101261.2689873548 406476.3388005077
+                                                 101260.9079873683 406476.4728005111 101266.4909873577 406491.0338005005
+                                                 101266.8579873564 406490.8838005243 101273.9629873605 406508.921800512
+                                                 101279.5409873547 406520.445800501 101271.2369873645 406524.367800492
+                                                 101280.1079873564 406543.0298004924 101297.9579414537 406554.2541085663
+                                                 101310.4087646715 406580.7057533604 101349.05098736 406563.0448005378
+                                                 101367.6469873609 406553.7118005335 101403.4682952442 406530.2974998043
+                                                 101415.837000028 406545.3340000686 101451.5980000354 406522.0770000396
+                                                 101353.9280000336 406367.1120000658 101281.7070632331 406253.6795041818
+                                             </gml:posList>
+                                         </gml:LinearRing>
+                                     </gml:exterior>
+                                 </gml:PolygonPatch>
+                             </gml:patches>
+                         </gml:Surface>
                     </imwe:geometrie>
                     <imwe:idealisatie>exact</imwe:idealisatie>
                 </imwe:GeometrieWNobject>
             </imwe:begrenzing>
-            <imwe:welstandsNota>
-                <imwe:Welstandsnota gml:id="string4">
-                    <imwe:identificatie>
-                        <imwe:NEN3610ID>
-                            <imwe:namespace>string</imwe:namespace>
-                            <imwe:lokaalID>string</imwe:lokaalID>
-                            <!--Optional:-->
-                            <imwe:versie>string</imwe:versie>
-                        </imwe:NEN3610ID>
-                    </imwe:identificatie>
-                    <imwe:typePlan>welstandsnota</imwe:typePlan>
-                    <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
-                    <imwe:naamOverheid>string</imwe:naamOverheid>
-                    <imwe:naam>string</imwe:naam>
-                    <!--Zero or more repetitions:-->
-                    <imwe:locatieNaam>string</imwe:locatieNaam>
-                    <imwe:planstatusInfo>
-                        <imwe:PlanstatusEnDatum>
-                            <imwe:planstatus>geconsolideerd</imwe:planstatus>
-                            <imwe:datum>2013-12-21+01:00</imwe:datum>
-                        </imwe:PlanstatusEnDatum>
-                    </imwe:planstatusInfo>
+            <imwe:welstandsNota xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#NL.IMWE.1709.WelstandsNota.v1"/>
+        </imwe:Welstandsniveau>
+    </imwe:featureMember>
+
+    <imwe:featureMember>
+        <!-- 1709 is gemeentecode Moerdijk -->
+        <imwe:Welstandsnota gml:id="NL.IMWE.1709.WelstandsNota.v1">
+            <imwe:identificatie>
+                <imwe:NEN3610ID>
+                    <imwe:namespace>NL.IMWE</imwe:namespace>
+                    <imwe:lokaalID>1709.WelstandsNota</imwe:lokaalID>
                     <!--Optional:-->
-                    <imwe:besluitnummer>string</imwe:besluitnummer>
+                    <imwe:versie>v1</imwe:versie>
+                </imwe:NEN3610ID>
+            </imwe:identificatie>
+            <imwe:typePlan>welstandsnota</imwe:typePlan>
+            <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
+            <imwe:naamOverheid>Moerdijk</imwe:naamOverheid>
+            <imwe:naam>string</imwe:naam>
+            <!--Zero or more repetitions:-->
+            <imwe:locatieNaam>string</imwe:locatieNaam>
+            <imwe:planstatusInfo>
+                <imwe:PlanstatusEnDatum>
+                    <imwe:planstatus>geconsolideerd</imwe:planstatus>
+                    <imwe:datum>2013-12-21+01:00</imwe:datum>
+                </imwe:PlanstatusEnDatum>
+            </imwe:planstatusInfo>
+            <!--Optional:-->
+            <imwe:besluitnummer>string</imwe:besluitnummer>
+            <!--Optional:-->
+            <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
+            <!--1 to 2 repetitions:-->
+            <imwe:verwijzingNaarTekstInfo>
+                <imwe:TekstReferentieWN_WN>
+                    <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+                    <imwe:typeTekst>bijlage(n)</imwe:typeTekst>
+                </imwe:TekstReferentieWN_WN>
+            </imwe:verwijzingNaarTekstInfo>
+            <!--1 or more repetitions:-->
+            <imwe:ondergrondInfo>
+                <imwe:OndergrondReferentie>
+                    <imwe:ondergrondtype>basisregistratie kadaster (BRK)</imwe:ondergrondtype>
+                    <imwe:ondergronddatum>2016-02-20+01:00</imwe:ondergronddatum>
+                </imwe:OndergrondReferentie>
+            </imwe:ondergrondInfo>
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarIllustratieInfo>
+                <imwe:Illustratiereferentie>
+                    <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
+                    <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+                </imwe:Illustratiereferentie>
+            </imwe:verwijzingNaarIllustratieInfo>
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarExternPlanInfo>
+                <imwe:ExternPlanReferentieWN_WN>
+                    <imwe:naamExternPlan>string</imwe:naamExternPlan>
                     <!--Optional:-->
-                    <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
-                    <!--1 to 2 repetitions:-->
-                    <imwe:verwijzingNaarTekstInfo>
-                        <imwe:TekstReferentieWN_WN>
-                            <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
-                            <imwe:typeTekst>bijlage(n)</imwe:typeTekst>
-                        </imwe:TekstReferentieWN_WN>
-                    </imwe:verwijzingNaarTekstInfo>
-                    <!--1 or more repetitions:-->
-                    <imwe:ondergrondInfo>
-                        <imwe:OndergrondReferentie>
-                            <imwe:ondergrondtype>basisregistratie kadaster (BRK)</imwe:ondergrondtype>
-                            <imwe:ondergronddatum>2016-02-20+01:00</imwe:ondergronddatum>
-                        </imwe:OndergrondReferentie>
-                    </imwe:ondergrondInfo>
-                    <!--Zero or more repetitions:-->
-                    <imwe:verwijzingNaarIllustratieInfo>
-                        <imwe:Illustratiereferentie>
-                            <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
-                            <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
-                        </imwe:Illustratiereferentie>
-                    </imwe:verwijzingNaarIllustratieInfo>
-                    <!--Zero or more repetitions:-->
-                    <imwe:verwijzingNaarExternPlanInfo>
-                        <imwe:ExternPlanReferentieWN_WN>
-                            <imwe:naamExternPlan>string</imwe:naamExternPlan>
-                            <!--Optional:-->
-                            <imwe:idnExternPlan>string</imwe:idnExternPlan>
-                            <imwe:rolExternPlan>ten gevolge van extern plan/besluit</imwe:rolExternPlan>
-                        </imwe:ExternPlanReferentieWN_WN>
-                    </imwe:verwijzingNaarExternPlanInfo>
-                    <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
-                    <imwe:beginTijd>2018-12-28+01:00</imwe:beginTijd>
-                    <!--Optional:-->
-                    <imwe:eindTijd>2017-11-01+01:00</imwe:eindTijd>
-                    <imwe:begenzing>
-                        <imwe:GeometrieWNgebied gml:id="string5">
-                            <imwe:geometrie>
-                                <gml:MultiSurface gml:id="string5.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
-                                    <gml:surfaceMember>
-                                        <gml:Surface gml:id="string5.1.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
-                                            <gml:patches>
-                                                <gml:PolygonPatch interpolation="planar">
-                                                    <gml:exterior>
-                                                        <gml:LinearRing>
-                                                            <gml:posList srsName="urn:x-ogc:def:crs:EPSG:28992"
-                                                                         srsDimension="2">
-                                                                176731.538 314881.081 176696.938 314882.86100000003
-                                                                176694.681
-                                                                314881.31200000003 176691.861 314880.159 176688.856
-                                                                314879.655 176685.814
-                                                                314879.824 176682.883 314880.657 176680.207 314882.115
-                                                                176677.918 314884.126
-                                                                176676.663 314885.726 176675.25400000002 314888.428
-                                                                176674.475 314891.374
-                                                                176674.362 314894.419 176674.662 314896.43 176675.657
-                                                                314899.31 176677.261
-                                                                314901.901 176679.395 314904.075 176681.695
-                                                                314905.58400000003 176682.375
-                                                                314918.799 176676.418 314919.105 176678.109 314951.976
-                                                                176682.939 314951.728
-                                                                176683.539 314963.395 176731.272 314960.939
-                                                                176731.64800000002 314968.253
-                                                                176746.999 314967.463 176747.20500000002
-                                                                314971.47000000003 176765.412
-                                                                314970.533 176757.312 314813.087 176740.881
-                                                                314813.93200000003 176718.229
-                                                                314815.098 176721.0 314868.954 176730.888 314868.445
-                                                                176731.538 314881.081
-                                                            </gml:posList>
-                                                        </gml:LinearRing>
-                                                    </gml:exterior>
-                                                </gml:PolygonPatch>
-                                            </gml:patches>
-                                        </gml:Surface>
-                                    </gml:surfaceMember>
-                                    <gml:surfaceMember>
-                                         <gml:Surface gml:id="string5.1.2" srsName="urn:x-ogc:def:crs:EPSG:28992">
-                                             <gml:patches>
-                                                 <gml:PolygonPatch interpolation="planar">
-                                                     <gml:exterior>
-                                                         <gml:LinearRing>
-                                                             <gml:posList srsName="urn:x-ogc:def:crs:EPSG:28992"
-                                                                          srsDimension="2">
-                                                                 176718.903 315340.92100000003 176718.574 315344.32 176718.01 315350.137
-                                                                 176727.834 315351.155 176728.386 315345.234 176728.953 315339.141
-                                                                 176729.49300000002 315333.351 176730.063 315327.228 176730.636 315321.082
-                                                                 176720.912 315320.177 176720.317 315326.32 176719.721 315332.441 176719.163
-                                                                 315338.229 176719.085 315339.036 176715.517 315338.683 176715.329 315340.537
-                                                                 176718.903 315340.92100000003
-                                                             </gml:posList>
-                                                         </gml:LinearRing>
-                                                     </gml:exterior>
-                                                 </gml:PolygonPatch>
-                                             </gml:patches>
-                                         </gml:Surface>
-                                     </gml:surfaceMember>
-                                </gml:MultiSurface>
-                            </imwe:geometrie>
-                        </imwe:GeometrieWNgebied>
-                    </imwe:begenzing>
-                </imwe:Welstandsnota>
-            </imwe:welstandsNota>
-        </imwe:Welstandsgebied>
+                    <imwe:idnExternPlan>string</imwe:idnExternPlan>
+                    <imwe:rolExternPlan>ten gevolge van extern plan/besluit</imwe:rolExternPlan>
+                </imwe:ExternPlanReferentieWN_WN>
+            </imwe:verwijzingNaarExternPlanInfo>
+            <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
+            <imwe:beginTijd>2018-12-28+01:00</imwe:beginTijd>
+            <!--Optional:-->
+            <imwe:eindTijd>2017-11-01+01:00</imwe:eindTijd>
+            <imwe:begenzing>
+                <imwe:GeometrieWNgebied gml:id="string5">
+                    <imwe:geometrie>
+                        <gml:MultiSurface gml:id="string5.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
+                            <gml:surfaceMember>
+                                <gml:Surface gml:id="string5.1.1" srsName='EPSG:28992'>
+                                    <gml:patches>
+                                        <gml:PolygonPatch>
+                                            <gml:exterior>
+                                                <gml:LinearRing>
+                                                    <gml:posList srsDimension='2' count='631'>86060.31999999358 406724.333000022
+                                                        85991.82600002064 406740.1950000105 85919.42600001465 406754.5650000153
+                                                        85868.85900001298 406765.536000031 85829.8370000131 406786.9450000105
+                                                        85801.15400001477 406806.9060000357 85763.67000001737 406834.6620000181
+                                                        85697.1970000125 406902.2770000276 85646.8560000218 406965.8820000468
+                                                        85579.39600001345 407094.2600000082 85557.81900002132 407124.1340000209
+                                                        85530.45600001582 407153.4300000248 85419.01400001417 407275.0169999776
+                                                        85396.03900002013 407298.6710000215 85349.76700002023 407342.7030000266
+                                                        85300.48900000822 407369.6940000234 85207.76400001418 407416.1400000033
+                                                        85145.8900000162 407438.4960000095 85129.07900001178 407445.1090000448
+                                                        85084.5530000187 407469.3990000067 85056.3900000162 407487.5150000034
+                                                        85053.02000001141 407490.3510000286 85021.66500002216 407544.23900004
+                                                        84987.41200001608 407591.2429999886 84924.79200001131 407648.431999999
+                                                        84915.20000001857 407656.6700000343 84787.01000002096 407885.2600000081
+                                                        84569.79420708575 408139.8861741363 84355.57400000165 408391.002999979
+                                                        84000.00000000068 408758.9720000205 84029.83399999212 408772.5730000315
+                                                        84210.37400001357 408845.3250000057 84330.65500000189 408913.8140000281
+                                                        84447.7730000026 409016.834000009 84489.12400001357 409070.553999978
+                                                        84597.40500000188 409237.1150000272 84703.47400000761 409408.53300001
+                                                        84784.12400001356 409550.5470000086 84858.95300000976 409702.8859999952
+                                                        85000.00000000071 410029.631 85052.1139999933 410155.2180000124
+                                                        85070.37400001356 410211.5650000153 85087.42400001061 410270.1170000014
+                                                        85113.47400000763 410380.3560000239 85189.28499999714 410718.1770000038
+                                                        85219.4240000106 410855.8150000152 85245.62300001155 411001.8460000333
+                                                        86304.00599999796 412082.0069999871 88397.00699999998 413854.006
+                                                        91565.00699999998 412715.0069999871 92887.00699999997 412199.006
+                                                        93688.00800000201 411943.006 94149.00900000407 411893.0050000129
+                                                        94689.00900000407 411883.0050000129 95763.00800000201 411978.006
+                                                        95774.93104612899 411980.0645248472 96540.00000001569 412112.1580000103
+                                                        97000.0000000156 412222.7500000176 97460.99900001357 412337.9990000305
+                                                        98469.99900001357 412625.2189999995 99000.00000001559 412781.1330000339
+                                                        99740.16700001131 413000.0000000176 100414.0000000156 413267.9990000305
+                                                        100881.9990000136 413587.9990000308 101168.4094361819 413763.8812897384
+                                                        101776.0119999952 414137.0069999871 103134.0109999931 414561.6060000238
+                                                        103685.0119999952 414731.806999999 103722.4744040824 414741.7132533965
+                                                        103914.5550000078 414260.4170000133 104026.3339999921 413951.877999979
+                                                        104036.1330842418 413926.2816611583 104039.8869999952 413916.4760000286
+                                                        104069.532999993 413846.9500000057 104108.1189999885 413741.8420000253
+                                                        104153.7399999953 413731.5489999828 104177.2169999934 413725.7030000267
+                                                        104236.6659999943 413701.1260000047 104257.2439999885 413691.0050000128
+                                                        104277.3970000155 413680.2300000367 104307.9290000058 413660.6419999775
+                                                        104327.382 413646.8539999899 104341.259000004 413635.6459999857
+                                                        104367.2980000085 413613.4329999861 104389.1409999884 413592.8610000191
+                                                        104402.6500000066 413578.9929999885 104424.132 413551.3890000162
+                                                        104463.481999994 413490.2580000338 104475.3030000038 413468.9550000009
+                                                        104488.3250000036 413441.5249999938 104495.3230000145 413424.3890000163
+                                                        104514.6379999972 413366.6110000191 104521.5670000172 413337.9419999895
+                                                        104526.5150000161 413308.9070000229 104532.8680000163 413249.381
+                                                        104541.3799999959 413036.9900000271 104543.5609999902 413038.2659999905
+                                                        104551.2959999896 412857.1269999919 104571.7250000096 412761.5669999895
+                                                        104594.3919999904 412659.6150000271 104640.0960000164 412471.0470000086
+                                                        104663.5789999968 412365.5980000076 104704.4920000143 412257.3949999986
+                                                        104691.8050000078 412248.71200003 104764.3100000031 412066.2810000357
+                                                        104774.8889999992 412046.411000031 104789.6900000132 412021.0989999947
+                                                        104808.1379999972 411994.3679999885 104872.4570000029 411910.2249999818
+                                                        104892.5370000011 411860.911000031 104988.231999994 411620.8079999862
+                                                        105063.3199999935 411428.4749999819 105095.7460000075 411346.9300000248
+                                                        105095.0780000097 411346.4800000367 105169.2190000123 411161.9270000038
+                                                        105170.8960000134 411161.5970000205 105193.8220000125 411104.0169999776
+                                                        105191.6949999935 411099.4920000014 105190.2899999923 411097.7810000358
+                                                        105214.2140000171 411105.459000009 105212.3450000144 411110.0080000339
+                                                        105356.2010000057 411165.1160000143 105365.185000003 411170.1729999957
+                                                        105630.7290000028 411375.8499999819 105935.3270000077 411160.9599999962
+                                                        106041.1270000047 411087.904999989 106091.8030000038 411146.9670000253
+                                                        106161.9480000145 411227.5169999775 106175.3240000016 411243.8250000057
+                                                        106188.2020000077 411260.4800000367 106186.8699999905 411262.2410000143
+                                                        106187.9410000152 411264.1879999814 106277.3659999973 411182.60399999
+                                                        106325.5420000113 411142.4149999795 106522.4359999902 410970.4139999924
+                                                        106521.4230000085 410968.0460000214 106514.6970000125 410960.1030000028
+                                                        106780.8480000055 410730.9599999962 106915.8560000069 410614.1200000224
+                                                        106925.1889999963 410605.2640000162 106927.1489999897 410606.486000019
+                                                        106952.3440000123 410582.8349999962 106953.9780000008 410584.5690000234
+                                                        106979.0289999998 410557.9749999819 106975.6750000126 410554.4239999828
+                                                        106977.5830000049 410549.8430000124 107054.4740000076 410621.6269999919
+                                                        107062.9520000077 410630.6930000362 107072.6050000048 410642.8250000057
+                                                        107115.0480000085 410702.6120000062 107124.5950000144 410717.7939999876
+                                                        107132.7899999923 410734.9910000143 107221.0020000047 411004.5579999861
+                                                        107294.8289999968 411218.57699998 107563.9909999973 410777.9670000253
+                                                        107705.4960000075 410542.90800001 107786.5859999961 410411.6470000324
+                                                        107612.8409999914 410345.1229999838 107787.1750000126 409946.0259999809
+                                                        107927.3050000078 409992.736000019 108148.7559999979 409603.3259999928
+                                                        107941.4899999953 409513.7300000367 107764.2449999905 409434.1560000358
+                                                        107643.1250000007 409385.1219999966 107472.9879999912 409311.2640000162
+                                                        107350.0980000056 409260.6760000167 107197.1180000163 409193.4360000071
+                                                        107082.0349999971 409147.7170000252 106911.1869999922 409074.357000011
+                                                        106518.0000000007 408902.3550000367 106415.9679999954 408858.2650000033
+                                                        106419.2659999884 408853.71200003 106413.1869999922 408851.2220000205
+                                                        106419.008000002 408842.5800000009 106419.8500000096 408842.8970000324
+                                                        106450.7899999923 408800.1630000053 106530.6359999931 408685.2770000276
+                                                        106676.1970000124 408480.3240000186 106741.0370000011 408387.705999988
+                                                        106745.0639999963 408383.5740000186 106749.1030000008 408380.3480000076
+                                                        106752.7879999883 408379.9139999924 106755.6859999902 408373.1499999937
+                                                        106758.4410000152 408368.9419999894 106762.4939999885 408361.2189999995
+                                                        106772.0839999921 408345.53300001 106800.8740000135 408303.2050000009
+                                                        106846.6159999973 408238.6240000305 107012.458000005 408000.0000000176
+                                                        107049.0509999997 407948.7989999829 107057.0960000164 407945.4469999848
+                                                        107084.4920000142 407936.6800000248 107089.3170000172 407933.0980000076
+                                                        107088.0420000113 407928.9469999848 107090.5440000153 407914.1050000367
+                                                        107095.6180000163 407901.6499999938 107114.6510000086 407844.3020000038
+                                                        107223.2569999999 407533.8079999862 106694.9219999916 407295.6269999919
+                                                        106753.7980000085 407154.0840000091 106756.6199999905 407155.0389999924
+                                                        106813.432999999 407020.4419999895 106809.4470000125 407009.1639999923
+                                                        106815.6809999949 406994.8110000072 106830.0609999902 406974.6540000019
+                                                        106923.483999998 406753.3489999948 106953.3960000134 406740.3090000328
+                                                        106981.958000005 406729.1160000143 107012.7710000134 406720.1940000233
+                                                        107043.1629999883 406712.8890000161 107072.5300000018 406707.4990000305
+                                                        107132.0010000027 406700.8650000271 107162.4060000039 406699.8480000076
+                                                        107196.2659999884 406701.6350000081 107221.1670000113 406703.9730000076
+                                                        107209.9120000011 406499.009000021 107205.4350000031 406469.0890000043
+                                                        107195.5279999978 406409.9630000171 107110.7310000069 406310.5109999952
+                                                        107125.9640000171 406274.3990000067 107130.2510000027 406266.9270000038
+                                                        107144.2409999973 406236.2870000181 107142.6220000095 406235.6060000238
+                                                        107173.7260000116 406161.3710000095 107197.4020000107 406109.1860000071
+                                                        107208.5520000017 406080.661000031 107266.7379999912 405951.3050000248
+                                                        107364.5320000059 405721.2199999866 107355.3699999905 405721.3589999852
+                                                        107359.6800000078 405711.303999978 107355.8750000007 405709.1060000238
+                                                        107360.0869999981 405699.1990000186 107361.4710000164 405699.1409999905
+                                                        107363.3720000095 405694.5220000324 107233.7350000001 405696.15800001
+                                                        107153.9700000144 405692.2669999776 107068.3680000163 405686.4300000248
+                                                        106974.983999998 405674.7569999871 106875.7639999992 405645.5750000057
+                                                        106801.8349999941 405620.28300001 106725.9609999961 405583.3190000234
+                                                        106652.0320000059 405544.4089999971 106601.4490000016 405507.4450000105
+                                                        106535.3020000017 405452.9710000333 106416.6270000047 405345.9680000123
+                                                        106366.0440000153 405305.1129999933 106313.5159999884 405264.2580000338
+                                                        106229.858999998 405211.72899999 106147.4240000106 405164.1649999795
+                                                        106089.0020000047 405139.5820000347 105989.1550000019 405110.2249999819
+                                                        105935.0940000123 405098.610000032 105873.0250000066 405088.5169999776
+                                                        105819.185000003 405082.931999999 105761.7420000142 405079.56000002
+                                                        105706.4780000008 405079.1369999823 105650.2060000009 405082.7770000276
+                                                        105592.7210000164 405089.4009999809 105548.6889999962 405096.431999999
+                                                        105502.0500000126 405106.0629999814 105450.6359999931 405120.2699999985
+                                                        105410.0409999944 405133.3250000057 105363.509000004 405150.9229999957
+                                                        105300.8519999987 405176.5180000243 105240.5020000047 405203.4459999975
+                                                        105099.7240000076 405263.5290000019 105007.0730000145 405300.2300000367
+                                                        105006.934000001 405298.2080000218 104971.8629999912 405310.2490000305
+                                                        104880.8550000048 405332.90800001 104806.2230000055 405343.4379999814
+                                                        104711.1230000115 405350.3079999861 104628.8230000145 405346.72899999
+                                                        104513.1030000008 405331.8900000033 104311.1230000115 405294.0669999895
+                                                        104072.4539999968 405241.0380000052 103819.1429999924 405178.9089999971
+                                                        103665.482999996 405137.428999978 103579.982999996 405112.4590000091
+                                                        103495.884000004 405080.9500000057 103432.0629999942 405048.9379999814
+                                                        103356.8940000094 405007.31000002 103342.0083094465 404997.0153549826
+                                                        103293.4740000076 404963.4500000057 103170.2250000096 404851.3990000066
+                                                        103128.932999999 404809.4780000028 103036.6939999915 404700.7690000114
+                                                        103022.6440000094 404679.6190000352 103012.0239999897 404655.0389999924
+                                                        102979.3330000049 404488.0399999795 102961.2650000162 404428.7379999933
+                                                        102930.3740000135 404389.4680000124 102887.4190000153 404351.6400000033
+                                                        102868.3550000048 404337.6200000223 102855.0198060328 404329.4850168355
+                                                        102837.5339999951 404318.8180000362 102821.2080000049 404309.7690000115
+                                                        102774.361000017 404278.6010000286 102706.3000000126 404241.1750000296
+                                                        102672.5119999952 404227.334000009 102619.6670000113 404211.431999999
+                                                        102519.9810000069 404183.4060000357 102488.0250000066 404178.5209999857
+                                                        102450.3689999885 404174.0430000005 102416.783999995 404174.2469999966
+                                                        102385.9850000001 404170.9009999808 102337.7449999905 404175.5830000218
+                                                        102270.5119999952 404184.57699998 102237.9449999935 404192.1079999981
+                                                        102199.2720000154 404203.5059999999 102147.4570000029 404221.0750000057
+                                                        102086.4200000173 404247.5230000195 102050.3919999904 404266.8589999852
+                                                        102000.0000000007 404302.5290000019 101975.7300000048 404318.5980000076
+                                                        101937.2470000095 404347.4379999814 101905.2899999923 404374.1020000157
+                                                        101861.1980000145 404417.3039999781 101780.1359999932 404502.9710000334
+                                                        101733.5250000066 404528.502999979 101706.2500000007 404548.8570000109
+                                                        101672.4609999961 404570.4329999861 101621.9060000039 404600.6589999971
+                                                        101554.2399999953 404635.2109999832 101520.858999998 404648.0339999972
+                                                        101473.4719999886 404662.6760000167 101436.4259999997 404670.411000031
+                                                        101411.3909999884 404677.1279999791 101357.833000005 404683.9599999962
+                                                        101294.1240000135 404688.6409999904 101234.8670000142 404688.9720000205
+                                                        101205.1500000066 404687.1400000033 101166.883000002 404683.6800000248
+                                                        101066.8540000028 404657.4480000315 101029.809000001 404646.6599999843
+                                                        100878.6900000132 404576.8830000339 100816.0370000011 404539.1630000053
+                                                        100755.0370000011 404485.6060000238 100695.2720000154 404428.1680000005
+                                                        100665.758000002 404396.4149999795 100612.7089999921 404358.6449999986
+                                                        100576.0950000144 404335.2669999776 100483.8490000076 404289.9310000119
+                                                        100439.7619999952 404270.7920000133 100395.7070000029 404254.3060000119
+                                                        100248.0899999893 404218.3150000152 100221.4000000066 404213.4310000119
+                                                        100203.3419999934 404211.3690000353 100182.858999998 404210.2460000095
+                                                        100164.1589999951 404209.8180000362 100145.7140000171 404211.1490000066
+                                                        100127.5490000105 404213.2880000052 100106.5480000085 404216.7550000129
+                                                        100086.2140000171 404221.5399999795 100066.3510000116 404227.4879999933
+                                                        100036.2870000011 404239.1300000129 100020.4149999923 404246.8309999881
+                                                        99994.0490000106 404253.4130000052 99912.55500000787 404275.1409999904
+                                                        99857.21699999343 404290.6739999827 99807.55200000179 404309.8069999991
+                                                        99741.9470000125 404340.2749999938 99672.69100001526 404383.2479999838
+                                                        99598.27000001141 404433.982000011 99578.32300001453 404446.8050000248
+                                                        99555.52600000869 404463.4960000095 99520.75000000068 404483.7910000262
+                                                        99517.73000000487 404487.6089999852 99511.72699999879 404493.7939999876
+                                                        99193.56099999021 404714.056999999 99155.0720000125 404738.9459999975
+                                                        99115.58599999617 404761.5880000171 99110.58599999615 404763.9960000095
+                                                        99072.83100000094 404786.0909999785 99043.56700001727 404800.8420000253
+                                                        99007.6740000106 404817.9710000334 98966.22300000559 404836.0470000086
+                                                        98880.28700000118 404868.5650000153 98817.08800001512 404887.7920000133
+                                                        98750.0339999951 404903.4220000086 98690.17700000179 404913.9300000248
+                                                        98643.24900001357 404921.2970000086 98582.96099999615 404926.9149999795
+                                                        98478.66900001536 404933.3219999847 98399.12200000952 404928.4640000043
+                                                        98362.14199999045 404925.6190000352 98296.00200000475 404916.1490000066
+                                                        98125.70800000498 404879.1750000296 98114.66900001535 404876.3760000047
+                                                        97981.28899999033 404835.1739999828 97962.67599999974 404825.6350000081
+                                                        97923.29099999438 404814.8390000043 97888.66200000118 404804.4900000272
+                                                        97831.67199999164 404784.8930000243 97787.1850000031 404765.1490000066
+                                                        97751.70399999688 404745.7989999828 97652.19700001249 404682.1570000228
+                                                        97623.45700000296 404661.9760000286 97604.53899999033 404647.6840000329
+                                                        97573.21499998937 404620.2720000324 97538.08100000094 404587.6520000276
+                                                        97522.38099999796 404570.5700000104 97491.69000001322 404532.8890000162
+                                                        97421.06899999152 404436.8639999804 97403.25900000404 404410.2939999876
+                                                        97357.41900001538 404338.252999979 97347.20700000296 404320.1030000028
+                                                        97333.90399999986 404293.9800000367 97321.03000000188 404261.8449999866
+                                                        97298.74800001155 404194.2790000019 97291.02500000664 404175.0980000077
+                                                        97272.34600001643 404094.7239999947 97266.62600000273 404075.7699999986
+                                                        97261.25499999593 404065.3209999976 97251.58399999212 404050.6689999876
+                                                        97219.11599999735 404010.7569999871 97208.41099999915 404000.0000000176
+                                                        97051.93099999498 403867.5470000085 97038.23000000489 403849.6800000248
+                                                        97024.84900000763 403838.0650000152 96989.97300000559 403805.1660000262
+                                                        96962.95899999212 403781.9400000152 96926.6480000026 403754.8119999942
+                                                        96883.79599998961 403724.002999979 96852.3409999914 403706.3309999881
+                                                        96838.20999999413 403694.7249999818 96800.93299999903 403670.6110000191
+                                                        96723.89899998973 403624.1620000181 96685.66900001536 403604.3129999813
+                                                        96560.20499999891 403542.8819999871 96537.36599999738 403535.3750000176
+                                                        96498.78499999712 403523.6520000276 96472.93099999498 403516.4900000271
+                                                        96441.13300000201 403508.661000031 96409.94399999152 403502.2300000367
+                                                        96382.41800001333 403498.1290000257 96315.2200000144 403490.7429999885
+                                                        96272.65600000392 403489.0750000057 96088.65100000869 403484.9649999914
+                                                        96048.79500001739 403480.763000029 96000.0000000007 403473.1770000038
+                                                        95980.08100000094 403469.3740000305 95936.64199999045 403459.7609999952
+                                                        95850.96499998937 403434.661000031 95816.93099999498 403421.009000021
+                                                        95794.806999997 403411.5320000228 95762.46699999343 403395.9730000076
+                                                        95732.55099999974 403380.1430000243 95691.61999999057 403356.6030000028
+                                                        95671.88099999796 403343.9089999972 95631.93699999223 403315.9360000071
+                                                        95591.63799999724 403283.9800000367 95566.15999999712 403263.0629999814
+                                                        95524.4200000174 403222.5389999924 95398.5220000155 403090.0479999957
+                                                        95359.3600000001 403047.178999978 95338.3438525952 403025.1024633226
+                                                        95313.35011952977 403046.9841313509 95267.82200001251 403000.0000000177
+                                                        95170.4130000181 402897.2490000305 95174.1700000174 402892.2540000258
+                                                        95157.60500001977 402875.3050000249 95093.6140000231 402808.4419999895
+                                                        95097.19200001727 402804.7940000472 95045.95400001178 402751.6260000047
+                                                        95045.96300001512 402746.8999999938 94936.25100001763 402592.110000032
+                                                        94906.3190000213 402551.7690000114 94890.13000001083 402532.8050000248
+                                                        94868.35200001369 402510.0890000042 94849.00500001083 402492.198000032
+                                                        94821.30500002275 402470.2910000262 94797.80200001669 402453.6240000305
+                                                        94791.79600001941 402444.0180000243 94791.95600001585 402441.6950000104
+                                                        94674.00200001965 402407.2910000263 94665.62500001559 402403.4060000357
+                                                        94656.1480000175 402397.3050000248 94654.40100000869 402402.2780000147
+                                                        94639.30100001465 402392.2099999961 94609.860000015 402378.9520000396
+                                                        94609.6480000175 402379.4780000028 94602.32800000976 402377.3140000281
+                                                        94586.16100001405 402373.9670000252 94572.77700001071 402372.205999988
+                                                        94563.71700000833 402371.7510000047 94537.41800001333 402372.1449999987
+                                                        94536.98197709094 402343.1603768048 94524.56199999223 402342.1100000319
+                                                        94444.2909999944 402343.3050000249 94337.5150000162 402342.2289999899
+                                                        94280.74800001155 402344.9419999895 94249.2350000001 402348.6739999829
+                                                        94219.22100001643 402354.15800001 94096.39700001548 402387.3550000367
+                                                        94052.11499999533 402403.0899999915 93938.5300000019 402446.0539999782
+                                                        93848.20700000296 402486.029999989 93784.1480000026 402519.7690000115
+                                                        93751.61399999331 402538.7659999904 93726.82730677187 402554.4586566385
+                                                        93702.75026618624 402571.2197947314 93679.42890560643 402589.0173724945
+                                                        93656.90780779114 402607.8173668223 93635.23002566035 402627.5838383187
+                                                        93614.43699999226 402648.2790000019 93559.09900000763 402706.2979999957
+                                                        93539.81199999225 402730.0579999862 93522.52899999986 402752.8190000234
+                                                        93479.44000001322 402812.5980000075 93400.53700000118 402917.6219999967
+                                                        93340.21549999787 403000.0000000177 93298.8790000088 403055.1900000153
+                                                        93245.53899999036 403134.732000011 93202.69700001251 403218.7839999972
+                                                        93156.32400000165 403331.860000032 93129.5409999944 403402.2040000138
+                                                        93107.8859999932 403448.1269999918 93098.1889999963 403467.3409999785
+                                                        93079.30900000106 403500.5000000176 93032.5190000094 403564.888000029
+                                                        92998.24900001357 403606.3050000247 92941.37400001357 403661.2950000343
+                                                        92921.9659999914 403677.4060000358 92868.6629999883 403718.0529999909
+                                                        92827.9050000019 403745.0550000248 92810.10000000965 403754.3020000039
+                                                        92777.26299999726 403772.7730000195 92733.8710000075 403794.6060000239
+                                                        92692.09299999545 403810.4770000157 92650.30900000106 403824.8359999832
+                                                        92608.2010000057 403836.6869999943 92573.00699999998 403843.4910000144
+                                                        92543.72400000761 403848.2989999828 92514.39199999046 403851.4430000362
+                                                        92493.72699999879 403854.2199999866 92470.80900000106 403855.5700000105
+                                                        92443.65999999714 403856.0169999775 92391.9960000075 403854.6900000152
+                                                        92379.87400001357 403853.8399999914 92314.7789999999 403845.7759999809
+                                                        92293.98899999331 403841.5209999857 92278.46300001512 403838.9220000086
+                                                        92233.3790000088 403826.95199998 92204.37700000475 403818.3650000272
+                                                        92144.38300000201 403795.7659999904 92135.35699999402 403791.7429999886
+                                                        92106.67400001058 403773.4289999781 92092.9280000038 403766.9160000262
+                                                        92064.68299999903 403755.8909999904 91999.88799999724 403725.8660000143
+                                                        91919.69800001453 403683.0410000262 91886.59699998864 403660.9670000252
+                                                        91802.007 403588.4189999876 91709.32899999688 403498.1639999924
+                                                        91668.40399999986 403461.131999987 91624.5150000162 403430.6160000143
+                                                        91539.36700001429 403395.5660000024 91468.79300001335 403376.1890000282
+                                                        91319.87400001357 403332.7249999818 91238.0339999951 403309.6570000229
+                                                        91124.92500001263 403280.5040000257 90917.07100001047 403245.8489999948
+                                                        90781.58399999212 403232.3160000024 90614.50999999118 403223.2000000058
+                                                        90512.33900001716 403221.7260000286 90357.94100001526 403231.2849999843
+                                                        90253.31500001323 403248.083000022 90135.47900000284 403272.1990000186
+                                                        89961.19100001526 403301.8610000191 89854.03700000118 403313.1729999957
+                                                        89812.4960000075 403302.3919999776 89689.92900000584 403332.536000031
+                                                        89653.0760000057 403334.2420000014 89553.0230000026 403369.2759999809
+                                                        89437.2800000019 403428.5069999872 89347.31000000308 403489.6620000181
+                                                        89233.17700000177 403577.3800000129 89137.36800001631 403671.1150000272
+                                                        89125.62999999593 403695.1720000086 89108.33300000499 403708.5290000019
+                                                        89024.57300001453 403795.982000011 88889.99300001631 403947.2389999804
+                                                        88716.81899999153 404139.607000011 88640.0339999951 404248.0859999833
+                                                        88568.7039999969 404369.6359999952 88519.66878588569 404483.6328673539
+                                                        88515.11999999057 404500.0000000177 88480.6859999902 404608.1010000286
+                                                        88474.26099999319 404688.4030000148 88429.51399999927 404820.7249999818
+                                                        88370.83699999821 404963.7550000128 88335.88599999317 405006.400999981
+                                                        88295.29300001333 405046.3259999928 88257.55400000582 405064.5949999867
+                                                        88209.30400000582 405076.6940000233 88082.61499999533 405111.7090000091
+                                                        87908.51299999724 405118.5790000138 87759.49700000952 405129.9440000233
+                                                        87698.02700001073 405128.5109999953 87571.22800000082 405147.2580000338
+                                                        87492.94399999152 405178.9360000071 87385.30799999903 405250.7280000028
+                                                        87249.50999999116 405359.9599999961 87185.39299999247 405427.1170000014
+                                                        87112.51699999045 405507.959000009 86985.60799999606 405665.580999988
+                                                        86922.96400001715 405736.4089999972 86890.6939999915 405769.6750000296
+                                                        86821.94100001524 405823.6060000239 86787.94499999355 405866.5870000301
+                                                        86746.88300000202 405901.6499999938 86639.68299999902 406028.7189999995
+                                                        86613.37500000068 406074.3750000177 86544.86899998855 406257.8520000157
+                                                        86501.7520000048 406381.3940000114 86489.34180808374 406403.3654388356
+                                                        86475.89363579228 406424.7173392087 86461.43834402168 406445.4007027492
+                                                        86446.00910480288 406465.3680652353 86429.64132518329 406484.5736055257
+                                                        86412.37256597458 406502.9732507102 86394.24245555812 406520.5247772481
+                                                        86375.2925989457 406537.1879078631 86355.56648230412 406552.9244039713
+                                                        86335.10937316327 406567.6981534318 86313.96821653597 406581.4752534163
+                                                        86292.19152718852 406594.2240882097 86276.42332695494 406601.7949487743
+                                                        86169.05300000381 406649.7519999919 86060.31999999358 406724.333000022
+                                                    </gml:posList>
+                                                </gml:LinearRing>
+                                            </gml:exterior>
+                                        </gml:PolygonPatch>
+                                    </gml:patches>
+                                </gml:Surface>
+                            </gml:surfaceMember>
+                         </gml:MultiSurface>
+                    </imwe:geometrie>
+                </imwe:GeometrieWNgebied>
+            </imwe:begenzing>
+        </imwe:Welstandsnota>
     </imwe:featureMember>
 </imwe:FeatureCollectionIMWE>

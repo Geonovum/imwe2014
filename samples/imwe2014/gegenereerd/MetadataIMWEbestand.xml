@@ -1,0 +1,12 @@
+<imwe:MetadataIMWEbestand gml:id="string" xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0"
+                        xmlns:gml="http://geonovum.nl/simplegml">
+    <imwe:datasetTitel>string</imwe:datasetTitel>
+    <imwe:creatiedatum>2008-09-29</imwe:creatiedatum>
+    <imwe:bronbeheerder>string</imwe:bronbeheerder>
+    <imwe:codeerVerantwoordelijke>string</imwe:codeerVerantwoordelijke>
+    <imwe:naamApplicatieschema>string</imwe:naamApplicatieschema>
+    <imwe:codeReferentiesysteem>string</imwe:codeReferentiesysteem>
+    <imwe:toepassingsschaal>100</imwe:toepassingsschaal>
+    <imwe:applicatieIdentificatie>string</imwe:applicatieIdentificatie>
+    <imwe:versieXMLschema>string</imwe:versieXMLschema>
+</imwe:MetadataIMWEbestand>

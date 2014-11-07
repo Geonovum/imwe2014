@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wfs:FeatureCollection numberOfFeatures="5" timeStamp="2014-11-05T16:47:31.994Z"
+<wfs:FeatureCollection numberOfFeatures="5" timeStamp="2014-11-07T11:22:45.607Z"
                        xsi:schemaLocation="imwe http://108.171.173.8:80/data/imwe/wfs?service=WFS&amp;version=1.1.0&amp;request=DescribeFeatureType&amp;typeName=imwe%3Awelstandsnota http://www.opengis.net/wfs http://108.171.173.8:80/data/schemas/wfs/1.1.0/wfs.xsd"
                        xmlns:imwe="imwe" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
                        xmlns:ows="http://www.opengis.net/ows" xmlns:wfs="http://www.opengis.net/wfs">
     <gml:featureMembers>
-        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1442f7c4a20_7abd">
+        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1498115049d_-54f8">
             <imwe:welstandsnota_fid>3</imwe:welstandsnota_fid>
             <imwe:welstandsnotagebiedgeometrie>
                 <gml:Polygon srsDimension="2" srsName="urn:x-ogc:def:crs:EPSG:28992">
@@ -304,7 +304,7 @@
             <imwe:begintijd>2008-01-01Z</imwe:begintijd>
             <imwe:identificatie>-</imwe:identificatie>
         </imwe:welstandsnota>
-        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1442f7c4a20_7abe">
+        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1498115049d_-54f7">
             <imwe:welstandsnota_fid>5</imwe:welstandsnota_fid>
             <imwe:welstandsnotagebiedgeometrie>
                 <gml:Polygon srsDimension="2" srsName="urn:x-ogc:def:crs:EPSG:28992">
@@ -3067,7 +3067,7 @@
             <imwe:begintijd>2008-01-01Z</imwe:begintijd>
             <imwe:identificatie>-</imwe:identificatie>
         </imwe:welstandsnota>
-        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1442f7c4a20_7abf">
+        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1498115049d_-54f6">
             <imwe:welstandsnota_fid>9</imwe:welstandsnota_fid>
             <imwe:welstandsnotagebiedgeometrie>
                 <gml:Polygon srsDimension="2" srsName="urn:x-ogc:def:crs:EPSG:28992">
@@ -3733,7 +3733,7 @@
             <imwe:begintijd>2008-01-01Z</imwe:begintijd>
             <imwe:identificatie>-</imwe:identificatie>
         </imwe:welstandsnota>
-        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1442f7c4a20_7ac0">
+        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1498115049d_-54f5">
             <imwe:welstandsnota_fid>11</imwe:welstandsnota_fid>
             <imwe:welstandsnotagebiedgeometrie>
                 <gml:Polygon srsDimension="2" srsName="urn:x-ogc:def:crs:EPSG:28992">
@@ -3874,7 +3874,7 @@
             <imwe:begintijd>2008-01-01Z</imwe:begintijd>
             <imwe:identificatie>-</imwe:identificatie>
         </imwe:welstandsnota>
-        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1442f7c4a20_7ac1">
+        <imwe:welstandsnota gml:id="welstandsnota.fid-6da09eca_1498115049d_-54f4">
             <imwe:welstandsnota_fid>17</imwe:welstandsnota_fid>
             <imwe:welstandsnotagebiedgeometrie>
                 <gml:MultiSurface srsDimension="2" srsName="urn:x-ogc:def:crs:EPSG:28992">

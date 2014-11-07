@@ -1,65 +1,66 @@
-<imwe:Welstandsnota gml:id="string" xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0" xmlns:gml="http://geonovum.nl/simplegml">
-  <imwe:identificatie>
-    <imwe:NEN3610ID>
-      <imwe:namespace>string</imwe:namespace>
-      <imwe:lokaalID>string</imwe:lokaalID>
-      <!--Optional:-->
-      <imwe:versie>string</imwe:versie>
-    </imwe:NEN3610ID>
-  </imwe:identificatie>
-  <imwe:typePlan>welstandsnota</imwe:typePlan>
-  <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
-  <imwe:naamOverheid>string</imwe:naamOverheid>
-  <imwe:naam>string</imwe:naam>
-  <!--Zero or more repetitions:-->
-  <imwe:locatieNaam>string</imwe:locatieNaam>
-  <imwe:planstatusInfo>
-    <imwe:PlanstatusEnDatum>
-      <imwe:planstatus>geconsolideerd</imwe:planstatus>
-      <imwe:datum>2014-09-19</imwe:datum>
-    </imwe:PlanstatusEnDatum>
-  </imwe:planstatusInfo>
-  <!--Optional:-->
-  <imwe:besluitnummer>string</imwe:besluitnummer>
-  <!--Optional:-->
-  <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
-  <!--1 to 2 repetitions:-->
-  <imwe:verwijzingNaarTekstInfo>
-    <imwe:TekstReferentieWN_WN>
-      <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
-      <imwe:typeTekst>document</imwe:typeTekst>
-    </imwe:TekstReferentieWN_WN>
-  </imwe:verwijzingNaarTekstInfo>
-  <!--1 or more repetitions:-->
-  <imwe:ondergrondInfo>
-    <imwe:OndergrondReferentie>
-      <imwe:ondergrondtype>basisregistratie topografie (BRT)</imwe:ondergrondtype>
-      <imwe:ondergronddatum>2008-11-15</imwe:ondergronddatum>
-    </imwe:OndergrondReferentie>
-  </imwe:ondergrondInfo>
-  <!--Zero or more repetitions:-->
-  <imwe:verwijzingNaarIllustratieInfo>
-    <imwe:Illustratiereferentie>
-      <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
-      <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
-    </imwe:Illustratiereferentie>
-  </imwe:verwijzingNaarIllustratieInfo>
-  <!--Zero or more repetitions:-->
-  <imwe:verwijzingNaarExternPlanInfo>
-    <imwe:ExternPlanReferentieWN_WN>
-      <imwe:naamExternPlan>string</imwe:naamExternPlan>
-      <!--Optional:-->
-      <imwe:idnExternPlan>string</imwe:idnExternPlan>
-      <imwe:rolExternPlan>ter vervanging van extern plan</imwe:rolExternPlan>
-    </imwe:ExternPlanReferentieWN_WN>
-  </imwe:verwijzingNaarExternPlanInfo>
-  <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
-  <imwe:beginTijd>2002-11-05+01:00</imwe:beginTijd>
-  <!--Optional:-->
-  <imwe:eindTijd>2002-06-24+02:00</imwe:eindTijd>
-  <imwe:begenzing>
-    <imwe:GeometrieWNgebied gml:id="string">
-      <imwe:geometrie>MultiSurfacePropertyType</imwe:geometrie>
-    </imwe:GeometrieWNgebied>
-  </imwe:begenzing>
+<imwe:Welstandsnota gml:id="string" xmlns:imwe="http://www.geonovum.nl/imwe/2014/1.0"
+                    xmlns:gml="http://geonovum.nl/simplegml">
+    <imwe:identificatie>
+        <imwe:NEN3610ID>
+            <imwe:namespace>string</imwe:namespace>
+            <imwe:lokaalID>string</imwe:lokaalID>
+            <!--Optional:-->
+            <imwe:versie>string</imwe:versie>
+        </imwe:NEN3610ID>
+    </imwe:identificatie>
+    <imwe:typePlan>welstandsnota</imwe:typePlan>
+    <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
+    <imwe:naamOverheid>string</imwe:naamOverheid>
+    <imwe:naam>string</imwe:naam>
+    <!--Zero or more repetitions:-->
+    <imwe:locatieNaam>string</imwe:locatieNaam>
+    <imwe:planstatusInfo>
+        <imwe:PlanstatusEnDatum>
+            <imwe:planstatus>geconsolideerd</imwe:planstatus>
+            <imwe:datum>2014-09-19</imwe:datum>
+        </imwe:PlanstatusEnDatum>
+    </imwe:planstatusInfo>
+    <!--Optional:-->
+    <imwe:besluitnummer>string</imwe:besluitnummer>
+    <!--Optional:-->
+    <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
+    <!--1 to 2 repetitions:-->
+    <imwe:verwijzingNaarTekstInfo>
+        <imwe:TekstReferentieWN_WN>
+            <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+            <imwe:typeTekst>document</imwe:typeTekst>
+        </imwe:TekstReferentieWN_WN>
+    </imwe:verwijzingNaarTekstInfo>
+    <!--1 or more repetitions:-->
+    <imwe:ondergrondInfo>
+        <imwe:OndergrondReferentie>
+            <imwe:ondergrondtype>basisregistratie topografie (BRT)</imwe:ondergrondtype>
+            <imwe:ondergronddatum>2008-11-15</imwe:ondergronddatum>
+        </imwe:OndergrondReferentie>
+    </imwe:ondergrondInfo>
+    <!--Zero or more repetitions:-->
+    <imwe:verwijzingNaarIllustratieInfo>
+        <imwe:Illustratiereferentie>
+            <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
+            <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+        </imwe:Illustratiereferentie>
+    </imwe:verwijzingNaarIllustratieInfo>
+    <!--Zero or more repetitions:-->
+    <imwe:verwijzingNaarExternPlanInfo>
+        <imwe:ExternPlanReferentieWN_WN>
+            <imwe:naamExternPlan>string</imwe:naamExternPlan>
+            <!--Optional:-->
+            <imwe:idnExternPlan>string</imwe:idnExternPlan>
+            <imwe:rolExternPlan>ter vervanging van extern plan</imwe:rolExternPlan>
+        </imwe:ExternPlanReferentieWN_WN>
+    </imwe:verwijzingNaarExternPlanInfo>
+    <imwe:verwijzingNorm>string</imwe:verwijzingNorm>
+    <imwe:beginTijd>2002-11-05+01:00</imwe:beginTijd>
+    <!--Optional:-->
+    <imwe:eindTijd>2002-06-24+02:00</imwe:eindTijd>
+    <imwe:begenzing>
+        <imwe:GeometrieWNgebied gml:id="string">
+            <imwe:geometrie>MultiSurfacePropertyType</imwe:geometrie>
+        </imwe:GeometrieWNgebied>
+    </imwe:begenzing>
 </imwe:Welstandsnota>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:gml="http://www.opengis.net/gml"
+                  xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" updateSequence="0" version="1.1.0"
+                  xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+    <ows:ServiceIdentification xmlns:ows="http://www.opengis.net/ows">
+        <ows:Title>Centrale voorziening welstand</ows:Title>
+        <ows:ServiceType>WFS</ows:ServiceType>
+        <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+        <ows:Fees>None</ows:Fees>
+        <ows:AccessConstraints>None</ows:AccessConstraints>
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider xmlns:ows="http://www.opengis.net/ows">
+        <ows:ProviderName>Federatie Welstand</ows:ProviderName>
+        <ows:ProviderSite xlink:href="http://www.fw.nl" xlink:type="simple"/>
+        <ows:ServiceContact>
+            <ows:IndividualName>dhr. F. ten Cate</ows:IndividualName>
+            <ows:PositionName>directeur</ows:PositionName>
+            <ows:ContactInfo>
+                <ows:Phone>
+                    <ows:Voice>+31–(0)20–4124964</ows:Voice>
+                </ows:Phone>
+                <ows:OnlineResource xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                <ows:HoursOfService>24x7</ows:HoursOfService>
+                <ows:ContactInstructions>Don't call us. We'll call you.</ows:ContactInstructions>
+            </ows:ContactInfo>
+            <ows:Role>PointOfContact</ows:Role>
+        </ows:ServiceContact>
+    </ows:ServiceProvider>
+    <ows:OperationsMetadata xmlns:ows="http://www.opengis.net/ows">
+        <ows:Operation name="GetFeature">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="http://www.imwe.nl/data?" xlink:type="simple"/>
+                    <ows:Post xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="resultType">
+                <ows:Value>results</ows:Value>
+                <ows:Value>hits</ows:Value>
+            </ows:Parameter>
+            <ows:Parameter name="outputFormat">
+                <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Operation name="DescribeFeatureType">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="http://www.imwe.nl/data?" xlink:type="simple"/>
+                    <ows:Post xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="outputFormat">
+                <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Operation name="GetCapabilities">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="http://www.imwe.nl/data?" xlink:type="simple"/>
+                    <ows:Post xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="AcceptVersions">
+                <ows:Value>1.0.0</ows:Value>
+                <ows:Value>1.1.0</ows:Value>
+            </ows:Parameter>
+            <ows:Parameter name="AcceptFormats">
+                <ows:Value>text/xml</ows:Value>
+            </ows:Parameter>
+            <ows:Parameter name="Sections">
+                <ows:Value>ServiceIdentification</ows:Value>
+                <ows:Value>ServiceProvider</ows:Value>
+                <ows:Value>OperationsMetadata</ows:Value>
+                <ows:Value>FeatureTypeList</ows:Value>
+                <ows:Value>ServesGMLObjectTypeList</ows:Value>
+                <ows:Value>SupportsGMLObjectTypeList</ows:Value>
+                <ows:Value>Filter_Capabilities</ows:Value>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Operation name="GetFeatureWithLock">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="http://www.imwe.nl/data?" xlink:type="simple"/>
+                    <ows:Post xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                </ows:HTTP>
+            </ows:DCP>
+        </ows:Operation>
+        <ows:Operation name="LockFeature">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="http://www.imwe.nl/data?" xlink:type="simple"/>
+                    <ows:Post xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                </ows:HTTP>
+            </ows:DCP>
+        </ows:Operation>
+        <ows:Operation name="Transaction">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="http://www.imwe.nl/data?" xlink:type="simple"/>
+                    <ows:Post xlink:href="http://www.imwe.nl/data" xlink:type="simple"/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="inputFormat">
+                <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+            </ows:Parameter>
+            <ows:Parameter name="idgen">
+                <ows:Value>GenerateNew</ows:Value>
+                <ows:Value>UseExisting</ows:Value>
+            </ows:Parameter>
+            <ows:Parameter name="releaseAction">
+                <ows:Value>ALL</ows:Value>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Parameter name="srsName">
+            <ows:Value>EPSG:28992</ows:Value>
+        </ows:Parameter>
+        <ows:Constraint name="DefaultMaxFeatures">
+            <ows:Value>25000</ows:Value>
+        </ows:Constraint>
+        <ows:Constraint name="DefaultLockExpiry">
+            <ows:Value>5</ows:Value>
+        </ows:Constraint>
+    </ows:OperationsMetadata>
+    <FeatureTypeList>
+        <FeatureType xmlns:imwe="http://www.imwe.nl">
+            <Name>imwe:Object</Name>
+            <Title>imwe:Object</Title>
+            <Abstract>Describes Objects</Abstract>
+            <ows:Keywords xmlns:ows="http://www.opengis.net/ows">
+                <ows:Keyword>object</ows:Keyword>
+                <ows:Keyword>centrale voorziening</ows:Keyword>
+            </ows:Keywords>
+            <DefaultSRS>EPSG:28992</DefaultSRS>
+            <OtherSRS>EPSG:3785</OtherSRS>
+            <OtherSRS>EPSG:4326</OtherSRS>
+            <OtherSRS>EPSG:28992</OtherSRS>
+            <OutputFormats>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>GML2</Format>
+            </OutputFormats>
+            <ows:WGS84BoundingBox xmlns:ows="http://www.opengis.net/ows">
+                <ows:LowerCorner>3.2 50.7</ows:LowerCorner>
+                <ows:UpperCorner>7.2 53.5</ows:UpperCorner>
+            </ows:WGS84BoundingBox>
+        </FeatureType>
+        <FeatureType xmlns:imwe="http://www.imwe.nl">
+            <Name>imwe:Gebied</Name>
+            <Title>imwe:Gebied</Title>
+            <Abstract>Describes gebieden</Abstract>
+            <ows:Keywords xmlns:ows="http://www.opengis.net/ows">
+                <ows:Keyword>gebied</ows:Keyword>
+                <ows:Keyword>centrale voorziening</ows:Keyword>
+            </ows:Keywords>
+            <DefaultSRS>EPSG:28992</DefaultSRS>
+            <OtherSRS>EPSG:3785</OtherSRS>
+            <OtherSRS>EPSG:4326</OtherSRS>
+            <OtherSRS>EPSG:28992</OtherSRS>
+            <OutputFormats>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>GML2</Format>
+            </OutputFormats>
+            <ows:WGS84BoundingBox xmlns:ows="http://www.opengis.net/ows">
+                <ows:LowerCorner>3.2 50.7</ows:LowerCorner>
+                <ows:UpperCorner>7.2 53.5</ows:UpperCorner>
+            </ows:WGS84BoundingBox>
+        </FeatureType>
+        <FeatureType xmlns:imwe="http://www.imwe.nl">
+            <Name>imwe:AfbeeldingInfo</Name>
+            <Title>imwe:AfbeeldingInfo</Title>
+            <Abstract>Describes AfbeeldingInfo</Abstract>
+            <ows:Keywords xmlns:ows="http://www.opengis.net/ows">
+                <ows:Keyword>AfbeeldingInfo</ows:Keyword>
+                <ows:Keyword>centrale voorziening</ows:Keyword>
+            </ows:Keywords>
+            <DefaultSRS>EPSG:28992</DefaultSRS>
+            <OtherSRS>EPSG:3785</OtherSRS>
+            <OtherSRS>EPSG:4326</OtherSRS>
+            <OtherSRS>EPSG:28992</OtherSRS>
+            <OutputFormats>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>GML2</Format>
+            </OutputFormats>
+            <ows:WGS84BoundingBox xmlns:ows="http://www.opengis.net/ows">
+                <ows:LowerCorner>3.2 50.7</ows:LowerCorner>
+                <ows:UpperCorner>7.2 53.5</ows:UpperCorner>
+            </ows:WGS84BoundingBox>
+        </FeatureType>
+        <FeatureType xmlns:imwe="http://www.imwe.nl">
+            <Name>imwe:WelstandsNiveauGebied</Name>
+            <Title>imwe:WelstandsNiveauGebied</Title>
+            <Abstract>Describes WelstandsNiveauGebied</Abstract>
+            <ows:Keywords xmlns:ows="http://www.opengis.net/ows">
+                <ows:Keyword>WelstandsNiveauGebied</ows:Keyword>
+                <ows:Keyword>centrale voorziening</ows:Keyword>
+            </ows:Keywords>
+            <DefaultSRS>EPSG:28992</DefaultSRS>
+            <OtherSRS>EPSG:3785</OtherSRS>
+            <OtherSRS>EPSG:4326</OtherSRS>
+            <OtherSRS>EPSG:28992</OtherSRS>
+            <OutputFormats>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>GML2</Format>
+            </OutputFormats>
+            <ows:WGS84BoundingBox xmlns:ows="http://www.opengis.net/ows">
+                <ows:LowerCorner>3.2 50.7</ows:LowerCorner>
+                <ows:UpperCorner>7.2 53.5</ows:UpperCorner>
+            </ows:WGS84BoundingBox>
+        </FeatureType>
+        <FeatureType xmlns:imwe="http://www.imwe.nl">
+            <Name>imwe:Dossier</Name>
+            <Title>imwe:Dossier</Title>
+            <Abstract>Describes Dossiers</Abstract>
+            <ows:Keywords xmlns:ows="http://www.opengis.net/ows">
+                <ows:Keyword>dossier</ows:Keyword>
+                <ows:Keyword>centrale voorziening</ows:Keyword>
+            </ows:Keywords>
+            <DefaultSRS>EPSG:28992</DefaultSRS>
+            <OtherSRS>EPSG:3785</OtherSRS>
+            <OtherSRS>EPSG:4326</OtherSRS>
+            <OtherSRS>EPSG:28992</OtherSRS>
+            <OutputFormats>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>GML2</Format>
+            </OutputFormats>
+            <ows:WGS84BoundingBox xmlns:ows="http://www.opengis.net/ows">
+                <ows:LowerCorner>3.2 50.7</ows:LowerCorner>
+                <ows:UpperCorner>7.2 53.5</ows:UpperCorner>
+            </ows:WGS84BoundingBox>
+        </FeatureType>
+        <FeatureType xmlns:imwe="http://www.imwe.nl">
+            <Name>imwe:WelstandsNota</Name>
+            <Title>imwe:WelstandsNota</Title>
+            <Abstract>Describes WelstandsNota</Abstract>
+            <ows:Keywords xmlns:ows="http://www.opengis.net/ows">
+                <ows:Keyword>WelstandsNota</ows:Keyword>
+                <ows:Keyword>centrale voorziening</ows:Keyword>
+            </ows:Keywords>
+            <DefaultSRS>EPSG:28992</DefaultSRS>
+            <OtherSRS>EPSG:3785</OtherSRS>
+            <OtherSRS>EPSG:4326</OtherSRS>
+            <OtherSRS>EPSG:28992</OtherSRS>
+            <OutputFormats>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>GML2</Format>
+            </OutputFormats>
+            <ows:WGS84BoundingBox xmlns:ows="http://www.opengis.net/ows">
+                <ows:LowerCorner>3.2 50.7</ows:LowerCorner>
+                <ows:UpperCorner>7.2 53.5</ows:UpperCorner>
+            </ows:WGS84BoundingBox>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:GeometryOperands>
+                <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>
+                <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>
+                <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>
+                <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>
+            </ogc:GeometryOperands>
+            <ogc:SpatialOperators>
+                <ogc:SpatialOperator name="Crosses"/>
+                <ogc:SpatialOperator name="Intersects"/>
+                <ogc:SpatialOperator name="BBOX"/>
+                <ogc:SpatialOperator name="Overlaps"/>
+                <ogc:SpatialOperator name="Touches"/>
+                <ogc:SpatialOperator name="Beyond"/>
+                <ogc:SpatialOperator name="Within"/>
+                <ogc:SpatialOperator name="Equals"/>
+                <ogc:SpatialOperator name="Contains"/>
+                <ogc:SpatialOperator name="Disjoint"/>
+            </ogc:SpatialOperators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:LogicalOperators/>
+            <ogc:ComparisonOperators>
+                <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>NullCheck</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>
+                <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>
+            </ogc:ComparisonOperators>
+            <ogc:ArithmeticOperators>
+                <ogc:SimpleArithmetic/>
+            </ogc:ArithmeticOperators>
+        </ogc:Scalar_Capabilities>
+        <ogc:Id_Capabilities>
+            <ogc:EID/>
+            <ogc:FID/>
+        </ogc:Id_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>

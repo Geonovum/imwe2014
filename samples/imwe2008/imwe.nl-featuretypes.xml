@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:deegreewfs="http://www.deegree.org/wfs"
+            xmlns:dgjdbc="http://www.deegree.org/jdbc" xmlns:gml="http://www.opengis.net/gml"
+            xmlns:imwe="http://www.imwe.nl" xmlns:ogc="http://www.opengis.net/ogc"
+            xmlns:wfs="http://www.opengis.net/wfs" attributeFormDefault="unqualified" elementFormDefault="qualified"
+            targetNamespace="http://www.imwe.nl">
+    <xsd:import namespace="http://www.opengis.net/gml"
+                schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd"/>
+    <xsd:import namespace="http://www.opengis.net/gml"
+                schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/geometryAggregates.xsd"/>
+    <!-- configuration for the persistence backend to be used -->
+    <!-- This is an automatic generated  and manually extended featuretypedefinition file. It associates
+    the WFS with the data source(s) -->
+
+    <!-- ====================================================================== -->
+    <xsd:element name="Gebied" substitutionGroup="gml:_Feature" type="imwe:GebiedType">
+
+        <!-- annotation of each element (=feature type definition) contains associated table name and gml:id definition -->
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="GebiedType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'name' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="gebiedsNaam" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'gebiedbeschrijving' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="gebiedBeschrijving" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'beginTijd' -->
+                    <xsd:element name="beginTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'eindTijd' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="eindTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'identificatie' -->
+                    <xsd:element name="identificatie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- complex valued property 'heeftTypologie' -->
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="hasGebiedsTypologie"
+                                 type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- complex valued property 'heeftCriteria' -->
+                    <xsd:element maxOccurs="unbounded" minOccurs="1" name="hasGebiedsCriteria"
+                                 type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- geometry property 'gebiedsGeometrie' -->
+                    <xsd:element name="gebiedsGeometrie" type="gml:MultiSurfacePropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="GebiedsCriteria" substitutionGroup="gml:_Feature" type="imwe:GebiedsCriteriaType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="GebiedsCriteriaType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- complex valued property 'overigetekst' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="overigeTekst" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'kleurEnMateriaal' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="kleurEnMateriaal" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'architektonischeKarakteristiek' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="architektonischeKarakteristiek" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'massaEnVorm' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="massaEnVorm" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'situering' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="situering" type="xsd:string">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="GebiedsTypologie" substitutionGroup="gml:_Feature" type="imwe:GebiedsTypologieType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="GebiedsTypologieType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'typologieGebiedsNaam' -->
+                    <xsd:element name="typologieGebiedsNaam" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'belevingsFunctie' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="belevingsFunctie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'planmatigheid' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="planmatigheid" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'stedebouwkundigPrincipeGlobaal' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="stedebouwkundigPrincipeGlobaal" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'stedebouwkundigPrincipeLokaal' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="stedebouwkundigPrincipeLokaal" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'architectonischPrincipe' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="architectonischPrincipe" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- complex valued property 'toevoegingsinfo' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="typologieGebiedBeschrijving"
+                                 type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="ToevoegingsInfo" substitutionGroup="gml:_Feature" type="imwe:ToevoegingsInfoType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="ToevoegingsInfoType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'titel' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="titel" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'trefwoorden' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="csTrefwoorden" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- complex valued property 'tekstinfo' -->
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="hasTekstInfo" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- complex valued property 'afbeeldinginfo' -->
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="hasAfbeeldingInfo"
+                                 type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="TekstInfo" substitutionGroup="gml:_Feature" type="imwe:TekstInfoType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="TekstInfoType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'titel' -->
+                    <xsd:element name="titel" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'tekst' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="tekst" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'richtlijn' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="richtlijn" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'typeBeschrijving' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="typeBeschrijving" type="xsd:string">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="AfbeeldingInfo" substitutionGroup="gml:_Feature" type="imwe:AfbeeldingInfoType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="AfbeeldingInfoType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'titel' -->
+                    <xsd:element name="titel" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'onderschrift' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="onderschrift" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'illustratieURL' -->
+                    <xsd:element name="illustratieURL" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- geometry property 'illustratieXY' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="illustratieXY" type="gml:PointPropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="Object" substitutionGroup="gml:_Feature" type="imwe:ObjectType">
+
+        <!-- annotation of each element (=feature type definition) contains associated table name and gml:id definition -->
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="ObjectType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'objectNaam' -->
+                    <xsd:element name="objectNaam" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'objectBeschrijving' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="objectBeschrijving" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'beginTijd' -->
+                    <xsd:element name="beginTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'eindTijd' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="eindTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'identificatie' -->
+                    <xsd:element name="identificatie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'objectType' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="objectType" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'lichtVergunningsplichtigeBouwwerkenCategorie' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="lichtVergunningsplichtigeBouwwerkenCategorie"
+                                 type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'objectNiveau' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="objectNiveau" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- complex valued property 'hasObjectCriteria' -->
+                    <xsd:element maxOccurs="unbounded" minOccurs="1" name="hasObjectCriteria"
+                                 type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- geometry property 'objectGeometrie' -->
+                    <xsd:element name="objectGeometrie" type="gml:GeometryPropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="ObjectCriteria" substitutionGroup="gml:_Feature" type="imwe:ObjectCriteriaType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="ObjectCriteriaType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- complex valued property 'overigetekst' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="overigeTekst" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- complex valued property 'trentsetterAbstract' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="trentsetterAbstract" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- complex valued property 'trentsetterFysiek' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="trentsetterFysiek" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'kleurEnMateriaal' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="kleurEnMateriaal" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'architektonischeKarakteristiek' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="architektonischeKarakteristiek" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'massaEnVorm' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="massaEnVorm" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'situering' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="situering" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'snelToetsCriteria' -->
+                    <xsd:element name="snelToetsCriteria" type="xsd:boolean">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="Dossier" substitutionGroup="gml:_Feature" type="imwe:DossierType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="DossierType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'dossierNr' -->
+                    <xsd:element name="dossierNr" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'jurisprudentie' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="jurisprudentie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'precedent' -->
+                    <xsd:element name="precedent" type="xsd:boolean">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'monument' -->
+                    <xsd:element name="monument" type="xsd:boolean">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'adviesTekst' -->
+                    <xsd:element name="adviesTekst" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- complex valued property 'bijlagen' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="bijlagen" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="WelstandsNiveauGebied" substitutionGroup="gml:_Feature" type="imwe:WelstandsNiveauGebiedType">
+
+        <!-- annotation of each element (=feature type definition) contains associated table name and gml:id definition -->
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="WelstandsNiveauGebiedType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'niveauNaam' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="niveauNaam" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'niveauBeschrijving' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="niveauBeschrijving" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'beginTijd' -->
+                    <xsd:element name="beginTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'eindTijd' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="eindTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'identificatie' -->
+                    <xsd:element name="identificatie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- geometry property 'niveauGeometrie' -->
+                    <xsd:element name="niveauGeometrie" type="gml:MultiSurfacePropertyType">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'gebiedsNiveau' -->
+                    <xsd:element name="gebiedsNiveau" type="xsd:string">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="WelstandsNota" substitutionGroup="gml:_Feature" type="imwe:WelstandsNotaType">
+
+        <!-- annotation of each element (=feature type definition) contains associated table name and gml:id definition -->
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="WelstandsNotaType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- simple (string) valued property 'gemeenteNaam' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="gemeenteNaam" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'opsteller' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="opsteller" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'gebiedInleiding' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="gebiedInleiding" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'objectInleiding' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="objectInleiding" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'beginTijd' -->
+                    <xsd:element name="beginTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (date) valued property 'eindTijd' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="eindTijd" type="xsd:date">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'identificatie' -->
+                    <xsd:element name="identificatie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- geometry property 'welstandsNotaGebiedGeometrie' -->
+                    <xsd:element name="welstandsNotaGebiedGeometrie" type="gml:MultiSurfacePropertyType">
+
+                    </xsd:element>
+                    <!-- complex valued property 'hasOverig' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="hasOverig" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- complex valued property 'hasAlgemeneCriteria' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="hasAlgemeneCriteria" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="Overig" substitutionGroup="gml:_Feature" type="imwe:OverigType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="OverigType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- complex valued property 'overigetekst' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="aanvulling" type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'begrippenLijst' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="begrippenLijst" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'juridischeParagraaf' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="juridischeParagraaf" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'monumentenLijst' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="monumentenLijst" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'verwijzing' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="verwijzing" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'procedure' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="procedure" type="xsd:string">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+    <xsd:element name="AlgemeneCriteria" substitutionGroup="gml:_Feature" type="imwe:AlgemeneCriteriaType">
+
+    </xsd:element>
+    <!-- ====================================================================== -->
+    <xsd:complexType name="AlgemeneCriteriaType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <!-- complex valued property 'algemeneCriteriaBeschrijving' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="algemeneCriteriaBeschrijving"
+                                 type="gml:FeaturePropertyType">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'bouwwerkOmgeving' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="bouwwerkOmgeving" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'evenwichtTussenHelderheidEnComplexiteit' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="evenwichtTussenHelderheidEnComplexiteit"
+                                 type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'materiaalTextuurKleurEnLicht' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="materiaalTextuurKleurEnLicht" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'schaalEnMaatvoering' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="schaalEnMaatvoering" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'toepassing' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="toepassing" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'vormGebruikConstructievormGebruikConstructie' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="vormGebruikConstructie" type="xsd:string">
+
+                    </xsd:element>
+                    <!-- simple (string) valued property 'vormInSociaalCultureleContext' -->
+                    <xsd:element maxOccurs="1" minOccurs="0" name="vormInSociaalCultureleContext" type="xsd:string">
+
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ====================================================================== -->
+</xsd:schema>
