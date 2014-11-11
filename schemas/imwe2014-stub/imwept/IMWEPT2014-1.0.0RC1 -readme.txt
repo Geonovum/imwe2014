@@ -1,0 +1,12 @@
+Dit XML Schema hoort bij het Informatiemodel Welstandsnota’s
+IMWE2014 v1.0 en daarin het planteksten model
+
+
+Het schema is gemaakt op basis van IMROPT2012-v1.0.1.
+De inhoud van IMROPT2012.xsd is aangepast voor de inhoud van IMWEPT2014.
+In de andere XSD's zijn alleen referenties en namespaces aangepast.
+
+Versie informatie:
+versie 1.0.0RC1
+
+

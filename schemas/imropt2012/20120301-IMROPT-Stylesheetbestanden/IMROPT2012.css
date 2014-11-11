@@ -1,0 +1,169 @@
+html 
+   {
+   height:100%; 
+   max-height:100%; 
+   padding:0; 
+   margin:0; 
+   border:0; 
+   font-family:verdana,helvetica,sans-serif;
+   background-color:#eee;
+   }
+
+body
+   {
+   padding:0; 
+   margin:0; 
+   border:0;
+   }
+
+.koptekst
+   {
+   padding-left: 20px;
+   border-bottom:2px solid #aaa;
+   background-color:#fff;
+   }            
+
+.inhoud
+   {
+   padding-left:20px; 
+   word-wrap:break-word;
+   }
+
+.inspring0
+   {
+   font-size: 120%;
+   text-indent:0px;
+   }
+
+.inspring1
+   {
+   font-size: 100%;
+   text-indent:25px;
+   }
+
+.inspring2
+   {
+   font-size: 80%;
+   text-indent:50px;
+   }
+
+div.navigatie ul 
+   {
+   display: block;
+   position:relative;
+   float: none;
+   list-style-type:none;
+   height: 1.5em;
+   font-size: larger;
+   margin-left: 0;
+   }
+
+div.navigatie li 
+   {
+   display: inline;
+   background-color:#eee; 
+   float: left;
+
+   margin-right: 1.0em;
+
+   padding: 0.5em;
+   padding-left: 1.0em;
+   padding-right: 1.0em;
+
+   border-style: solid;
+   border-width: 2px;
+   border-color: #aaa
+   }
+
+div.navigatie a:hover
+   {
+   text-decoration:none;
+   color:#ff0;
+   }
+
+a
+   {
+   text-decoration:none;
+   color:#000;
+   background-color:#ccc; 
+   }
+
+a:hover 
+   {
+   text-decoration:none;
+   color:#ff0;
+   background-color:#aaa; 
+   }
+
+a.menubalk
+   { 
+   color:#000;
+   background-color:#eee; 
+   }
+
+a.menubalk:hover 
+   {
+   color:#ff0;
+   background-color:#aaa; 
+   }
+
+a.inhoudsopgave 
+   { 
+   background-color:#eee; 
+   color:#000;
+   }
+
+a.inhoudsopgave:hover 
+   {
+   color:#ff0;
+   background-color:#aaa; 
+   }
+
+.voetnoot a
+   {
+   background-color:#ccc;
+   }
+
+.voetnoot a:hover
+   {
+   color:#ff0;
+   background-color:#aaa;
+   }
+
+.voetnoot a span
+   {
+   display:none;
+   background-color:#aaa;
+   }
+
+.voetnoot a:hover span
+   {
+   display:inline;
+   position:relative;
+   text-align: left;
+
+   color:#ff0;
+   background-color:#aaa; 
+   }
+
+.verwijderd {text-decoration: line-through;}
+.toegevoegd {background-color: Yellow;}
+del  {text-decoration: line-through;}
+ins {background-color: Yellow;text-decoration: none;}
+   
+h5 { font-size: 90%; }
+h6 { font-size: 90%; }
+
+/* IE: */
+ol.upper-roman { list-style-type: upper-roman;}
+ol.lower-roman { list-style-type: lower-roman;}
+ol.upper-alpha { list-style-type: upper-alpha;}
+ol.lower-alpha { list-style-type: lower-alpha;}
+ol.upper-greek { list-style-type: upper-greek;}
+ol.lower-greek { list-style-type: lower-greek;}
+ol.decimal { list-style-type: decimal;}
+
+ul.disc { list-style-type: disc;}
+ul.square { list-style-type: square;}
+ul.circle { list-style-type: circle;}
+

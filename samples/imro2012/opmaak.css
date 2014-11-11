@@ -1,0 +1,144 @@
+   /* ----------- reset ----------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul {  margin:10px;}
+
+body { margin:0 49px 10px 0; background:#eee url(http://www.kuiper.nl/ro/gfx/bg.gif) fixed; }
+#container { margin: 20px auto; padding: 0px 0 0 180px; width: 900px; background-image: url(http://www.kuiper.nl/ro/gfx/kc_logo.gif); background-repeat: no-repeat; background-position: left top; }
+a img { border: 0; }
+/*standaard tekst en links in de 'body' van de pagina*/ 
+body, p, li, table, div { font-family: Arial, Helvetica, sans-serif; font-size:12px; color:#000; line-height: 1.4em; }
+/* Basis tekstopmaak voor de plantekst */
+
+p, h1, h2, h3, h4, h5, h6 { margin:4px 0; }
+
+
+h2, h3, h4, h5, h6 { font-weight:bold; }
+h2 { font-size:28px; margin:18px 0;}
+h3 { font-size:24px; margin:12px 0;}
+h4 { font-size:18px; margin:8px 0;}
+h5 { font-size:14px; margin:8px 0;}
+h6 { font-size:12px; margin:2px 0;}
+
+
+a:link, a:visited { color:#333; text-decoration: none;border-bottom:1px dotted; }
+a:hover { color:#EE435D; text-decoration: none; }
+a.voetnootlink:link, a.voetnootlink:visited { cursor: help; text-decoration:none; vertical-align:super; line-height:0.2em; font-size:70%; margin-left:0.1em; }
+a.voetnootlink:hover { text-decoration:none; }
+ul#voetnoten { border-top:1px dashed #555; margin:1em 0 0 0; padding:0; width:100%; /*nodig voor haslayout in IE6*/ }
+ul#voetnoten li { padding:0 0 0 2.2em; margin:1em 0 0 0; position:relative; width:90%; /*nodig voor haslayout in IE6*/ }
+a.voetnootterug { position:absolute; left:0; line-height:1; top:0.2em; }
+div#koptekst { }
+ @media print, screen {
+div#toegang { display:none; }
+}
+div#kruimelspoor { overflow:auto; padding:0; float:left;height:90px; }
+.kruimel { float: left; font-size: 14px; margin:4px 0; }
+h1.kruimel { float:none; padding: 0; margin: 0 0 10px 0; font-size:24px; }
+.kruimel a:link, .kruimel a:visited { color:#000; padding: 0 1em 0 0; text-decoration:none; }
+.kruimel a:hover { color:#EE435D; }
+#plangegevens { float:right; padding:0 0 5px 0; margin-bottom:16px;}
+#plangegevens table { border-collapse:collapse; }
+#plangegevens th { padding-right:1em; }
+#plangegevens th, #plangegevens td { font-weight:normal; color:#000; font-size:10px; vertical-align:top; text-align:left; padding-top:1px; margin:0; line-height:100%; max-width:30em; }
+div#hoofdmenu {display:block;background:#EE435D; padding:0; clear:both; overflow:auto; width:100%; height:30px; }
+div#hoofdmenu ul { margin:0; padding:0; }
+div#hoofdmenu li { float:left; margin:0; padding:0; }
+div#hoofdmenu a { display:block; padding:3px 1em; color:#FFF; font-weight:bold; font-size:14px; text-decoration:none;margin-top:4px;border:none; }
+div#hoofdmenu a.pdf { background:url(http://opmaak.dezta.nl/kuiper/opmaak_iconen.gif) no-repeat right -197px; padding-right:1.7em; }
+div#hoofdmenu a:hover, div#hoofdmenu a.pdf:hover { background-color:#3853A4; color:#FFF; text-decoration:none; }
+div#inhoudsopgave, div#inhoud { clear: both; }
+div#inhoud { padding:20px 20px 40px 20px; background:#FFF; }
+div#inhoud p{width:600px}
+div#inhoud li a, div#inhoud li a:visited{
+font-weight:bold;}
+
+div#inhoud ul{
+	margin-bottom:10px;
+}
+li{
+
+list-style-position: outside;
+margin:4px 0 6px 32px;
+max-width:600px
+}
+div.navigatie ul { display: block; float: none; list-style-type:none; }
+div.navigatie li { display: inline; float: left; margin: 2em; }
+div#inhoudsopgave li.pdf { background:url(http://opmaak.dezta.nl/kuiper/opmaak_iconen.gif) no-repeat 0 -200px; padding-left:28px;  }
+ul.inhoudsopgave, ul#voetnoten { list-style-type:none; }
+ul.inhoudsopgave a:link, ul.inhoudsopgave a:visited { }
+ul.inhoudsopgave a:hover { }
+div.begripsbepaling {margin:12px 0;}
+/* Extra voor de inhoudsopgave op de index pagina */
+
+div.document div#inhoudsopgave ul a { text-decoration:none; }
+div.document div#inhoudsopgave ul { margin-left:0; padding-left:0; }
+div.document div#inhoudsopgave ul ul { margin-left:4em; }
+div.document div#inhoudsopgave ul ul ul { margin-top:0.5em; }
+div.document div#inhoudsopgave ul ul ul ul { margin-top:0; }
+div.document div#inhoudsopgave ul li { margin-top:1em; font-size:16px; font-weight:bold; }
+div.document div#inhoudsopgave ul ul li { margin-top:0.5em; font-size:14px; font-weight:bold; }
+div.document div#inhoudsopgave ul ul ul li { margin-top:0; font-size:12px; font-weight:bold; }
+div.document div#inhoudsopgave ul ul ul ul li { font-size:12px; font-weight:normal; }
+/* Navigatie-links onderaan de pagina */
+
+div#navigatiemenu { position:absolute; right:0;padding: 10px;background:#fff; }
+#container > div#navigatiemenu {position:absolute; }
+div#navigatiemenu ul { padding:10px; margin:0; background:#fff;}
+div#navigatiemenu li { padding:0; float:none; display:block; height:24px; margin:10px; padding:0; }
+div#navigatiemenu a:link, div#navigatiemenu a:visited, div#navigatiemenu a:link:hover, div#navigatiemenu a:visited:hover { display:block; height: 24px; width: 24px; text-indent: -200px; overflow: hidden; background-image:url(http://opmaak.dezta.nl/kuiper/opmaak_iconen.gif); background-repeat:no-repeat; }
+div#navigatiemenu li.navigatieitemBegin a { }
+div#navigatiemenu li.navigatieitemBegin a:hover { background-position:0 -25px; }
+div#navigatiemenu li.navigatieitemVorige a { background-position:0 -75px; }
+div#navigatiemenu li.navigatieitemVorige a:hover { background-position:0 -50px; }
+div#navigatiemenu li.navigatieitemVolgende a { background-position:0 -125px; }
+div#navigatiemenu li.navigatieitemVolgende a:hover { background-position:0 -100px; }
+div#navigatiemenu li.navigatieitemOmhoog a { background-position:0 -150px; }
+div#navigatiemenu li.navigatieitemOmhoog a:hover { background-position:0 -175px; }
+ @media print, screen {
+div#navigatiemenu span.inactief { display:none; }
+}
+/* Opmaak voor speciale elementen in de plantekst */
+
+span.lijstnummer {  margin-left: -24px;
+    position: absolute;}
+ins { text-decoration:none; }
+.mark1 { color:#000000; background-color: Yellow; }
+.mark2 { color:#000000; background-color: Lime; }
+.mark3 { color:#000000; background-color: Aqua; }
+.mark4 { color:#000000; background-color: Fuchsia; }
+.mark5 { color:#000000; background-color: #6699FF; }
+.mark6 { color:#000000; background-color: #AAAAAA; }
+.doorstreept { text-decoration: line-through; }
+.superscript { vertical-align:super }
+.subscript { vertical-align:sub }
+.superscript, .subscript { line-height:0.2em; font-size:70%; }
+.onderstreept { text-decoration: underline; }
+ul.upper-alpha { list-style-type:none; }
+ul.lower-alpha { list-style-type:none; }
+ul.upper-roman { list-style-type:none; }
+ul.lower-roman { list-style-type:none; }
+
+ul.decimal { list-style-type:none; }
+table.teksttabel { border-collapse:collapse; width: 100%; }
+td.teksttabelcel { border: none; vertical-align:top; }
+td.border-bottom, td.bottomborder { border-bottom: 1px solid #000000; }
+td.border-left, td.leftborder { border-left: 1px solid #000000; }
+td.border-right, td.rightborder { border-right: 1px solid #000000; }
+td.border-top, td.topborder { border-top: 1px solid #000000; }
+
+
+/*********************************************************
+*           Definities voor uitprinten:                  *
+*********************************************************/
+@media print {
+body { margin:0px; color: #000000; background:none; font-size:10pt; }
+p, h1, h2, h3, h4, h5, h6 { color:#000; margin:0; padding:0 0 1em 0; }
+a:link, a:visited { color:#000; text-decoration:underline; }
+.navigatie, div#inhoudsopgave { display:none; }
+div.document div#inhoudsopgave { display:block; }
+div#inhoud { padding:0; clear:none; }
+#plangegevens { }
+#plangegevens table { border:none; margin:0 0 0.5em 0.5em; }
+#plangegevens th, #plangegevens td { color:#DDD; font-size:8pt; }
+}

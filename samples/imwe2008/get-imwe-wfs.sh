@@ -28,3 +28,5 @@ wget -O imwe.nl-capabilities.xml 'http://www.imwe.nl/data?service=WFS&version=1.
 wget -O imwe.nl-featuretypes.xml 'http://www.imwe.nl/data?service=WFS&version=1.1.0&request=DescribeFeatureType'
 wget -O imwe.nl-welstandsniveaugebied1.xml 'http://www.imwe.nl/data?service=WFS&version=1.1.0&request=GetFeature&typeName=WelstandsNiveauGebied&maxFeatures=10'
 wget -O imwe.nl-welstandsnnota1.xml 'http://www.imwe.nl/data?service=WFS&version=1.1.0&request=GetFeature&typeName=WelstandsNota&maxFeatures=10'
+
+wget -O imwe.nl-wn-landgraaf.xml 'http://www.imwe.nl/data?service=WFS&version=1.1.0&request=GetFeature&typeName=WelstandsNota&maxFeatures=2&filter=%3Cogc:Filter%20xmlns:app=%22http://www.deegree.org/app%22%20xmlns:gml=%22http://www.opengis.net/gml%22%20xmlns:ogc=%22http://www.opengis.net/ogc%22%3E%20%3CPropertyIsLike%20wildCard=%22*%22%20singleChar=%22?%22%20escape=%22\%22%3E%20%3CPropertyName%3EgemeenteNaam%20%3C/PropertyName%3E%20%3CLiteral%3ELandgraaf%3C/Literal%3E%20%3C/PropertyIsLike%3E%20%3C/ogc:Filter%3E'

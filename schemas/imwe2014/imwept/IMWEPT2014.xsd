@@ -66,7 +66,7 @@
 			<element name="niveau" type="integer"/>
 			<element name="type" type="imwept:Tekstobjecttype_WNType"/>
 			<element name="titel" type="imwept:TitelInfoPropertyType"/>
-			<element name="externeVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="ep=[xterneVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="tekst" type="string" minOccurs="0"/>
 			<element name="tekstMetadata" type="imwept:TekstMetadataPropertyType" minOccurs="0"/>
 			<element name="ouderID" type="imwept:TekstObjectPropertyType"/>

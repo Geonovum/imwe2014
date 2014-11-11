@@ -1,0 +1,104 @@
+html 
+   {
+   height:100%; 
+   max-height:100%; 
+   padding:0; 
+   margin:0; 
+   border:0; 
+   font-family:verdana,helvetica,sans-serif;
+   background-color:#eee;
+   }
+
+body
+   {
+   padding:0; 
+   margin:0; 
+   border:0;
+   }
+
+.kop
+   {
+   padding-left: 20px;
+   border-bottom:2px solid #aaa;
+   background-color:#fff;
+   }            
+
+.inhoud 
+   {
+   padding-left:20px; 
+   word-wrap:break-word;
+   }
+
+.inspring0
+   {
+   font-size: 120%;
+   text-indent:0px;
+   }
+
+.inspring1
+   {
+   font-size: 100%;
+   text-indent:25px;
+   }
+
+.inspring2
+   {
+   font-size: 80%;
+   text-indent:50px;
+   }
+
+div.navigatie ul 
+   {
+   display: none;
+   }
+
+div.navigatie li 
+   {
+   display: none;
+   }
+
+a
+   {
+   text-decoration:none;
+   color:#000;
+   }
+
+a.inhoudsopgave 
+   { 
+   text-decoration:none;
+   color:#000;
+   }
+
+.voetnoot a
+   {
+   font-style:italic;
+   text-decoration:none;
+   color:#000;
+   }
+
+.voetnoot a span
+   {
+   font-style:italic;
+   display:inline;
+   position:relative;
+   text-align: left;
+   text-decoration:none;
+   color:#000;
+   }
+
+hr
+   {
+   display:none;
+   }
+
+/* IE: */
+ol.upper-roman { list-style-type: upper-roman;}
+ol.lower-roman { list-style-type: lower-roman;}
+ol.upper-alpha { list-style-type: upper-alpha;}
+ol.lower-alpha { list-style-type: lower-alpha;}
+ol.upper-greek { list-style-type: upper-greek;}
+ol.lower-greek { list-style-type: lower-greek;}
+ol.decimal { list-style-type: decimal;}
+ul.disc { list-style-type: disc;}
+ul.square { list-style-type: square;}
+ul.circle { list-style-type: circle;}

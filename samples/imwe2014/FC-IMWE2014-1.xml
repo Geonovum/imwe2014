@@ -44,8 +44,9 @@
             <imwe:naam>string</imwe:naam>
             <!--1 or more repetitions:-->
             <imwe:verwijzingNaarTekstInfo>
+                <!-- Zie 4.4 - W3 - 'pt_' + planID -->
                 <imwe:TekstReferentieNG_WN>
-                    <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+                    <imwe:verwijzingNaarTekst>pt_NL.IMWE.1709.WelstandsNiveauGebied.23</imwe:verwijzingNaarTekst>
                     <imwe:typeTekst>beschrijving</imwe:typeTekst>
                 </imwe:TekstReferentieNG_WN>
             </imwe:verwijzingNaarTekstInfo>
@@ -114,6 +115,7 @@
             <imwe:identificatie>
                 <imwe:NEN3610ID>
                     <imwe:namespace>NL.IMWE</imwe:namespace>
+                    <!-- 4.4 a10 - CBS-code bronhouder verwerkt in identificatiecode. -->
                     <imwe:lokaalID>1709.WelstandsNota</imwe:lokaalID>
                     <!--Optional:-->
                     <imwe:versie>v1</imwe:versie>
@@ -136,6 +138,12 @@
             <!--Optional:-->
             <imwe:verwijzingNaarVaststellingsbesluit>string</imwe:verwijzingNaarVaststellingsbesluit>
             <!--1 to 2 repetitions:-->
+            <imwe:verwijzingNaarTekstInfo>
+                <imwe:TekstReferentieWN_WN>
+                    <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
+                    <imwe:typeTekst>document</imwe:typeTekst>
+                </imwe:TekstReferentieWN_WN>
+            </imwe:verwijzingNaarTekstInfo>
             <imwe:verwijzingNaarTekstInfo>
                 <imwe:TekstReferentieWN_WN>
                     <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>

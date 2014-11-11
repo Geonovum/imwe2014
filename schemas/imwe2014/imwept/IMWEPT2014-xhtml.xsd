@@ -11,7 +11,10 @@
 <!-- 2014-09-01 Versie 1.0.0b1 gepubliceerd -->
 <!-- namespaces en verwijzingen aangepast aan IMWEPT2014 -->
 <!-- start is IMROPT2012-xhtml.xsd -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:imwept="http://www.geonovum.nl/imwe/pt/2014/1.0" xmlns="http://www.w3.org/1999/xhtml" targetNamespace="http://www.w3.org/1999/xhtml" elementFormDefault="qualified" blockDefault="#all">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:imwept="http://www.geonovum.nl/imwe/pt/2014/1.0"
+           xmlns="http://www.w3.org/1999/xhtml" targetNamespace="http://www.w3.org/1999/xhtml"
+           elementFormDefault="qualified" blockDefault="#all">
 	<xs:annotation>
 		<xs:documentation>
       Dit is de schemadriver voor de subset van XHTML geschikt voor

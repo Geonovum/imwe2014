@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!--                                            Lokale versie                                                                         -->
+<!--       	             Onderdeel van IMWEPT2014 versie 1.0.0b1                                                     -->
+<!-- =================================================================== -->
+<!-- Remote versie op:	nog niet gepubliceerd																										 -->
+<!-- =================================================================== -->
+<!-- Geonovum, Beheerorganisatie RO-Standaarden. http://ro-standaarden.geonovum.nl -->
+<!-- =================================================================== -->
+<!-- versieinfo -->
+<!-- 2014-09-01 Versie 1.0.0b1 gepubliceerd -->
+<!-- namespaces en verwijzingen aangepast aan IMWEPT2014 -->
+<!-- start is IMROPT2012-xhtml.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:imwept="http://www.geonovum.nl/imwe/pt/2014/1.0"
+           xmlns="http://www.w3.org/1999/xhtml"
+           targetNamespace="http://www.w3.org/1999/xhtml"
+           elementFormDefault="qualified"
+           blockDefault="#all">
+	<xs:annotation>
+		<xs:documentation>
+      Dit is de schemadriver voor de subset van XHTML geschikt voor
+      IMWE gecodeerde planteksten.
+      IMWEPT2014-xhtml.xsd
+    </xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="IMWEPT2014-xhtml-modules-1.xsd"/>
+	<xs:import namespace="http://www.geonovum.nl/imwe/pt/2014/1.0" schemaLocation="IMWEPT2014.xsd"/>
+	<xs:redefine schemaLocation="IMWEPT2014-xhtml-model-1.xsd">
+		<xs:group name="xhtml.AnchorImropt.class">
+			<xs:choice>
+				<xs:element ref="imwept:interneVerwijzing"/>
+				<xs:element ref="imwept:externeVerwijzing"/>
+				<xs:element ref="imwept:verwijderd"/>
+				<xs:element ref="imwept:toegevoegd"/>
+				<xs:group ref="xhtml.AnchorImropt.class"/>
+			</xs:choice>
+		</xs:group>
+		<xs:group name="xhtml.InlineImropt.class">
+			<xs:choice>
+				<!-- extra elementen voor de IMRO PT XHTML. Ze kunnen overal voorkomen waar inline content toegestaan is,
+					maar het zijn 'leaf' elementen; ze mogen geen verdere XHTML-elementen bevatten.-->
+				<xs:element ref="imwept:voetnoot" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:group ref="xhtml.InlineImropt.class"/>
+			</xs:choice>
+		</xs:group>
+	</xs:redefine>
+	<xs:element name="tekst" type="imwept:rotext.type"/>
+</xs:schema>
