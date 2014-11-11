@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 <wfs:FeatureCollection numberOfFeatures='1' xmlns:wfs="http://www.opengis.net/wfs"
                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml"
                        xmlns:imwe="http://www.imwe.nl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
