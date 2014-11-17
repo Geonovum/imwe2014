@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!-- Proefbestand voor IMWEPT2014, Documentatie-elementen behorende by FC-IMWE2014-1.xml.
+Waarden uit IMWE2008 met WNota voor gemeente Landgraaf. -->
+
+<!-- Just van den Broecke okt-nov 2014 -->
+<!-- =================================================================== -->
+<imwept:FeatureCollectionIMWEPT
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:imwept="http://www.geonovum.nl/imwe/pt/2014/1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="
+            http://www.geonovum.nl/imwe/pt/2014/1.0 ../../schemas/imwe2014/imwept/IMWEPT2014.xsd"
+        >
+
+    <!--<element name="TekstMetadata" type="imwept:TekstMetadataType"/>-->
+    <!--<complexType name="TekstMetadataType">-->
+    <!--<sequence>-->
+    <!--<element name="identificatie" type="string"/>-->
+    <!--<element name="verwijzingNaarPlangebied" type="string"/>-->
+    <!--<element name="typePlan" type="string"/>-->
+    <!--<element name="naam" type="string"/>-->
+    <!--<element name="beleidsmatigVerantwoordelijkeOverheid" type="string"/>-->
+    <!--<element name="naamOverheid" type="string"/>-->
+    <!--<element name="overheidsCode" type="string"/>-->
+    <!--<element name="creatiedatum" type="string"/>-->
+    <!--<element name="naamPraktijkrichtlijn" type="string"/>-->
+    <!--</sequence>-->
+    <!--</complexType>-->
+    <imwept:TekstMetadata>
+        <imwept:identificatie>NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD</imwept:identificatie>
+
+        <!-- 6.2 identificatie (idn) van het IMWE Welstandsnota-object waar het plantekstenbestand bij hoort. -->
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+
+        <!-- 6.2 de waarde van het attribuut typePlan van het Plangebied waar het plantekstenbestand bij hoort.-->
+        <imwept:typePlan>welstandsnota</imwept:typePlan>
+
+        <!-- 6.2 naam van het plan volgens de (aanhaal)titel -->
+        <imwept:naam>Gemeente Landgraaf – Nieuwe Welstandsnota</imwept:naam>
+
+        <!-- 6.2 de waarde van het attribuut beleidsmatigVerantwoordelijkeOverheid van het object Welstandsnota waar het plantekstenbestand bij hoort. -->
+        <imwept:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid
+        </imwept:beleidsmatigVerantwoordelijkeOverheid>
+
+        <!-- 6.2 naam van de overheid -->
+        <imwept:naamOverheid>Landgraaf</imwept:naamOverheid>
+
+        <!-- 6.2 4 cijfers: CBS-nummer gemeente -->
+        <imwept:overheidsCode>0882</imwept:overheidsCode>
+
+        <!-- 6.2  datum waarop het bestand gemaakt is in de vorm: jjjj-mm-dd -->
+        <imwept:creatiedatum>2014-11-30</imwept:creatiedatum>
+
+        <!-- 6.2 de vaste waarde PRWE2014 -->
+        <imwept:naamPraktijkrichtlijn>PRWE2014</imwept:naamPraktijkrichtlijn>
+    </imwept:TekstMetadata>
+
+    <!--<element name="TekstObject" type="imwept:TekstObjectType"/>-->
+    <!--<complexType name="TekstObjectType">-->
+    <!--<sequence>-->
+    <!--<element name="identificatie" type="string"/>-->
+    <!--<element name="verwijzingNaarPlangebied" type="string"/>-->
+    <!--<element name="volgnummer" type="integer"/>-->
+    <!--<element name="niveau" type="integer"/>-->
+    <!--<element name="type" type="imwept:Tekstobjecttype_WNType"/>-->
+    <!--<element name="titel" type="imwept:TitelInfoPropertyType"/>-->
+    <!--<element name="externeVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>-->
+    <!--<element name="tekst" type="string" minOccurs="0"/>-->
+    <!--<element name="tekstMetadata" type="imwept:TekstMetadataPropertyType" minOccurs="0"/>-->
+    <!--<element name="ouderID" type="imwept:TekstObjectPropertyType"/>-->
+    <!--<element name="interneVerwijzing" type="imwept:TekstObjectPropertyType" minOccurs="0"/>-->
+    <!--</sequence>-->
+    <!--</complexType>-->
+    <imwept:TekstObject>
+        <!-- eigen identificatie (idn) van het TekstObject. De code moet uniek zijn binnen de welstandsnota.
+        De identificatie begint met "NL.IMWE.PT." en wordt gevolgd door max. 32 alfanumerieke tekens.  -->
+        <imwept:identificatie>NL.IMWE.PT.0882.</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>1</imwept:volgnummer>
+        <imwept:niveau>0</imwept:niveau>
+
+        <!--<simpleType name="Tekstobjecttype_WNType">-->
+        <!--<restriction base="string">-->
+        <!--<enumeration value="welstandstekst"/>-->
+        <!--<enumeration value="bijlage"/>-->
+        <!--<enumeration value="bijlagen"/>-->
+        <!--<enumeration value="deel"/>-->
+        <!--<enumeration value="document"/>-->
+        <!--<enumeration value="hoofdstuk"/>-->
+        <!--<enumeration value="overig"/>-->
+        <!--<enumeration value="paragraaf"/>-->
+        <!--<enumeration value="subparagraaf"/>-->
+        <!--<enumeration value="subsubparagraaf"/>-->
+        <!--<enumeration value="subsubsubparagraaf"/>-->
+        <!--</restriction>-->
+        <!--</simpleType>-->
+        <imwept:type>document</imwept:type>
+        <!--<element name="TitelInfo" type="imwept:TitelInfoType"/>-->
+        <!--<complexType name="TitelInfoType">-->
+        <!--<sequence>-->
+        <!--<element name="label" type="string" minOccurs="0"/>-->
+        <!--<element name="nummer" type="string" minOccurs="0"/>-->
+        <!--<element name="naam" type="string" minOccurs="0"/>-->
+        <!--</sequence>-->
+        <!--</complexType>-->
+        <!--<complexType name="TitelInfoPropertyType">-->
+        <!--<sequence>-->
+        <!--<element ref="imwept:TitelInfo"/>-->
+        <!--</sequence>-->
+        <!--</complexType>-->
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label>gebiedInleiding</imwept:label>
+                <imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>
+                <imwept:naam>welstandsbeleid</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+        <imwept:externeVerwijzing>externeVerwijzing</imwept:externeVerwijzing>
+        <imwept:tekst>
+            <![CDATA[<p>Een belangrijke pijler van de welstandsnota is het gebiedsgerichte welstandsbeleid. De gebiedsgerichte welstandscriteria worden gebruikt voor de kleine en middelgrote bouwplannen, die de bestaande structuur van het gebied niet wezenlijk doorbreken.</p>
+            <p><strong>Gebieden</strong><br />De gebiedsgerichte criteria zijn gebaseerd op het architectonisch vakmanschap en de bestaande ruimtelijke kwaliteit. Deze criteria geven aan hoe een bouwwerk zich moet verhouden tot zijn omgeving om niet teveel uit de toon te vallen, en welke gewaardeerde karakteristieken uit de omgeving in het ontwerp moeten worden gebruikt. De gebiedsgerichte welstandscriteria zijn dus relatief en moeten worden gezien als gewenste eigenschappen van het bouwplan. Vanwege het diverse karakter van de gebieden kan het nodig zijn in bijzondere gevallen af te wijken van de gebiedsbeschrijving en terug te vallen op de algemene welstandscriteria.<br />Per gebied is een beoordelingskader opgesteld met daarin een korte beschrijving van het gebied, waarbij aandacht wordt besteed aan de stedenbouwkundige opzet, een typering van de bouwwerken, de materialen en de kleuren. Ook wordt er een waardering gegeven voor het gebied op grond van de belevingswaarde en eventuele bijzondere kenmerken. Dit is de grondslag voor het welstandsniveau, waarbij tevens de hoofdpunten voor de beoordeling worden genoemd. Daarna volgen de welstandscriteria, steeds onderverdeeld in criteria betreffende de relatie met de omgeving van het bouwwerk, de bouwmassa, de architectonische uitwerking, materiaal en kleur. Met de welstandscriteria kan de commissie binnen de grenzen van het bestemmingsplan of de beheersverordening een gewogen oordeel vormen. In aanvulling op de tekst zijn foto&rsquo;s opgenomen, die een impressie van het gebied geven.</p>
+            <p><strong>Niveaus</strong><br />Voor elk welstandsgebied is het gewenste welstandsniveau aangegeven. Het welstandsniveau sluit zoveel mogelijk aan bij het gehanteerde ruimtelijk kwaliteitsbeleid en de gewenste ontwikkelingen.<br />Allereerst heeft de gemeente enkele welstandsvrije gebieden aangewezen waar het initiatief volledig bij de burger wordt gelegd.<br />Een groot deel van de bebouwing staat in een soepel welstandsgebied. In deze gebieden wordt ruimte geboden voor vernieuwing. De lichte toetsing beperkt zich tot de hoofdlijnen, dus met name tot de voorkanten van gebouwen en bouwwerken.<br />In de gewone welstandsgebieden ligt de lat iets hoger. Van bouwplannen in deze gebieden wordt verwacht, dat ze geen afbreuk aan de basiskwaliteit van de openbare ruimte. Dit betekent dat ook hier bouwplannen aan achterkanten vanwege hun beperkte invloed op de openbare ruimte veelal soepeler beoordeeld kunnen worden.<br />In bijzondere gebieden is extra inspanning ten behoeve van het behoud en de eventuele versterking van de ruimtelijke kwaliteit gewenst. Dit geldt ook voor de beschermde gezichten.</p>]]>
+        </imwept:tekst>
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+        <imwept:ouderID xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>
+        <imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>
+
+    </imwept:TekstObject>
+
+</imwept:FeatureCollectionIMWEPT>

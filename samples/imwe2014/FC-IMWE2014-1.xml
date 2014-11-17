@@ -16,7 +16,7 @@
         gml:id="string1">
 
     <imwe:featureMember>
-        <imwe:MetadataIMWEbestand gml:id="NL.IMWE.0882.MetadataIMWEbestand">
+        <imwe:MetadataIMWEbestand gml:id="NL.IMWE.0882.WelstandLandgraaf.v1.MD">
             <imwe:datasetTitel>WelstandsNota Landgraaf</imwe:datasetTitel>
             <imwe:creatiedatum>2014-11-30</imwe:creatiedatum>
 
@@ -24,7 +24,7 @@
             <imwe:bronbeheerder>Landgraaf</imwe:bronbeheerder>
 
             <!-- Degene die codeer app draait om dit bestand te genereren -->
-            <imwe:codeerVerantwoordelijke>Just van den Broecke</imwe:codeerVerantwoordelijke>
+            <imwe:codeerVerantwoordelijke>Just van den Broecke - Geonovum</imwe:codeerVerantwoordelijke>
 
             <!-- Fixed IMWE2014 -->
             <imwe:naamApplicatieschema>IMWE2014</imwe:naamApplicatieschema>
@@ -119,13 +119,13 @@
                     <imwe:idealisatie>exact</imwe:idealisatie>
                 </imwe:GeometrieWNobject>
             </imwe:begrenzing>
-            <imwe:welstandsNota xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#NL.IMWE.0882.WelstandsLandgraaf.v1"/>
+            <imwe:welstandsNota xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#NL.IMWE.0882.WelstandLandgraaf.v1"/>
         </imwe:Welstandsniveau>
     </imwe:featureMember>
 
     <imwe:featureMember>
         <!-- 0882 is gemeentecode Landgraaf -->
-        <imwe:Welstandsnota gml:id="NL.IMWE.0882.WelstandsLandgraaf.v1">
+        <imwe:Welstandsnota gml:id="NL.IMWE.0882.WelstandLandgraaf.v1">
             <imwe:identificatie>
                 <imwe:NEN3610ID>
                     <imwe:namespace>NL.IMWE</imwe:namespace>
@@ -139,8 +139,8 @@
 
             <!-- overheden GType enum, twee mogelijke waarden: gemeentelijke overheid of deelgemeente/stadsdeel -->
             <!-- TODO: bug zie, https://github.com/Geonovum/imwe2014/issues/4 -->
-            <imwe:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid</imwe:beleidsmatigVerantwoordelijkeOverheid>
-            <!--<imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>-->
+            <!--<imwe:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid</imwe:beleidsmatigVerantwoordelijkeOverheid>-->
+            <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
 
             <imwe:naamOverheid>Landgraaf</imwe:naamOverheid>
 
@@ -161,7 +161,7 @@
             </imwe:planstatusInfo>
 
             <!--Optioneel:-->
-            <imwe:besluitnummer>string</imwe:besluitnummer>
+            <imwe:besluitnummer>gmb-2014-3133</imwe:besluitnummer>
 
             <!--Optioneel:-->
             <imwe:verwijzingNaarVaststellingsbesluit>https://zoek.officielebekendmakingen.nl/gmb-2014-3133.html</imwe:verwijzingNaarVaststellingsbesluit>
@@ -185,7 +185,7 @@
             <imwe:ondergrondInfo>
                 <imwe:OndergrondReferentie>
                     <imwe:ondergrondtype>basisregistratie kadaster (BRK)</imwe:ondergrondtype>
-                    <imwe:ondergronddatum>2016-02-20+01:00</imwe:ondergronddatum>
+                    <imwe:ondergronddatum>2014-02-20+01:00</imwe:ondergronddatum>
                 </imwe:OndergrondReferentie>
             </imwe:ondergrondInfo>
             
