@@ -154,8 +154,8 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
     </imwept:TekstObject>
 
     <imwept:TekstObject>
-        <!-- Hier tekst enkel WelstandsNiveau (Welstandsvrij) -->
-        <imwept:identificatie>NL.IMWE.PT.0882.WelstandsNiveau.141</imwept:identificatie>
+        <!-- Hier tekst enkel Welstandsniveau (Welstandsvrij) -->
+        <imwept:identificatie>NL.IMWE.PT.0882.Welstandsniveau.141</imwept:identificatie>
         <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
         <imwept:volgnummer>1</imwept:volgnummer>
         <imwept:niveau>1</imwept:niveau>
@@ -180,7 +180,7 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <imwept:titel>
             <imwept:TitelInfo>
                 <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
-                <imwept:label>WelstandsNiveau</imwept:label>
+                <imwept:label>Welstandsniveau</imwept:label>
                 <!--<imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>-->
                 <imwept:naam>Welstandsvrij</imwept:naam>
             </imwept:TitelInfo>
@@ -191,6 +191,124 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <imwept:tekst>
             <![CDATA[<p>De gemeente heeft enkele welstandsvrije gebieden aangewezen waar het
             initiatief volledig bij de burger wordt gelegd.</p>]]>
+        </imwept:tekst>
+
+        <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
+        alleen een element (identificatie) is en geen
+        Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+
+        <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
+                Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <!-- (naar Hoofdtekst?, dus heeft geen "parent") -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.HeleTekst"/>
+        <!--<imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>-->
+
+    </imwept:TekstObject>
+
+    <imwept:TekstObject>
+        <!-- Hier tekst enkel Welstandsobject (Welstandsvrij) -->
+        <imwept:identificatie>NL.IMWE.PT.0882.Welstandsobject.1134.1</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>2</imwept:volgnummer>
+        <imwept:niveau>1</imwept:niveau>
+
+        <!--<simpleType name="Tekstobjecttype_WNType">-->
+        <!--<restriction base="string">-->
+        <!--<enumeration value="welstandstekst"/>-->
+        <!--<enumeration value="bijlage"/>-->
+        <!--<enumeration value="bijlagen"/>-->
+        <!--<enumeration value="deel"/>-->
+        <!--<enumeration value="document"/>-->
+        <!--<enumeration value="hoofdstuk"/>-->
+        <!--<enumeration value="overig"/>-->
+        <!--<enumeration value="paragraaf"/>-->
+        <!--<enumeration value="subparagraaf"/>-->
+        <!--<enumeration value="subsubparagraaf"/>-->
+        <!--<enumeration value="subsubsubparagraaf"/>-->
+        <!--</restriction>-->
+        <!--</simpleType>-->
+        <imwept:type>overig</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
+                <imwept:label>Welstandsobject</imwept:label>
+                <!--<imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>-->
+                <imwept:naam>Dakkapellen aanvullende criteria</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <imwept:externeVerwijzing>????</imwept:externeVerwijzing>
+
+        <imwept:tekst>
+            <![CDATA[<p>
+            <p>Een dakkapel voldoet in ieder geval aan redelijke eisen van welstand als aan onderstaande criteria wordt
+            voldaan, waarbij kleine afwijkingen denkbaar zijn om herhalingsplannen mogelijk te maken. Voldoet het plan
+            hier niet aan of is er twijfel aan de toepasbaarheid daarvan zoals bij monumenten en ander erfgoed,
+            dan wordt bij de beoordeling ook gebruik gemaakt van gebieds- en eventuele andere criteria.</p>
+            </p>]]>
+        </imwept:tekst>
+
+        <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
+        alleen een element (identificatie) is en geen
+        Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+
+        <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
+                Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <!-- (naar Hoofdtekst?, dus heeft geen "parent") -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.HeleTekst"/>
+        <!--<imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>-->
+
+    </imwept:TekstObject>
+
+    <imwept:TekstObject>
+        <!-- Hier tekst enkel Welstandsgebied  -->
+        <imwept:identificatie>NL.IMWE.PT.0882.Welstandsgebied.2618.1</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>2</imwept:volgnummer>
+        <imwept:niveau>1</imwept:niveau>
+
+        <!--<simpleType name="Tekstobjecttype_WNType">-->
+        <!--<restriction base="string">-->
+        <!--<enumeration value="welstandstekst"/>-->
+        <!--<enumeration value="bijlage"/>-->
+        <!--<enumeration value="bijlagen"/>-->
+        <!--<enumeration value="deel"/>-->
+        <!--<enumeration value="document"/>-->
+        <!--<enumeration value="hoofdstuk"/>-->
+        <!--<enumeration value="overig"/>-->
+        <!--<enumeration value="paragraaf"/>-->
+        <!--<enumeration value="subparagraaf"/>-->
+        <!--<enumeration value="subsubparagraaf"/>-->
+        <!--<enumeration value="subsubsubparagraaf"/>-->
+        <!--</restriction>-->
+        <!--</simpleType>-->
+        <imwept:type>overig</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
+                <imwept:label>Welstandsgebied</imwept:label>
+                <!--<imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>-->
+                <imwept:naam>Beschermd gezicht Leenhof</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <imwept:externeVerwijzing>????</imwept:externeVerwijzing>
+
+        <imwept:tekst>
+            <![CDATA[<p>
+            <p>Leenhof is een bijzonder welstandsgebied. In dit gebied gaat behoud voor vernieuwing. Het beleid is
+            terughoudend en gericht op het behoud van een samenhangend beeld en de gedifferentieerde uitwerking per
+            (cluster) woningen. Bij de beoordeling zal met name aandacht worden geschonken aan de zorgvuldige
+            detaillering en het gebruik van traditionele materialen en kleuren in harmonie met de omgeving.</p>
+            </p>]]>
         </imwept:tekst>
 
         <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,

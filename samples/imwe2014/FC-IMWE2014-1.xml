@@ -4,6 +4,7 @@
 <!-- die gegenereerd zijn vanuit de IMWE2014 XSDs (zie schemas/imwe2014-stub en "gegenereerd" map) -->
 <!-- en daarna hier met de hand bewerkt. Waarden uit IMWE2008 met WNota voor gemeente Landgraaf. -->
 
+<!-- Bevat object typen: Welstandsnota,-gebied,-niveau,-object en MetadataIMWEbestand -->
 <!-- Just van den Broecke okt 2014 -->
 <!-- =================================================================== -->
 <imwe:FeatureCollectionIMWE
@@ -14,9 +15,10 @@
         xsi:schemaLocation="
         http://www.opengis.net/gml/3.2 ../../schemas/gml/3.2.1.2/gml.xsd
         http://www.geonovum.nl/imwe/2014/1.0 ../../schemas/imwe2014/IMWE2014.xsd"
-        gml:id="string1">
+        gml:id="niet_nodig_mi">
 
     <imwe:featureMember>
+        <!-- data uit samples/imwe2008/imwe.nl-wo-landgraaf.xml (WelstandsObject gml:id="nl.imwe2008.WelstandsniveauGebied.141") -->
         <imwe:MetadataIMWEbestand gml:id="NL.IMWE.0882.WelstandLandgraaf.v1.MD">
             <imwe:datasetTitel>WelstandsNota Landgraaf</imwe:datasetTitel>
             <imwe:creatiedatum>2014-11-30</imwe:creatiedatum>
@@ -45,13 +47,302 @@
     </imwe:featureMember>
 
     <imwe:featureMember>
-
-        <!-- data uit samples/imwe2008/imwe.nl-wng-landgraaf.xml (WelstandsNiveauGebied gml:id="nl.imwe2008.WelstandsNiveauGebied.141") -->
-        <imwe:Welstandsniveau gml:id="NL.IMWE.0882.WelstandsNiveau.141">
+        <!-- data uit samples/imwe2008/imwe.nl-wo-landgraaf.xml (WelstandsniveauGebied gml:id="nl.imwe2008.Object.1134") -->
+        <imwe:Welstandsobject gml:id="NL.IMWE.0882.Welstandsobject.1134">
             <imwe:identificatie>
                 <imwe:NEN3610ID>
                     <imwe:namespace>NL.IMWE</imwe:namespace>
-                    <imwe:lokaalID>0882.WelstandsNiveau.141</imwe:lokaalID>
+                    <imwe:lokaalID>0882.Welstandsobject.1134</imwe:lokaalID>
+                    <!-- versie NIET in PlanObjecten! -->
+                    <!--<imwe:versie>string</imwe:versie>-->
+                </imwe:NEN3610ID>
+            </imwe:identificatie>
+
+            <imwe:typePlanobject>welstandsobject</imwe:typePlanobject>
+
+            <imwe:naam>Dakkapellen aanvullende criteria</imwe:naam>
+
+            <imwe:kleinBouwwerk>true</imwe:kleinBouwwerk>
+
+            <!--1 or more repetitions:-->
+            <imwe:verwijzingNaarTekstInfo>
+                <!-- Zie 4.4 - W3 - 'pt_' + planID en voorbeeld in <imwe:Welstandsnota>-->
+                <imwe:TekstReferentieO_WN>
+                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.Welstandsobject.1134.1</imwe:verwijzingNaarTekst>
+                    <imwe:typeTekst>beschrijving</imwe:typeTekst>
+                </imwe:TekstReferentieO_WN>
+            </imwe:verwijzingNaarTekstInfo>
+
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarIllustratieInfo>
+                <imwe:Illustratiereferentie>
+                    <!-- illustraties/1377178466770Landgraaf_Page_15_Image_0003.jpg -->
+                    <imwe:verwijzingNaarIllustratie>illustraties/1377178466770Landgraaf_Page_15_Image_0003.jpg</imwe:verwijzingNaarIllustratie>
+                    <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+                </imwe:Illustratiereferentie>
+            </imwe:verwijzingNaarIllustratieInfo>
+
+            <!--Zero or more repetitions:-->
+            <imwe:cartografieInfo>
+                <imwe:CartografieInfo>
+                    <imwe:kaartnummer>string</imwe:kaartnummer>
+                    <imwe:kaartnaam>string</imwe:kaartnaam>
+                    <!--Optional:-->
+                    <imwe:symboolcode>string</imwe:symboolcode>
+                </imwe:CartografieInfo>
+            </imwe:cartografieInfo>
+
+            <imwe:beginTijd>2004-02-14</imwe:beginTijd>
+
+            <!--Optional:-->
+            <imwe:eindTijd>2018-11-01+01:00</imwe:eindTijd>
+
+            <!--1 or more repetitions:-->
+            <imwe:begrenzing>
+                <imwe:GeometrieWNobject gml:id="NL.IMWE.PT.0882.Welstandsobject.1134.G1">
+                    <imwe:geometrie>
+                        <gml:Surface gml:id="NL.IMWE.PT.0882.Welstandsobject.1134.G1.1" srsName='EPSG:28992'>
+                            <gml:patches>
+                                <gml:PolygonPatch>
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList srsDimension='2' count='22'>200887.6287254664 326518.0468196204
+                                                200707.93537956345 326315.5621498281 200859.05323543336
+                                                326172.00786626677 200951.0189778392 326106.09577899246
+                                                200931.5938194578 326085.2169224274 200912.16866107643 326064.3380658624
+                                                200639.00387800875 326311.35353336704 200479.22395483172
+                                                326153.77341496706 200354.25370876648 326022.0349142522
+                                                200282.2796010375 325954.554192884 200191.24010289187 326053.21363671956
+                                                200320.9422497541 326165.8822503664 200495.77268839348 326329.7360912524
+                                                200515.65076191336 326309.8621638937 200614.09447997375
+                                                326398.82167133887 200508.07817033085 326494.4058142133
+                                                200418.15361092886 326572.0087977595 200350.83783747038
+                                                326610.54316458735 200413.3833647645 326675.59946170973
+                                                200642.6010308087 326472.951577575 200791.3243215651 326615.55002687173
+                                                200887.6287254664 326518.0468196204
+                                            </gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </gml:Surface>
+
+                    </imwe:geometrie>
+                    <imwe:idealisatie>exact</imwe:idealisatie>
+                </imwe:GeometrieWNobject>
+            </imwe:begrenzing>
+
+            <!-- Interne verwijzing naar WelstandsNota element (ipv inlininng) -->
+            <imwe:welstandsNota xlink:href="#NL.IMWE.0882.WelstandLandgraaf.v1"/>
+
+        </imwe:Welstandsobject>
+    </imwe:featureMember>
+
+    <imwe:featureMember>
+        <!-- data uit samples/imwe2008/imwe.nl-wg-landgraaf.xml (WelstandsniveauGebied gml:id="nl.imwe2008.Gebied.2618") -->
+        <imwe:Welstandsgebied gml:id="NL.IMWE.0882.Welstandsgebied.2618">
+            <imwe:identificatie>
+                <imwe:NEN3610ID>
+                    <imwe:namespace>NL.IMWE</imwe:namespace>
+                    <imwe:lokaalID>0882.Welstandsgebied.2618</imwe:lokaalID>
+                    <!-- versie NIET in PlanObjecten! -->
+                    <!--<imwe:versie>string</imwe:versie>-->
+                </imwe:NEN3610ID>
+            </imwe:identificatie>
+
+            <imwe:typePlanobject>welstandsgebied</imwe:typePlanobject>
+
+            <imwe:naam>Beschermd gezicht Leenhof</imwe:naam>
+
+            <!--1 or more repetitions:-->
+            <imwe:verwijzingNaarTekstInfo>
+                <imwe:TekstReferentieG_WN>
+                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.Welstandsgebied.2618.1</imwe:verwijzingNaarTekst>
+                    <imwe:typeTekst>gebiedscriteria</imwe:typeTekst>
+                </imwe:TekstReferentieG_WN>
+            </imwe:verwijzingNaarTekstInfo>
+
+            <!--Zero or more repetitions:-->
+            <imwe:verwijzingNaarIllustratieInfo>
+                <imwe:Illustratiereferentie>
+                    <!-- illustraties/1377509364370Landgraaf_Page_38_Image_0001.jpg -->
+                    <imwe:verwijzingNaarIllustratie>illustraties/1377509364370Landgraaf_Page_38_Image_0001.jpg</imwe:verwijzingNaarIllustratie>
+                    <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
+                </imwe:Illustratiereferentie>
+            </imwe:verwijzingNaarIllustratieInfo>
+
+            <!--Zero or more repetitions:-->
+            <imwe:cartografieInfo>
+                <imwe:CartografieInfo>
+                    <imwe:kaartnummer>string</imwe:kaartnummer>
+                    <imwe:kaartnaam>string</imwe:kaartnaam>
+                    <!--Optional:-->
+                    <imwe:symboolcode>string</imwe:symboolcode>
+                </imwe:CartografieInfo>
+            </imwe:cartografieInfo>
+
+            <imwe:beginTijd>2014-09-19</imwe:beginTijd>
+            <!--Optional:-->
+
+            <imwe:eindTijd>2006-08-19+02:00</imwe:eindTijd>
+
+            <!--1 or more repetitions:-->
+            <imwe:begrenzing>
+                <imwe:GeometrieWNobject gml:id="NL.IMWE.0882.Welstandsgebied.2618.G1">
+                    <imwe:geometrie>
+                        <gml:Surface gml:id="NL.IMWE.0882.Welstandsgebied.2618.G1.1" srsName='EPSG:28992'>
+                            <gml:patches>
+                                <gml:PolygonPatch>
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList srsDimension='2' count='143'>198648.53648977107
+                                                322746.4785419104
+                                                198642.56453217336 322757.72815324133 198637.0257565595 322767.997458281
+                                                198636.55715552802 322768.76084024855 198636.12473346412
+                                                322769.1314877319
+                                                198632.8506806946 322774.97948135796 198617.03638807195 322804.981335982
+                                                198613.79770901485 322810.2443691943 198593.17483472635
+                                                322849.6765679343
+                                                198569.58574524295 322837.1525482224 198546.78195217325
+                                                322825.29182875546
+                                                198530.21566619293 322817.0706329005 198500.21185594916 322800.878100388
+                                                198483.86242654803 322793.0184688074 198470.28195663283
+                                                322785.8388084157
+                                                198466.7949138523 322783.4155653255 198441.74727705625
+                                                322770.68712581915
+                                                198440.10179549144 322769.71012114006 198438.4391734937
+                                                322768.44172910054
+                                                198437.08507928936 322767.79039264785 198436.5537258674
+                                                322767.2590392259
+                                                198435.7812560193 322765.7847319178 198394.79751116165 322743.4460044062
+                                                198346.60953686837 322718.0641250797 198317.44504842412
+                                                322702.9909434823
+                                                198303.42425250565 322695.70422326773 198294.3772571831
+                                                322692.3474195734
+                                                198290.71342876062 322690.8327642479 198282.32612643726
+                                                322686.9720710159
+                                                198248.6345213021 322669.739722213 198207.6769390646 322649.26093109424
+                                                198190.2454288106 322640.81613939203 198181.90861955867
+                                                322636.5746048604
+                                                198146.24056570834 322617.66961766296 198130.60365931148
+                                                322609.9702272036
+                                                198117.4273828552 322604.1758405692 198104.25110639897 322629.5758915692
+                                                198081.9466866146 322676.08973496297 198068.57696499463
+                                                322715.1971062637
+                                                198047.2597419677 322766.9742924474 197994.87213678018
+                                                322925.64523603796
+                                                198077.97357711426 322954.07165637595 198136.55949962145
+                                                322974.4052814056
+                                                198120.91988986768 323005.4966463692 198106.63236118018
+                                                323035.3417062942
+                                                198094.64613693225 323061.6544565906 198094.46944092528
+                                                323062.18454461143
+                                                198273.55140852835 323144.93904905 198344.08038770483 323181.7585665068
+                                                198430.85779835563 323153.6533180461 198435.94217994125 323152.086291349
+                                                198437.4190180515 323151.3196883605 198439.17182863608 323149.9291275974
+                                                198449.33184903607 323138.10222885053 198487.6700510142
+                                                323105.2409128693
+                                                198557.20269062667 323045.78891849745 198582.76149194542
+                                                323026.73888024746
+                                                198585.61899768293 323026.8976305662 198590.6990078829
+                                                323020.70636813494
+                                                198602.59607887216 323008.9427394427 198603.860329599 323010.26335803635
+                                                198607.00082503512 323008.9830022047 198615.14655697043
+                                                323005.0694617381
+                                                198641.73723536107 322993.1631878319 198674.59855134232
+                                                322977.8437820725
+                                                198684.12357046732 322973.08127251 198687.45439095507 322971.55794031324
+                                                198694.3629660267 322970.2237667725 198699.99860234233 322969.6681406569
+                                                198705.07428274455 322970.0126798069 198711.34925013295
+                                                322971.0175183662
+                                                198718.25488899858 322973.4781483069 198735.1617979455 322982.2094158382
+                                                198735.1617979455 322983.7175438663 198744.84556738925
+                                                322978.95503430377
+                                                198744.28994127363 322971.176268685 198744.60744191112 322968.7156387444
+                                                198747.62369796738 322961.65124956 198753.97371071737 322964.74688077567
+                                                198755.95808970174 322965.7787578475 198764.3718565955
+                                                322965.62000752875
+                                                198766.51498589863 322967.8425119913 198767.38811265177
+                                                322971.8906451194
+                                                198775.88125470487 322975.85940308816 198783.58064516427
+                                                322978.7169088257
+                                                198794.77254263614 322983.3206680694 198805.17068851428
+                                                322988.7975540663
+                                                198811.91757706113 322994.036314585 198818.4263401299 322995.62381777255
+                                                198825.88760511114 322999.5925757413 198843.1913898549 323007.2919662007
+                                                198852.24015802366 323011.8163502851 198859.54267268616
+                                                323014.6738560226
+                                                198866.13081091427 323017.6901120788 198872.87769946115
+                                                323021.10324393195
+                                                198890.1814842049 323028.2470082757 198904.7865135299 323033.3270184757
+                                                198970.03289453615 323060.1558223445 198986.46355252675
+                                                323067.2202115288
+                                                199000.75108121426 323073.17334848194 199012.89548059864
+                                                323078.1739835226
+                                                199025.59550609865 323083.1746185632 199035.2792755424 323086.5877504163
+                                                199042.66116536426 323088.88963003823 199049.92160291402
+                                                323090.8377899679
+                                                199062.73708102756 323045.0865202865 199079.44277568028
+                                                322986.99206194014
+                                                199068.04875914316 322984.17815502203 199039.54065298956
+                                                322977.9045264834
+                                                199058.77670519997 322888.73596791556 198918.12265738638
+                                                322827.41635656904
+                                                198933.1065017836 322789.5945532727 198910.89756226345
+                                                322780.73363964783
+                                                198919.73581370513 322763.3290829627 198945.43472943557
+                                                322751.3634502416
+                                                198947.72360993712 322748.7799613587 198928.00217836443 322741.17627674
+                                                198906.64398760026 322732.73454614426 198842.65942796753
+                                                322707.49268461857
+                                                198824.39209781087 322700.20420440455 198816.13489554307
+                                                322697.80546408094
+                                                198759.2335623849 322676.25199549407 198757.68866496603
+                                                322675.7093753308
+                                                198755.52057275048 322675.06356062833 198753.26022129168
+                                                322674.64839403384
+                                                198750.16953664398 322674.37161630427 198727.85590327252
+                                                322674.28310091444
+                                                198727.32855478665 322674.3528970375 198726.28161293975
+                                                322674.6243264053
+                                                198725.11834422094 322675.12840951676 198724.3369485436
+                                                322675.6171160877
+                                                198713.03519124968 322684.4740034364 198693.72075790746
+                                                322699.75135782757
+                                                198687.80228823025 322704.8171665654 198682.72802985337
+                                                322708.9227028885
+                                                198677.88441958456 322713.4434058061 198675.0243830449 322716.4879608322
+                                                198672.8562908293 322719.30186775024 198670.78045785698
+                                                322724.6990334784
+                                                198665.5227738401 322750.84417564835 198651.25019989276
+                                                322747.9229397104
+                                                198649.81569520087 322747.2106339324 198648.53648977107
+                                                322746.4785419104
+                                            </gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </gml:Surface>
+                    </imwe:geometrie>
+                    <imwe:idealisatie>exact</imwe:idealisatie>
+                </imwe:GeometrieWNobject>
+            </imwe:begrenzing>
+
+            <!-- Interne verwijzing naar WelstandsNota element (ipv inlininng) -->
+            <imwe:welstandsNota xlink:href="#NL.IMWE.0882.WelstandLandgraaf.v1"/>
+
+        </imwe:Welstandsgebied>
+    </imwe:featureMember>
+
+    <imwe:featureMember>
+
+        <!-- data uit samples/imwe2008/imwe.nl-wng-landgraaf.xml (WelstandsniveauGebied gml:id="nl.imwe2008.WelstandsniveauGebied.141") -->
+        <imwe:Welstandsniveau gml:id="NL.IMWE.0882.Welstandsniveau.141">
+            <imwe:identificatie>
+                <imwe:NEN3610ID>
+                    <imwe:namespace>NL.IMWE</imwe:namespace>
+                    <imwe:lokaalID>0882.Welstandsniveau.141</imwe:lokaalID>
 
                     <!-- versie NIET in PlanObjecten! -->
                     <!--<imwe:versie>string</imwe:versie>-->
@@ -68,7 +359,7 @@
             <imwe:verwijzingNaarTekstInfo>
                 <!-- Zie 4.4 - W3 - 'pt_' + planID en voorbeeld in <imwe:Welstandsnota>-->
                 <imwe:TekstReferentieNG_WN>
-                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.WelstandsNiveau.141</imwe:verwijzingNaarTekst>
+                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.Welstandsniveau.141</imwe:verwijzingNaarTekst>
                     <imwe:typeTekst>beschrijving</imwe:typeTekst>
                 </imwe:TekstReferentieNG_WN>
             </imwe:verwijzingNaarTekstInfo>
@@ -95,9 +386,9 @@
             <imwe:eindTijd>2006-08-19+02:00</imwe:eindTijd>
             <!--1 or more repetitions:-->
             <imwe:begrenzing>
-                <imwe:GeometrieWNobject gml:id="NL.IMWE.0882.WelstandsNiveau.141.GeometrieWNobject">
+                <imwe:GeometrieWNobject gml:id="NL.IMWE.0882.Welstandsniveau.141.GeometrieWNobject">
                     <imwe:geometrie>
-                        <gml:Surface gml:id="NL.IMWE.0882.WelstandsNiveau.141.geometrie" srsName='EPSG:28992'>
+                        <gml:Surface gml:id="NL.IMWE.0882.Welstandsniveau.141.geometrie" srsName='EPSG:28992'>
                             <gml:patches>
                                 <gml:PolygonPatch>
                                     <gml:exterior>
@@ -129,6 +420,8 @@
                     <imwe:idealisatie>exact</imwe:idealisatie>
                 </imwe:GeometrieWNobject>
             </imwe:begrenzing>
+
+            <!-- Interne verwijzing naar WelstandsNota element (ipv inlininng) -->
             <imwe:welstandsNota xlink:href="#NL.IMWE.0882.WelstandLandgraaf.v1"/>
         </imwe:Welstandsniveau>
     </imwe:featureMember>
@@ -154,8 +447,7 @@
             <!-- overheden GType enum, twee mogelijke waarden: gemeentelijke overheid of deelgemeente/stadsdeel -->
             <!-- TODO: bug zie, https://github.com/Geonovum/imwe2014/issues/4 (moet zijn: gemeentelijke overheid) -->
             <!--<imwe:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid</imwe:beleidsmatigVerantwoordelijkeOverheid>-->
-            <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel
-            </imwe:beleidsmatigVerantwoordelijkeOverheid>
+            <imwe:beleidsmatigVerantwoordelijkeOverheid>deelgemeente/stadsdeel</imwe:beleidsmatigVerantwoordelijkeOverheid>
 
             <imwe:naamOverheid>Landgraaf</imwe:naamOverheid>
 
@@ -179,8 +471,7 @@
             <imwe:besluitnummer>gmb-2014-3133</imwe:besluitnummer>
 
             <!--Optioneel: -->
-            <imwe:verwijzingNaarVaststellingsbesluit>https://zoek.officielebekendmakingen.nl/gmb-2014-3133.html
-            </imwe:verwijzingNaarVaststellingsbesluit>
+            <imwe:verwijzingNaarVaststellingsbesluit>https://zoek.officielebekendmakingen.nl/gmb-2014-3133.html</imwe:verwijzingNaarVaststellingsbesluit>
 
             <!-- Verplicht: 1 verwijzing naar volledige beleidsdocument -->
             <imwe:verwijzingNaarTekstInfo>
@@ -216,8 +507,7 @@
             <imwe:verwijzingNaarIllustratieInfo>
                 <imwe:Illustratiereferentie>
                     <!-- hyperlink: vgl IMRO : http://ruimtelijkeplannen.nl/documents/NL.IMRO.1709.SVMoerdijk2030-0401/i_NL.IMRO.1709.SVMoerdijk2030-0401.pdf -->
-                    <imwe:verwijzingNaarIllustratie>illustraties/1378378189602Stroomschema-p4.jpg
-                    </imwe:verwijzingNaarIllustratie>
+                    <imwe:verwijzingNaarIllustratie>illustraties/1378378189602Stroomschema-p4.jpg</imwe:verwijzingNaarIllustratie>
                     <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
                 </imwe:Illustratiereferentie>
             </imwe:verwijzingNaarIllustratieInfo>
@@ -225,8 +515,7 @@
             <imwe:verwijzingNaarIllustratieInfo>
                 <imwe:Illustratiereferentie>
                     <!-- hyperlink: vgl IMRO : http://ruimtelijkeplannen.nl/documents/NL.IMRO.1709.SVMoerdijk2030-0401/i_NL.IMRO.1709.SVMoerdijk2030-0401.pdf -->
-                    <imwe:verwijzingNaarIllustratie>illustraties/1378379003656schema-voor-achter.jpg
-                    </imwe:verwijzingNaarIllustratie>
+                    <imwe:verwijzingNaarIllustratie>illustraties/1378379003656schema-voor-achter.jpg</imwe:verwijzingNaarIllustratie>
                     <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
                 </imwe:Illustratiereferentie>
             </imwe:verwijzingNaarIllustratieInfo>
