@@ -68,7 +68,7 @@
             <imwe:verwijzingNaarTekstInfo>
                 <!-- Zie 4.4 - W3 - 'pt_' + planID en voorbeeld in <imwe:Welstandsnota>-->
                 <imwe:TekstReferentieO_WN>
-                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.Welstandsobject.1134.1</imwe:verwijzingNaarTekst>
+                    <imwe:verwijzingNaarTekst>FC-IMWEPT2014-1.xml#NL.IMWE.PT.0882.Welstandsobject.1134.1</imwe:verwijzingNaarTekst>
                     <imwe:typeTekst>beschrijving</imwe:typeTekst>
                 </imwe:TekstReferentieO_WN>
             </imwe:verwijzingNaarTekstInfo>
@@ -157,7 +157,7 @@
             <!--1 or more repetitions:-->
             <imwe:verwijzingNaarTekstInfo>
                 <imwe:TekstReferentieG_WN>
-                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.Welstandsgebied.2618.1</imwe:verwijzingNaarTekst>
+                    <imwe:verwijzingNaarTekst>FC-IMWEPT2014-1.xml#NL.IMWE.PT.0882.welstandsgebied.2618.1</imwe:verwijzingNaarTekst>
                     <imwe:typeTekst>gebiedscriteria</imwe:typeTekst>
                 </imwe:TekstReferentieG_WN>
             </imwe:verwijzingNaarTekstInfo>
@@ -359,18 +359,18 @@
             <imwe:verwijzingNaarTekstInfo>
                 <!-- Zie 4.4 - W3 - 'pt_' + planID en voorbeeld in <imwe:Welstandsnota>-->
                 <imwe:TekstReferentieNG_WN>
-                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.Welstandsniveau.141</imwe:verwijzingNaarTekst>
+                    <imwe:verwijzingNaarTekst>FC-IMWEPT2014-1.xml#NL.IMWE.PT.0882.welstandsniveau.141</imwe:verwijzingNaarTekst>
                     <imwe:typeTekst>beschrijving</imwe:typeTekst>
                 </imwe:TekstReferentieNG_WN>
             </imwe:verwijzingNaarTekstInfo>
 
             <!--Zero or more repetitions: zie voorbeeld in <imwe:Welstandsnota>-->
-            <imwe:verwijzingNaarIllustratieInfo>
-                <imwe:Illustratiereferentie>
-                    <imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>
-                    <imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>
-                </imwe:Illustratiereferentie>
-            </imwe:verwijzingNaarIllustratieInfo>
+            <!--<imwe:verwijzingNaarIllustratieInfo>-->
+                <!--<imwe:Illustratiereferentie>-->
+                    <!--<imwe:verwijzingNaarIllustratie>string</imwe:verwijzingNaarIllustratie>-->
+                    <!--<imwe:typeIllustratie>afbeelding</imwe:typeIllustratie>-->
+                <!--</imwe:Illustratiereferentie>-->
+            <!--</imwe:verwijzingNaarIllustratieInfo>-->
 
             <!--Zero or more repetitions:-->
             <imwe:cartografieInfo>
@@ -478,18 +478,18 @@
                 <imwe:TekstReferentieWN_WN>
                     <!-- TODO zie issue https://github.com/Geonovum/imwe2014/issues/3 volgens constraint WN W3 zou verwijzing
                      pt_PlanID moeten zijn, lijkt inconsistent -->
-                    <imwe:verwijzingNaarTekst>NL.IMWE.PT.0882.HeleTekst</imwe:verwijzingNaarTekst>
+                    <imwe:verwijzingNaarTekst>FC-IMWEPT2014-1.xml#NL.IMWE.PT.0882.document</imwe:verwijzingNaarTekst>
                     <imwe:typeTekst>document</imwe:typeTekst>
                 </imwe:TekstReferentieWN_WN>
             </imwe:verwijzingNaarTekstInfo>
 
             <!-- Optioneel: Max 1 verwijzing naar bijlage(n) -->
-            <imwe:verwijzingNaarTekstInfo>
-                <imwe:TekstReferentieWN_WN>
-                    <imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>
-                    <imwe:typeTekst>bijlage(n)</imwe:typeTekst>
-                </imwe:TekstReferentieWN_WN>
-            </imwe:verwijzingNaarTekstInfo>
+            <!--<imwe:verwijzingNaarTekstInfo>-->
+                <!--<imwe:TekstReferentieWN_WN>-->
+                    <!--<imwe:verwijzingNaarTekst>string</imwe:verwijzingNaarTekst>-->
+                    <!--<imwe:typeTekst>bijlage(n)</imwe:typeTekst>-->
+                <!--</imwe:TekstReferentieWN_WN>-->
+            <!--</imwe:verwijzingNaarTekstInfo>-->
 
             <!--1 or more repetitions:-->
             <imwe:ondergrondInfo>
@@ -538,11 +538,11 @@
             <!--<imwe:eindTijd>2017-11-01+01:00</imwe:eindTijd>-->
             <!-- TODO fix typo "begenzing" in XSD: https://github.com/Geonovum/imwe2014/issues/1 -->
             <imwe:begenzing>
-                <imwe:GeometrieWNgebied gml:id="string5">
+                <imwe:GeometrieWNgebied gml:id="NL.IMWE.0882.WelstandLandgraaf.v1.G1">
                     <imwe:geometrie>
-                        <gml:MultiSurface gml:id="string5.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
+                        <gml:MultiSurface gml:id="NL.IMWE.0882.WelstandLandgraaf.v1.G1.1" srsName="urn:x-ogc:def:crs:EPSG:28992">
                             <gml:surfaceMember>
-                                <gml:Surface gml:id="string5.1.1" srsName='urn:x-ogc:def:crs:EPSG:28992'>
+                                <gml:Surface gml:id="NL.IMWE.0882.WelstandLandgraaf.v1.G1.1.1" srsName='urn:x-ogc:def:crs:EPSG:28992'>
                                     <gml:patches>
                                         <gml:PolygonPatch>
                                             <gml:exterior>

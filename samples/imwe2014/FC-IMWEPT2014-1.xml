@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- =================================================================== -->
 <!-- Proefbestand voor IMWEPT2014, Documentatie-elementen behorende by FC-IMWE2014-1.xml.
-Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
+Waarden uit IMWE2008 met Welstandsnota objecten voor gemeente Landgraaf. -->
 
 <!-- Just van den Broecke okt-nov 2014 -->
 <!-- =================================================================== -->
@@ -29,7 +29,7 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
     <!--</sequence>-->
     <!--</complexType>-->
     <imwept:TekstMetadata>
-        <imwept:identificatie>NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD</imwept:identificatie>
+        <imwept:identificatie>NL.IMWE.PT.0882.metadata</imwept:identificatie>
 
         <!-- 6.2 identificatie (idn) van het IMWE Welstandsnota-object waar het plantekstenbestand bij hoort. -->
         <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
@@ -41,8 +41,7 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <imwept:naam>Gemeente Landgraaf – Nieuwe Welstandsnota</imwept:naam>
 
         <!-- 6.2 de waarde van het attribuut beleidsmatigVerantwoordelijkeOverheid van het object Welstandsnota waar het plantekstenbestand bij hoort. -->
-        <imwept:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid
-        </imwept:beleidsmatigVerantwoordelijkeOverheid>
+        <imwept:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid</imwept:beleidsmatigVerantwoordelijkeOverheid>
 
         <!-- 6.2 naam van de overheid -->
         <imwept:naamOverheid>Landgraaf</imwept:naamOverheid>
@@ -56,6 +55,8 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <!-- 6.2 de vaste waarde PRWE2014 -->
         <imwept:naamPraktijkrichtlijn>PRWE2014</imwept:naamPraktijkrichtlijn>
     </imwept:TekstMetadata>
+
+    <!-- BEGIN - TekstObject-en WelstandsNota -->
 
     <!--<element name="TekstObject" type="imwept:TekstObjectType"/>-->
     <!--<complexType name="TekstObjectType">-->
@@ -73,10 +74,12 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
     <!--<element name="interneVerwijzing" type="imwept:TekstObjectPropertyType" minOccurs="0"/>-->
     <!--</sequence>-->
     <!--</complexType>-->
+
+    <!-- 1,0 - Hele Document. -->
     <imwept:TekstObject>
         <!-- eigen identificatie (idn) van het TekstObject. De code moet uniek zijn binnen de welstandsnota.
         De identificatie begint met "NL.IMWE.PT." en wordt gevolgd door max. 32 alfanumerieke tekens.  -->
-        <imwept:identificatie>NL.IMWE.PT.0882.HeleTekst</imwept:identificatie>
+        <imwept:identificatie>NL.IMWE.PT.0882.document</imwept:identificatie>
         <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
         <imwept:volgnummer>1</imwept:volgnummer>
         <imwept:niveau>0</imwept:niveau>
@@ -96,7 +99,7 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <!--<enumeration value="subsubsubparagraaf"/>-->
         <!--</restriction>-->
         <!--</simpleType>-->
-        <imwept:type>welstandstekst</imwept:type>
+        <imwept:type>document</imwept:type>
 
         <!--<element name="TitelInfo" type="imwept:TitelInfoType"/>-->
         <!--<complexType name="TitelInfoType">-->
@@ -113,10 +116,10 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <!--</complexType>-->
         <imwept:titel>
             <imwept:TitelInfo>
-                <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
-                <imwept:label>gebiedInleiding</imwept:label>
-                <imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>
-                <imwept:naam>welstandsbeleid</imwept:naam>
+                <!-- Titel van hele document. Geen titel info in IMWE2008: hier naam (Deel)Gemeentenaam genomen -->
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
+                <imwept:naam>Landgraaf</imwept:naam>
             </imwept:TitelInfo>
         </imwept:titel>
 
@@ -130,32 +133,57 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         opgenomen. Een verwijzing in de tekst werkt als een hyperlink, een verwijzing als attribuut
         kan door viewers worden geïnterpreteerd om categorieën als “zie ook” of “zie verder” te vullen.
         -->
-        <imwept:externeVerwijzing>????</imwept:externeVerwijzing>
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
 
-        <imwept:tekst>
-            <![CDATA[<p>Een belangrijke pijler van de welstandsnota is het gebiedsgerichte welstandsbeleid. De gebiedsgerichte welstandscriteria worden gebruikt voor de kleine en middelgrote bouwplannen, die de bestaande structuur van het gebied niet wezenlijk doorbreken.</p>
-            <p><strong>Gebieden</strong><br />De gebiedsgerichte criteria zijn gebaseerd op het architectonisch vakmanschap en de bestaande ruimtelijke kwaliteit. Deze criteria geven aan hoe een bouwwerk zich moet verhouden tot zijn omgeving om niet teveel uit de toon te vallen, en welke gewaardeerde karakteristieken uit de omgeving in het ontwerp moeten worden gebruikt. De gebiedsgerichte welstandscriteria zijn dus relatief en moeten worden gezien als gewenste eigenschappen van het bouwplan. Vanwege het diverse karakter van de gebieden kan het nodig zijn in bijzondere gevallen af te wijken van de gebiedsbeschrijving en terug te vallen op de algemene welstandscriteria.<br />Per gebied is een beoordelingskader opgesteld met daarin een korte beschrijving van het gebied, waarbij aandacht wordt besteed aan de stedenbouwkundige opzet, een typering van de bouwwerken, de materialen en de kleuren. Ook wordt er een waardering gegeven voor het gebied op grond van de belevingswaarde en eventuele bijzondere kenmerken. Dit is de grondslag voor het welstandsniveau, waarbij tevens de hoofdpunten voor de beoordeling worden genoemd. Daarna volgen de welstandscriteria, steeds onderverdeeld in criteria betreffende de relatie met de omgeving van het bouwwerk, de bouwmassa, de architectonische uitwerking, materiaal en kleur. Met de welstandscriteria kan de commissie binnen de grenzen van het bestemmingsplan of de beheersverordening een gewogen oordeel vormen. In aanvulling op de tekst zijn foto&rsquo;s opgenomen, die een impressie van het gebied geven.</p>
-            <p><strong>Niveaus</strong><br />Voor elk welstandsgebied is het gewenste welstandsniveau aangegeven. Het welstandsniveau sluit zoveel mogelijk aan bij het gehanteerde ruimtelijk kwaliteitsbeleid en de gewenste ontwikkelingen.<br />Allereerst heeft de gemeente enkele welstandsvrije gebieden aangewezen waar het initiatief volledig bij de burger wordt gelegd.<br />Een groot deel van de bebouwing staat in een soepel welstandsgebied. In deze gebieden wordt ruimte geboden voor vernieuwing. De lichte toetsing beperkt zich tot de hoofdlijnen, dus met name tot de voorkanten van gebouwen en bouwwerken.<br />In de gewone welstandsgebieden ligt de lat iets hoger. Van bouwplannen in deze gebieden wordt verwacht, dat ze geen afbreuk aan de basiskwaliteit van de openbare ruimte. Dit betekent dat ook hier bouwplannen aan achterkanten vanwege hun beperkte invloed op de openbare ruimte veelal soepeler beoordeeld kunnen worden.<br />In bijzondere gebieden is extra inspanning ten behoeve van het behoud en de eventuele versterking van de ruimtelijke kwaliteit gewenst. Dit geldt ook voor de beschermde gezichten.</p>]]>
-        </imwept:tekst>
+        <!-- GEEN tekst element! (hoofdocument) -->
 
         <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
         alleen een element (identificatie) is en geen
         Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
 
         <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
                 Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <!-- (hier toevallig: Hoofdtekst, dus heeft geen "parent") -->
-        <imwept:ouderID xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>
-        <imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>
+        <!-- (hier toevallig: document, dus heeft geen "parent", href="", dus leeg net als bij IMRO2012) -->
+        <imwept:ouderID xlink:href=""/>
+
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
 
     </imwept:TekstObject>
 
+    <!--<element name="TekstObject" type="imwept:TekstObjectType"/>-->
+    <!--<complexType name="TekstObjectType">-->
+    <!--<sequence>-->
+    <!--<element name="identificatie" type="string"/>-->
+    <!--<element name="verwijzingNaarPlangebied" type="string"/>-->
+    <!--<element name="volgnummer" type="integer"/>-->
+    <!--<element name="niveau" type="integer"/>-->
+    <!--<element name="type" type="imwept:Tekstobjecttype_WNType"/>-->
+    <!--<element name="titel" type="imwept:TitelInfoPropertyType"/>-->
+    <!--<element name="externeVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>-->
+    <!--<element name="tekst" type="string" minOccurs="0"/>-->
+    <!--<element name="tekstMetadata" type="imwept:TekstMetadataPropertyType" minOccurs="0"/>-->
+    <!--<element name="ouderID" type="imwept:TekstObjectPropertyType"/>-->
+    <!--<element name="interneVerwijzing" type="imwept:TekstObjectPropertyType" minOccurs="0"/>-->
+    <!--</sequence>-->
+    <!--</complexType>-->
+    <!-- 1,1 - gebiedInleiding. -->
     <imwept:TekstObject>
-        <!-- Hier tekst enkel Welstandsniveau (Welstandsvrij) -->
-        <imwept:identificatie>NL.IMWE.PT.0882.Welstandsniveau.141</imwept:identificatie>
+        <!-- eigen identificatie (idn) van het TekstObject. De code moet uniek zijn binnen de welstandsnota.
+        De identificatie begint met "NL.IMWE.PT." en wordt gevolgd door max. 32 alfanumerieke tekens.  -->
+        <imwept:identificatie>NL.IMWE.PT.0882.gebiedInleiding</imwept:identificatie>
         <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
         <imwept:volgnummer>1</imwept:volgnummer>
         <imwept:niveau>1</imwept:niveau>
@@ -177,40 +205,93 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <!--</simpleType>-->
         <imwept:type>overig</imwept:type>
 
+        <!--<element name="TitelInfo" type="imwept:TitelInfoType"/>-->
+        <!--<complexType name="TitelInfoType">-->
+        <!--<sequence>-->
+        <!--<element name="label" type="string" minOccurs="0"/>-->
+        <!--<element name="nummer" type="string" minOccurs="0"/>-->
+        <!--<element name="naam" type="string" minOccurs="0"/>-->
+        <!--</sequence>-->
+        <!--</complexType>-->
+        <!--<complexType name="TitelInfoPropertyType">-->
+        <!--<sequence>-->
+        <!--<element ref="imwept:TitelInfo"/>-->
+        <!--</sequence>-->
+        <!--</complexType>-->
         <imwept:titel>
             <imwept:TitelInfo>
                 <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
-                <imwept:label>Welstandsniveau</imwept:label>
-                <!--<imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>-->
-                <imwept:naam>Welstandsvrij</imwept:naam>
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
+                <imwept:naam>Gebied Inleiding</imwept:naam>
             </imwept:TitelInfo>
         </imwept:titel>
 
-        <imwept:externeVerwijzing>????</imwept:externeVerwijzing>
+        <!-- PRWE2014: Vanuit de planteksten kan worden verwezen naar andere bronbestanden waaruit het instrument is opgebouwd.
+        Dit wordt gedaan door de bestandsnaam van het gerefereerde bronbestand op te nemen.
+        Zo kan er vanuit de planteksten eenvoudig worden verwezen naar bijlagen en illustraties.
+        Er kan niet worden verwezen naar bronnen die geen onderdeel zijn van het instrument. De waarde van dit attribuut
+        moet voldoen aan de vereisten die in paragraaf 4.2 van de STRI20129 worden gesteld aan de bestandsnaam van een
+        bronbestand, eventueel gevolgd door een “fragment identifier” #. In paragraaf 2.3 van IMROPT wordt dit nader gespecificeerd.
+        Het attribuut externeVerwijzing kan bij een object worden opgenomen of in de tekst worden
+        opgenomen. Een verwijzing in de tekst werkt als een hyperlink, een verwijzing als attribuut
+        kan door viewers worden geïnterpreteerd om categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
 
         <imwept:tekst>
-            <![CDATA[<p>De gemeente heeft enkele welstandsvrije gebieden aangewezen waar het
-            initiatief volledig bij de burger wordt gelegd.</p>]]>
+            <![CDATA[<p>Een belangrijke pijler van de welstandsnota is het gebiedsgerichte welstandsbeleid. De gebiedsgerichte welstandscriteria worden gebruikt voor de kleine en middelgrote bouwplannen, die de bestaande structuur van het gebied niet wezenlijk doorbreken.</p>
+            <p><strong>Gebieden</strong><br />De gebiedsgerichte criteria zijn gebaseerd op het architectonisch vakmanschap en de bestaande ruimtelijke kwaliteit. Deze criteria geven aan hoe een bouwwerk zich moet verhouden tot zijn omgeving om niet teveel uit de toon te vallen, en welke gewaardeerde karakteristieken uit de omgeving in het ontwerp moeten worden gebruikt. De gebiedsgerichte welstandscriteria zijn dus relatief en moeten worden gezien als gewenste eigenschappen van het bouwplan. Vanwege het diverse karakter van de gebieden kan het nodig zijn in bijzondere gevallen af te wijken van de gebiedsbeschrijving en terug te vallen op de algemene welstandscriteria.<br />Per gebied is een beoordelingskader opgesteld met daarin een korte beschrijving van het gebied, waarbij aandacht wordt besteed aan de stedenbouwkundige opzet, een typering van de bouwwerken, de materialen en de kleuren. Ook wordt er een waardering gegeven voor het gebied op grond van de belevingswaarde en eventuele bijzondere kenmerken. Dit is de grondslag voor het welstandsniveau, waarbij tevens de hoofdpunten voor de beoordeling worden genoemd. Daarna volgen de welstandscriteria, steeds onderverdeeld in criteria betreffende de relatie met de omgeving van het bouwwerk, de bouwmassa, de architectonische uitwerking, materiaal en kleur. Met de welstandscriteria kan de commissie binnen de grenzen van het bestemmingsplan of de beheersverordening een gewogen oordeel vormen. In aanvulling op de tekst zijn foto&rsquo;s opgenomen, die een impressie van het gebied geven.</p>
+            <p><strong>Niveaus</strong><br />Voor elk welstandsgebied is het gewenste welstandsniveau aangegeven. Het welstandsniveau sluit zoveel mogelijk aan bij het gehanteerde ruimtelijk kwaliteitsbeleid en de gewenste ontwikkelingen.<br />Allereerst heeft de gemeente enkele welstandsvrije gebieden aangewezen waar het initiatief volledig bij de burger wordt gelegd.<br />Een groot deel van de bebouwing staat in een soepel welstandsgebied. In deze gebieden wordt ruimte geboden voor vernieuwing. De lichte toetsing beperkt zich tot de hoofdlijnen, dus met name tot de voorkanten van gebouwen en bouwwerken.<br />In de gewone welstandsgebieden ligt de lat iets hoger. Van bouwplannen in deze gebieden wordt verwacht, dat ze geen afbreuk aan de basiskwaliteit van de openbare ruimte. Dit betekent dat ook hier bouwplannen aan achterkanten vanwege hun beperkte invloed op de openbare ruimte veelal soepeler beoordeeld kunnen worden.<br />In bijzondere gebieden is extra inspanning ten behoeve van het behoud en de eventuele versterking van de ruimtelijke kwaliteit gewenst. Dit geldt ook voor de beschermde gezichten.</p>]]>
         </imwept:tekst>
 
         <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
         alleen een element (identificatie) is en geen
         Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
 
         <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
                 Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <!-- (naar Hoofdtekst?, dus heeft geen "parent") -->
-        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.HeleTekst"/>
-        <!--<imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>-->
+        <!-- Ouder is hele document. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.document"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
 
     </imwept:TekstObject>
 
+    <!--<element name="TekstObject" type="imwept:TekstObjectType"/>-->
+    <!--<complexType name="TekstObjectType">-->
+    <!--<sequence>-->
+    <!--<element name="identificatie" type="string"/>-->
+    <!--<element name="verwijzingNaarPlangebied" type="string"/>-->
+    <!--<element name="volgnummer" type="integer"/>-->
+    <!--<element name="niveau" type="integer"/>-->
+    <!--<element name="type" type="imwept:Tekstobjecttype_WNType"/>-->
+    <!--<element name="titel" type="imwept:TitelInfoPropertyType"/>-->
+    <!--<element name="externeVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>-->
+    <!--<element name="tekst" type="string" minOccurs="0"/>-->
+    <!--<element name="tekstMetadata" type="imwept:TekstMetadataPropertyType" minOccurs="0"/>-->
+    <!--<element name="ouderID" type="imwept:TekstObjectPropertyType"/>-->
+    <!--<element name="interneVerwijzing" type="imwept:TekstObjectPropertyType" minOccurs="0"/>-->
+    <!--</sequence>-->
+    <!--</complexType>-->
+    <!-- 2,1 - objectInleiding. -->
+    <!-- Bron is objectInleiding element uit IMWE2008 WFS object. -->
     <imwept:TekstObject>
-        <!-- Hier tekst enkel Welstandsobject (Welstandsvrij) -->
-        <imwept:identificatie>NL.IMWE.PT.0882.Welstandsobject.1134.1</imwept:identificatie>
+        <!-- eigen identificatie (idn) van het TekstObject. De code moet uniek zijn binnen de welstandsnota.
+        De identificatie begint met "NL.IMWE.PT." en wordt gevolgd door max. 32 alfanumerieke tekens.  -->
+        <imwept:identificatie>NL.IMWE.PT.0882.objectInleiding</imwept:identificatie>
         <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
         <imwept:volgnummer>2</imwept:volgnummer>
         <imwept:niveau>1</imwept:niveau>
@@ -232,16 +313,430 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         <!--</simpleType>-->
         <imwept:type>overig</imwept:type>
 
+        <!--<element name="TitelInfo" type="imwept:TitelInfoType"/>-->
+        <!--<complexType name="TitelInfoType">-->
+        <!--<sequence>-->
+        <!--<element name="label" type="string" minOccurs="0"/>-->
+        <!--<element name="nummer" type="string" minOccurs="0"/>-->
+        <!--<element name="naam" type="string" minOccurs="0"/>-->
+        <!--</sequence>-->
+        <!--</complexType>-->
+        <!--<complexType name="TitelInfoPropertyType">-->
+        <!--<sequence>-->
+        <!--<element ref="imwept:TitelInfo"/>-->
+        <!--</sequence>-->
+        <!--</complexType>-->
         <imwept:titel>
             <imwept:TitelInfo>
-                <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
-                <imwept:label>Welstandsobject</imwept:label>
-                <!--<imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>-->
-                <imwept:naam>Dakkapellen aanvullende criteria</imwept:naam>
+                <!-- Bron is objectInleiding element uit IMWE2008 WFS object. -->
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
+                <imwept:naam>Object Inleiding</imwept:naam>
             </imwept:TitelInfo>
         </imwept:titel>
 
-        <imwept:externeVerwijzing>????</imwept:externeVerwijzing>
+        <!-- PRWE2014: Vanuit de planteksten kan worden verwezen naar andere bronbestanden waaruit het instrument is opgebouwd.
+        Dit wordt gedaan door de bestandsnaam van het gerefereerde bronbestand op te nemen.
+        Zo kan er vanuit de planteksten eenvoudig worden verwezen naar bijlagen en illustraties.
+        Er kan niet worden verwezen naar bronnen die geen onderdeel zijn van het instrument. De waarde van dit attribuut
+        moet voldoen aan de vereisten die in paragraaf 4.2 van de STRI20129 worden gesteld aan de bestandsnaam van een
+        bronbestand, eventueel gevolgd door een “fragment identifier” #. In paragraaf 2.3 van IMROPT wordt dit nader gespecificeerd.
+        Het attribuut externeVerwijzing kan bij een object worden opgenomen of in de tekst worden
+        opgenomen. Een verwijzing in de tekst werkt als een hyperlink, een verwijzing als attribuut
+        kan door viewers worden geïnterpreteerd om categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
+        <imwept:tekst>
+            <![CDATA[<p>De gemeente streeft ernaar veel voorkomende kleine objecten snel te beoordelen om zo de burger
+            tegemoet te komen. Het gaat daarbij om relatief eenvoudige en meetbare criteria, die de planindiener vooraf
+            zo veel mogelijk duidelijkheid geven.
+            Objectcriteria zijn opgesteld voor aanbouwen, bijgebouwen, gevelwijzigingen, dakkapellen, erfafscheidingen,
+            dakramen panelen en collectoren, installaties en reclame.</p>
+            <p><strong>Vergunning</strong><br />De bovengenoemde bouwwerken zijn deels vergunningvrij binnen bepaalde randvoorwaarden.
+            Dat betekent dat een deel van deze plannen (met name aan achterkanten) niet vooraf wordt getoetst aan redelijke eisen van
+            welstand. De objectcriteria zijn in dit geval te lezen als richtlijn: plannen die aan deze criteria voldoen, worden in
+            principe ook achteraf niet als exces aangemerkt. Informatie over vergunningvrij bouwen is verkrijgbaar bij de gemeente of op de website van de rijksoverheid (www.rijksoverheid.nl).<br />Indien een bouwwerk niet vergunningvrij is, moet een vergunning worden aangevraagd en is een welstandstoets nodig. In dit geval treedt het bestemmingsplan of de beheersverordening in eerste instantie regelend op voor wat betreft rooilijnen en maximale afmetingen. Als het bestemmingsplan of de beheersverordening geen bezwaar oplevert, wordt het bouwplan getoetst aan de criteria voor objecten. Voldoet het bouwplan niet aan deze criteria of is er sprake van een bijzondere situatie waarbij twijfel bestaat aan de toepasbaarheid van de criteria, zoals bij bouwplannen aan een monument of in een beschermde gezicht, dan wordt bij de beoordeling van het bouwplan tevens gebruik maakt van de gebiedsgerichte en algemene welstandscriteria.</p>
+            <p><strong>Herhalingsplan</strong><br />Een herhalingsplan is een plan, dat in vergelijkbare situaties als uitgangspunt
+            gehanteerd kan worden. Ook als deze enigszins afwijkt van de criteria op de volgende bladzijden. Niet ieder bouwwerk is
+            automatisch een herhalingsplan. Een eerder op dezelfde woning of hetzelfde bouwblok goedgekeurd plan is dit in de regel wel.
+            Ook een oorspronkelijke bouwoptie die is meeontworpen tijdens de bouw, voldoet aan redelijke eisen van welstand.
+            Een herhalingsplan is van toepassing op een bouwblok, cluster of een groter gebied.</p>
+            <p><strong>Voor- en achterkant</strong><br />Bij de criteria is er onderscheid in de voor- en de achterkant van bouwwerken.</p>
+            <p>Onder <em>voorkant</em> wordt ten eerste verstaan het voorerf, de voorgevel en het dakvlak aan de voorzijde van een
+            gebouw en ten tweede het zijerf, de zijgevel en het dakvlak aan de zijkant van een gebouw voor zover die zijde (zijdelings)
+            gekeerd is naar openbaar toegankelijk gebied.</p>
+            <p>Onder <em>achterkant</em> wordt ten eerste verstaan het achtererf, de achtergevel en het dakvlak aan de achterzijde
+            van een gebouw en ten tweede het zijerf, de zijgevel en het dakvlak aan de zijkant van een gebouw voor zover die zijde
+            (zijdelings) niet gekeerd is naar openbaar toegankelijk gebied.</p>
+            <p><strong>Basis- en aanvullende criteria</strong><br />Daarnaast is er in de criteria onderscheid gemaakt tussen
+            basis- en aanvullende criteria. De basiscriteria gelden overal, met uitzondering van welstandsvrije gebieden.
+            Voor centrumgebieden (gebied 1), linten (gebied 2) en beschermde gezichten (gebied 3) gelden daarnaast enkele
+            aanvullende criteria.</p>]]>
+        </imwept:tekst>
+
+        <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
+        alleen een element (identificatie) is en geen
+        Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
+                Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <!-- Ouder is hele document. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.document"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
+    </imwept:TekstObject>
+
+    <!--<element name="TekstObject" type="imwept:TekstObjectType"/>-->
+    <!--<complexType name="TekstObjectType">-->
+    <!--<sequence>-->
+    <!--<element name="identificatie" type="string"/>-->
+    <!--<element name="verwijzingNaarPlangebied" type="string"/>-->
+    <!--<element name="volgnummer" type="integer"/>-->
+    <!--<element name="niveau" type="integer"/>-->
+    <!--<element name="type" type="imwept:Tekstobjecttype_WNType"/>-->
+    <!--<element name="titel" type="imwept:TitelInfoPropertyType"/>-->
+    <!--<element name="externeVerwijzing" type="string" minOccurs="0" maxOccurs="unbounded"/>-->
+    <!--<element name="tekst" type="string" minOccurs="0"/>-->
+    <!--<element name="tekstMetadata" type="imwept:TekstMetadataPropertyType" minOccurs="0"/>-->
+    <!--<element name="ouderID" type="imwept:TekstObjectPropertyType"/>-->
+    <!--<element name="interneVerwijzing" type="imwept:TekstObjectPropertyType" minOccurs="0"/>-->
+    <!--</sequence>-->
+    <!--</complexType>-->
+    <!-- Bron is imwe:ToevoegingsInfo/hasTekstInfo/TekstInfo element uit IMWE2008 WFS object. 
+    Ieder van deze wordt hier een hoofdstuk. -->
+    <!-- 3,1 - Hoofdstuk 1, etc., ieder hoofdstuk of bijlagen een volgnr 4,1 dan 5,1 etc-->
+    <imwept:TekstObject>
+        <!-- eigen identificatie (idn) van het TekstObject. De code moet uniek zijn binnen de welstandsnota.
+        De identificatie begint met "NL.IMWE.PT." en wordt gevolgd door max. 32 alfanumerieke tekens.  -->
+        <imwept:identificatie>NL.IMWE.PT.0882.hoofdstuk1</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>3</imwept:volgnummer>
+        <imwept:niveau>1</imwept:niveau>
+        <imwept:type>hoofdstuk</imwept:type>
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <!-- Bron is Bron is imwe:ToevoegingsInfo/hasTekstInfo/TekstInfo IMWE2008 WFS object. -->
+                <imwept:label>hoofdstuk</imwept:label>
+                <imwept:nummer>1</imwept:nummer>
+                <imwept:naam>Hoofdstuk 1 Inleiding</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <!-- PRWE2014: Vanuit de planteksten kan worden verwezen naar andere bronbestanden waaruit het instrument is opgebouwd.
+        Dit wordt gedaan door de bestandsnaam van het gerefereerde bronbestand op te nemen.
+        Zo kan er vanuit de planteksten eenvoudig worden verwezen naar bijlagen en illustraties.
+        Er kan niet worden verwezen naar bronnen die geen onderdeel zijn van het instrument. De waarde van dit attribuut
+        moet voldoen aan de vereisten die in paragraaf 4.2 van de STRI20129 worden gesteld aan de bestandsnaam van een
+        bronbestand, eventueel gevolgd door een “fragment identifier” #. In paragraaf 2.3 van IMROPT wordt dit nader gespecificeerd.
+        Het attribuut externeVerwijzing kan bij een object worden opgenomen of in de tekst worden
+        opgenomen. Een verwijzing in de tekst werkt als een hyperlink, een verwijzing als attribuut
+        kan door viewers worden geïnterpreteerd om categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
+        <imwept:tekst>
+            <![CDATA[<p>Landgraaf combineert wonen, werken en ontspannen op eigen wijze met een groene omgeving en een rijke historie. 
+            Het aanzien van de bebouwing is een belangrijke factor in de indentiteit van de gemeente. Welstand is &eacute;&eacute;n 
+            van de manieren, om het aanzien van daarvan in goede banen te leiden. De gemeente werkt sinds 2004 met een welstandsnota, 
+            waarin criteria zijn opgenomen voor de beoordeling van plannen zoals aangegeven in de Woningwet. Deze nota is aan herziening 
+            toe. Met de herziening van 2013 wil de gemeente het welstandsbeleid actualiseren en vereenvoudigen.</p>
+            <p><strong>Uitgangspunten</strong><br />Uitgangspunt bij het opstellen van deze nota is te komen tot kort en krachtig beleid. 
+            Landgraaf heeft in het welstandsbeleid een algemeen uitgangspunt voor ogen. Met de welstandstoets zoekt de gemeente een 
+            evenwicht tussen het belang van de individuele vrijheid van de burger of ondernemer en het aanzien van de omgeving als publiek 
+            belang. Het beleid is opgesteld vanuit de gedachte, dat welstand een bijdrage levert aan de totstandkoming en het beheer van 
+            een aantrekkelijke bebouwde omgeving.<br />Waar mogelijk biedt de nota ruimte, waar nodig stelt de gemeente meer eisen. 
+            Deze eisen betreffen het bouwwerk op zichzelf en in zijn omgeving. Dit is vertaald in een nadruk op de beleving van de 
+            bebouwing vanuit de openbare ruimte en omgeving. Bouwdelen in het zicht zijn belangrijker voor het algemeen belang dan 
+            bouwdelen die aan het oog onttrokken zijn. In de beschrijvingen en uitgangspunten wordt daarom de invloed van een plan 
+            op het straatbeeld en het aanzien van de omgeving gewogen. Naarmate een plan meer invloed heeft op de identiteit van 
+            Landgraaf zullen er meer aspecten worden betrokken bij de beoordeling en zal er zo nodig zorgvuldiger worden gewogen.<br />
+            Doel van het welstandsbeleid is het welstandstoezicht helder onder woorden te brengen en op een effectieve en controleerbare 
+            wijze in te richten. Daarbij is het van belang aanvragers door middel van de welstandsnota van tevoren op de hoogte te 
+            stellen van de aspecten die een rol spelen bij de welstandsbeoordeling. Het welstandsbeleid geeft de gemeente de mogelijkheid 
+            om stedenbouwkundige, architectonische en cultuurhistorische waarden een rol te geven bij de ontwikkeling en beoordeling van 
+            bouwplannen.</p>
+            <p><strong>Gebruik van de nota</strong><br />De welstandsnota is niet bedoeld als leesboek, maar opgesteld als een naslagwerk. 
+            De nota bevat verschillende beoordelingskaders. De verschillende hoofdstukken bevatten de criteria, die de gemeente hanteert 
+            bij de beoordeling van bouwplannen. Wie wil weten welke criteria op een aanvraag van toepassing zijn, doorloopt het hiernaast 
+            afgebeelde stroomschema. In de bijlage is een straatnamenregister opgenomen met een verwijzing naar de gebiedsindeling. 
+            Indien gewenst kunnen bij de gemeente inlichtingen worden ingewonnen over de interpretatie van de welstandsnota in het 
+            licht van het beoogde plan.</p>
+            <p><strong>Leeswijzer<br /></strong>Hoofdstuk 2 bevat de hoofdlijnen van welstand met daarin een algemene toelichting 
+            op welstand. Hierop volgt een toelichting op de procedure voor afwijkende plannen. De nota is in hoofdzaak geschreven 
+            voor het beheer van bestaande gebieden, plannen die de bestaande structuur of architectuur doorbreken zullen op een 
+            andere wijze beoordeeld worden. Dit kan vooraf op basis van bijvoorbeeld een stedenbouwkundig plan of beeldkwaliteitsplan 
+            danwel op basis van de algemene criteria, die de regels zijn van het architectonische vakmanschap en gelden als 
+            uitgangspunt voor iedere welstandsbeoordeling. Achteraf kan een plan beoordeeld worden aan de hand van de excessenregeling, 
+            waarin criteria staan voor bouwwerken en andere vergunningplichtige activiteiten die zonder vergunning of in 
+            afwijking van een vergunning zijn gerealiseerd, maar zo onder de maat zijn dat zij als exces moeten worden 
+            gezien. Met behulp van deze criteria kan de gemeente achteraf optreden tegen misstanden.<br />Hoofdstuk 3 
+            bevat criteria voor veel voorkomende objecten als dakkapellen en bijgebouwen.<br />In hoofdstuk 4 wordt voor 
+            de gebieden in de gemeente aangegeven op welke wijze het architectonische vakmanschap zou moeten worden ingevuld. 
+            De beschrijvingen en criteria geven aan welke eigenschappen wenselijk zijn en dienen als agenda voor de beoordeling 
+            door de commissie.<br />In hoofdstuk 5 staat het cultureel erfgoed centraal. Naast een beschrijving van enkele voor 
+            de gemeente kenmerkende typen erfgoed is hier een aantal uitgangspunten voor de beoordeling van bouwplannen binnen 
+            de invloedssfeer van cultureel erfgoed opgenomen.<br />In de bijlagen zijn onder meer een begrippenlijst en een 
+            toelichting op de excessenregeling opgenomen.<br />De in de nota opgenomen foto&rsquo;s zijn te zien als illustratie 
+            bij de gebiedsbeschrijving (dus niet als afbeelding van de gewenste eigenschappen).</p>]]>
+        </imwept:tekst>
+
+        <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
+        alleen een element (identificatie) is en geen
+        Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
+                Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <!-- Ouder is hele document. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.document"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
+    </imwept:TekstObject>
+    
+    <!-- EINDE - TekstObject-en Welstandsnota -->
+    
+    <!-- START TekstObject-en Welstandsniveau -->
+    
+    <!-- Hier hoofdstuk welstandsniveau's met paragraaf per niveau. -->    
+    <imwept:TekstObject>
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsniveaus</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>10</imwept:volgnummer>
+        <imwept:niveau>1</imwept:niveau>
+        <imwept:type>hoofdstuk</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label>hoofdstuk</imwept:label>
+                <imwept:nummer>10</imwept:nummer>
+                <imwept:naam>Welstandsniveau's</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
+        <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
+        alleen een element (identificatie) is en geen
+        Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
+                Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <!-- Ouder is hele document. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.document"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
+    </imwept:TekstObject>
+   
+    <!-- Hier tekst enkel Welstandsniveau (Welstandsvrij) -->
+    <imwept:TekstObject>
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsniveau.141</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>1</imwept:volgnummer>
+        <imwept:niveau>2</imwept:niveau>
+
+        <!--<simpleType name="Tekstobjecttype_WNType">-->
+        <!--<restriction base="string">-->
+        <!--<enumeration value="welstandstekst"/>-->
+        <!--<enumeration value="bijlage"/>-->
+        <!--<enumeration value="bijlagen"/>-->
+        <!--<enumeration value="deel"/>-->
+        <!--<enumeration value="document"/>-->
+        <!--<enumeration value="hoofdstuk"/>-->
+        <!--<enumeration value="overig"/>-->
+        <!--<enumeration value="paragraaf"/>-->
+        <!--<enumeration value="subparagraaf"/>-->
+        <!--<enumeration value="subsubparagraaf"/>-->
+        <!--<enumeration value="subsubsubparagraaf"/>-->
+        <!--</restriction>-->
+        <!--</simpleType>-->
+        <imwept:type>paragraaf</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
+                <imwept:naam>Welstandsvrij</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
+        <imwept:tekst>
+            <![CDATA[<p>De gemeente heeft enkele welstandsvrije gebieden aangewezen waar het
+            initiatief volledig bij de burger wordt gelegd.</p>]]>
+        </imwept:tekst>
+
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- Ouder is hoofdstuk welstandsniveau's. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.welstandsniveaus"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
+    </imwept:TekstObject>
+
+    <!-- Hier tekst enkel Welstandsniveau (Soepel) -->
+    <imwept:TekstObject>
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsniveau.142</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>2</imwept:volgnummer>
+        <imwept:niveau>2</imwept:niveau>
+
+        <!--<simpleType name="Tekstobjecttype_WNType">-->
+        <!--<restriction base="string">-->
+        <!--<enumeration value="welstandstekst"/>-->
+        <!--<enumeration value="bijlage"/>-->
+        <!--<enumeration value="bijlagen"/>-->
+        <!--<enumeration value="deel"/>-->
+        <!--<enumeration value="document"/>-->
+        <!--<enumeration value="hoofdstuk"/>-->
+        <!--<enumeration value="overig"/>-->
+        <!--<enumeration value="paragraaf"/>-->
+        <!--<enumeration value="subparagraaf"/>-->
+        <!--<enumeration value="subsubparagraaf"/>-->
+        <!--<enumeration value="subsubsubparagraaf"/>-->
+        <!--</restriction>-->
+        <!--</simpleType>-->
+        <imwept:type>paragraaf</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
+                <imwept:naam>Soepel</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
+        <imwept:tekst>
+            <![CDATA[<p>Een groot deel van de bebouwing van Landgraaf staat in een soepel welstandsgebied. 
+            In deze gebieden wordt ruimte geboden voor vernieuwing. De lichte toetsing beperkt zich tot de 
+            hoofdlijnen, dus met name tot de voorkanten van gebouwen en bouwwerken.</p>]]>
+        </imwept:tekst>
+
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- Ouder is hoofdstuk welstandsniveau's. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.welstandsniveaus"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
+    </imwept:TekstObject>
+
+    <!-- EIND TekstObject-en Welstandsniveau -->
+    
+    <!-- START TekstObject-en Welstandsobject -->
+    
+    <!-- Hier hoofdstuk welstandsobjecten met paragraaf per object. -->    
+    <imwept:TekstObject>
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsobjecten</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>11</imwept:volgnummer>
+        <imwept:niveau>1</imwept:niveau>
+        <imwept:type>hoofdstuk</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label>hoofdstuk</imwept:label>
+                <imwept:nummer>11</imwept:nummer>
+                <imwept:naam>Welstandsobjecten</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
+        <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
+        alleen een element (identificatie) is en geen
+        Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
+                Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
+        -->
+        <!-- Ouder is hele document. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.document"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
+    </imwept:TekstObject>
+    
+    <imwept:TekstObject>
+        <!-- Hier tekst enkel Welstandsobject -->
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsobject.1134.1</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>3</imwept:volgnummer>
+        <imwept:niveau>2</imwept:niveau>
+        <imwept:type>paragraaf</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
+                <imwept:naam>Dakkapellen aanvullende criteria</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
 
         <imwept:tekst>
             <![CDATA[<p>
@@ -252,55 +747,77 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
             </p>]]>
         </imwept:tekst>
 
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
+
+        <!-- Ouder is hele hoofdstuk Welstandsobjecten. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.welstandsobjecten"/>
+
+    </imwept:TekstObject>
+
+    <!-- EIND TekstObject-en Welstandsobject -->
+    
+    <!-- START TekstObject-en Welstandsgebied -->
+
+    <!-- Hier hoofdstuk welstandsgebieden met paragraaf per object. -->    
+    <imwept:TekstObject>
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsgebieden</imwept:identificatie>
+        <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
+        <imwept:volgnummer>12</imwept:volgnummer>
+        <imwept:niveau>1</imwept:niveau>
+        <imwept:type>hoofdstuk</imwept:type>
+
+        <imwept:titel>
+            <imwept:TitelInfo>
+                <imwept:label>hoofdstuk</imwept:label>
+                <imwept:nummer>11</imwept:nummer>
+                <imwept:naam>Welstandsgebieden</imwept:naam>
+            </imwept:TitelInfo>
+        </imwept:titel>
+
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
+
         <!-- TODO ?? waarom hier een xlink terwijl de idn van de  TekstMetadata geen id-attribuut kent,
         alleen een element (identificatie) is en geen
         Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
 
         <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
                 Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <!-- (naar Hoofdtekst?, dus heeft geen "parent") -->
-        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.HeleTekst"/>
-        <!--<imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>-->
-
+        <!-- Ouder is hele document. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.document"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
     </imwept:TekstObject>
 
     <imwept:TekstObject>
         <!-- Hier tekst enkel Welstandsgebied  -->
-        <imwept:identificatie>NL.IMWE.PT.0882.Welstandsgebied.2618.1</imwept:identificatie>
+        <imwept:identificatie>NL.IMWE.PT.0882.welstandsgebied.2618.1</imwept:identificatie>
         <imwept:verwijzingNaarPlangebied>NL.IMWE.0882.WelstandLandgraaf.v1</imwept:verwijzingNaarPlangebied>
-        <imwept:volgnummer>2</imwept:volgnummer>
-        <imwept:niveau>1</imwept:niveau>
+        <imwept:volgnummer>4</imwept:volgnummer>
+        <imwept:niveau>2</imwept:niveau>
 
-        <!--<simpleType name="Tekstobjecttype_WNType">-->
-        <!--<restriction base="string">-->
-        <!--<enumeration value="welstandstekst"/>-->
-        <!--<enumeration value="bijlage"/>-->
-        <!--<enumeration value="bijlagen"/>-->
-        <!--<enumeration value="deel"/>-->
-        <!--<enumeration value="document"/>-->
-        <!--<enumeration value="hoofdstuk"/>-->
-        <!--<enumeration value="overig"/>-->
-        <!--<enumeration value="paragraaf"/>-->
-        <!--<enumeration value="subparagraaf"/>-->
-        <!--<enumeration value="subsubparagraaf"/>-->
-        <!--<enumeration value="subsubsubparagraaf"/>-->
-        <!--</restriction>-->
-        <!--</simpleType>-->
-        <imwept:type>overig</imwept:type>
+        <imwept:type>paragraaf</imwept:type>
 
         <imwept:titel>
             <imwept:TitelInfo>
-                <!-- Bron is gebied inleiding uit IMWE2008 WFS object. -->
-                <imwept:label>Welstandsgebied</imwept:label>
-                <!--<imwept:nummer>nl.imwe2008.WelstandsNota.126</imwept:nummer>-->
+                <imwept:label></imwept:label>
+                <imwept:nummer></imwept:nummer>
                 <imwept:naam>Beschermd gezicht Leenhof</imwept:naam>
             </imwept:TitelInfo>
         </imwept:titel>
 
-        <imwept:externeVerwijzing>????</imwept:externeVerwijzing>
+        <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
 
         <imwept:tekst>
             <![CDATA[<p>
@@ -315,15 +832,26 @@ Waarden uit IMWE2008 met WelstandsNota objecten voor gemeente Landgraaf. -->
         alleen een element (identificatie) is en geen
         Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.WelstandLandgraaf.v1.MD"/>
+        <imwept:tekstMetadata xlink:href="#NL.IMWE.PT.0882.metadata"/>
 
         <!-- TODO: ouderID en interneVerwijzing hebben zelfde probleem als tekstMetadata.
                 Zie commentaar in https://github.com/Geonovum/imwe2014/issues/3
         -->
-        <!-- (naar Hoofdtekst?, dus heeft geen "parent") -->
-        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.HeleTekst"/>
-        <!--<imwept:interneVerwijzing xlink:href="NL.IMWE.0882.MetadataIMWEPTbestand"/>-->
-
+        <!-- Ouder is hoofdstuk welstandsgebieden. -->
+        <imwept:ouderID xlink:href="#NL.IMWE.PT.0882.welstandsgebieden"/>
+        <!--
+        Een interne verwijzing kan objecten binnen de gehele tekst met elkaar verbinden. In een interactieve raadpleegomgeving
+        kan dit bijvoorbeeld opleveren dat de specifieke toelichting bij een bepaalde regel direct bij de regel benaderbaar is.
+        Interne verwijzingen worden gelegd vanuit het object waar ze bij horen. De toelichting bij een welstandsregel wordt dus
+        gekoppeld vanuit de regel. Het is wel toegestaan ook in toelichtende teksten een verwijzing te maken. Dan is er ook
+        vanuit de toelichting een rechtstreekse toegang tot een regel te realiseren.
+        De interneVerwijzing kan als attribuut bij een object worden opgenomen of in de tekst worden opgenomen. Een verwijzing
+        in de tekst werkt als een hyperlink. Een verwijzing als attribuut kan door viewers worden geïnterpreteerd om
+        categorieën als “zie ook” of “zie verder” te vullen.
+        -->
+        <!--<imwept:interneVerwijzing xlink:href=""/>-->
     </imwept:TekstObject>
+
+    <!-- EIND TekstObject-en Welstandsgebied -->
 
 </imwept:FeatureCollectionIMWEPT>

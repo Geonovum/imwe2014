@@ -6,4 +6,7 @@ Welstands* elementen vanuit de IMWE2014 (stubbed) XSD.
 
 Met validate.sh kunnen de FC-'s steeds ge-schema-valideerd worden.
 
+Het voornaamste proefbestand is FC-IMWE2014-1.xml - een IMWE2014 Feature Collection.
+De bijbehorende en verwezen tekstobjecten zitten in bestand FC-IMWEPT2014-1.xml.
+
 

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- versie info -->
+<!-- 20120314
+- schemalocation van lokaal naar remote
+- id format van NL.IMRO. naar NL.IMRO.PT.
+- id format voor verwijzingen aangepast
+- lokale xlinks worden door # voorafgegaan
+- id's mogen uit maximaal 32 tekens bestaan. In dit voorbeeld zijn dat er meer.
+-->
+<FeatureCollectionIMROPT xsi:schemaLocation="http://www.geonovum.nl/imro/pt/2012/1.0 http://schemas.geonovum.nl/imro/pt/2012/1.0/IMROPT2012.xsd" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:imropt="http://www.geonovum.nl/imro/pt/2012/1.0" xmlns="http://www.geonovum.nl/imro/pt/2012/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <TekstMetadata identificatie="NL.IMRO.PT.9999.SVP20120007-VA01">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <typePlan>structuurvisie</typePlan>
+      <naam>partiële herziening PRSV Vogelenzang</naam>
+      <beleidsmatigVerantwoordelijkeOverheid>provinciale overheid</beleidsmatigVerantwoordelijkeOverheid>
+      <naamOverheid>Provincie Durperland</naamOverheid>
+      <overheidsCode>9999</overheidsCode>
+      <creatiedatum>2012-02-06</creatiedatum>
+      <naamPraktijkrichtlijn>IMROPT2012</naamPraktijkrichtlijn>
+   </TekstMetadata>
+   <TekstObject identificatie="NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32eb2803e">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>1</volgnummer>
+      <niveau>0</niveau>
+      <type>document</type>
+      <typeTekst>document</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer></nummer>
+            <naam>Partiële herziening PRSV Vogelenzang</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.PT.9999.SVP20120007-VA01" />
+      <ouderID xl:href=""/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml" />
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>1</volgnummer>
+      <niveau>1</niveau>
+      <type>document</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer></nummer>
+            <naam>Besluitdocument</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32eb2803e"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml" />
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.xc93ecb649fc742aabba7039a6d0af3cf">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>2</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>1</nummer>
+            <naam>Inleiding</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>Deze structuurvisie heeft betrekking op een aanpassing van de zogenoemde rode én groene contour aan de zuidoostzijde van de kern Rhenen, zoals deze in de Provinciale Ruimtelijke Structuurvisie 2005-2015 (PRS; voorheen Streekplan) en de Provinciale Ruimtelijke Verordening (PRV) zijn weergegeven. De aanpassing van deze contouren is nodig om de voorgestane realisering van een goed functionerende (robuuste) ecologische verbindingszone in samenhang met de nieuwe woonwijk “Vogelenzang” mogelijk te maken.De structuurvisie vindt haar wettelijke grondslag in artikel 2.2, lid 2 van de Wet ruimtelijke ordening (Wro).</p> <p>Deze structuurvisie is zelfbindend voor de provincie. De onderdelen die wij direct willen laten doorwerken naar het gemeentelijk niveau, zijn opgenomen in de bijbehorende herziening van de PRV. Het gaat hier om wijziging van de rode en groene contourkaarten aan de zuidoostzijde van de kern Rhenen. Deze herziening van de verordening wordt tegelijkertijd met deze structuurvisie ter inzage gelegd.</p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x9b6172fa06dc4d1886854f4b551c791d">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>3</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>2</nummer>
+            <naam>Provinciaal belang</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         Deze structuurvisie heeft betrekking op de volgende provinciale belangen.
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x2ac51acb8f014aab919f4d6353b4c9dc">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>4</volgnummer>
+      <niveau>3</niveau>
+      <type>paragraaf</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer>2.1</nummer>
+            <naam>Rode contour (stedelijk gebied)</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.x9b6172fa06dc4d1886854f4b551c791d"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         Het instrument van de zogenoemde rode (bebouwings)contouren is neergelegd in hoofdstuk 6.3 (rode contouren) van de PRS. Hierin is vastgelegd dat de verstedelijkingsambities moeten plaatsvinden binnen de rode contouren (stedelijk gebied). In de Beleidslijn nieuwe Wro (Beleidslijn) is deze beleidsuitspraak als provinciaal belang aangemerkt (aandachtsgebied 3, sub 1 en aandachtsgebied 4, sub 3). In de PRV is dit provinciale belang uitgewerkt in artikel 4.1 (Landelijk gebied). De rode contour voor de kern Rhenen is weergegeven op de rode contourenkaart nummer 53 in de PRV.
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.xd5ffbe06439c44babe4aad6b459e91e3">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>5</volgnummer>
+      <niveau>3</niveau>
+      <type>paragraaf</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer>2.2</nummer>
+            <naam>Groene contour (ecologische hoofdstructuur)</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.x9b6172fa06dc4d1886854f4b551c791d"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>Het instrument van de zogenoemde groene contour is neergelegd in hoofdstuk 7.5 (natuur) van de PRS. Hierin is het volgende vastgelegd: <em>De Ecologische Hoofdstructuur (inclusief gebieden die vallen onder de Natuurbeschermingswet) en de Vogel- en Habitatrichtlijngebieden hebben wij begrensd met een zogenoemde groene contour. Binnen de groene contour geldt het ”nee, tenzij”-regime en kan op gebiedsniveau de saldobenadering worden toegepast. In de Beleidslijn is deze beleidsuitspraak als provinciaal belang aangemerkt (aandachtsgebied 1, sub 2a). In de PRV is dit provinciale belang uitgewerkt in artikel 5.2 (Groene contour). De groene contour is weergegeven op de bij dit artikel behorende kaart in de PRV. </em>In de Beleidslijn is deze beleidsuitspraak als provinciaal belang aangemerkt (aandachtsgebied 1, sub 2a). In de PRV is dit provinciale belang uitgewerkt in artikel 5.2 (Groene contour). De groene contour is weergegeven op de bij dit artikel behorende kaart in de PRV.</p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x2409bda124c548f88cd01d2c43bf0a4f">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>6</volgnummer>
+      <niveau>3</niveau>
+      <type>paragraaf</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer>2.3</nummer>
+            <naam>Zondering van het landelijk gebied (landelijk gebied 4)</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.x9b6172fa06dc4d1886854f4b551c791d"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         In de PRS is in hoofdstuk 7.2 (zonering van het landelijk gebied) het zoneringsprincipe voor het landelijk gebied opgenomen. Hierin wordt een viertal gebiedscategorieën onderscheiden: landelijk gebied 1 ((stedelijk uitloopgebied), landelijk gebied 2 (agrarisch), landelijk gebied 3 (verweving van functies) en landelijk gebied 4 (natuur). In de Beleidslijn is dit zoneringsprincipe als provinciaal belang aangemerkt (aandachtsgebied 7, sub 5). In de PRV is dit provinciale belang uitgewerkt in artikel 4.0 (Zonering landelijk gebied). De zonering van het landelijk gebied is weergegeven op de bij dit artikel behorende kaart in de PRV.
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x0420288abde5408a8eaaea41d3fe2bdf">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>7</volgnummer>
+      <niveau>3</niveau>
+      <type>paragraaf</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer>2.4</nummer>
+            <naam>Robuuste verbindingen</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.x9b6172fa06dc4d1886854f4b551c791d"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>In de PRS is in hoofdstuk 7.5 (natuur) het volgende opgenomen inzake de realisering van enkele robuuste verbindingen.<br /><em>Wij hebben de mogelijkheden verkend om een aantal robuuste ecologische verbindingszones tussen grote eenheden natuur aan te leggen. Delen van deze verbindingszones behoren nog niet tot de EHS. In Utrecht gaat het om de verbindingen Heuvelrug – Veluwe, de natte As tussen IJsselmeer en de Zeeuwse wateren en de Nieuwe Hollandse Waterlinie (kaart 7.5A). <strong>Onomkeerbare ingrepen en processen in de nog niet tot de EHS behorende robuuste ecologische verbindingszones, zoals grootschalige verstedelijking, die het realiseren van deze zones frustreren, zullen wij voorkomen. </strong>Wij willen elementen en delen van de robuuste zones realiseren waarvoor financiële dekking is en die goed inpasbaar zijn in gebiedsplannen, zoals het Plan van Aanpak De Venen en het Reconstructieplan Gelderse Vallei/Utrecht-Oost. De realisering van de bedoelde robuuste verbindingen is in de Beleidslijn als provinciaal belang aangemerkt (aandachtsgebied 1, sub 1). In de PRV is dit provinciale belang uitgewerkt in artikel 5.1 (inclusief bijbehorende kaart). </em></p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x7d0a27b597d84e5782807fcb2f4b2685">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>8</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>3</nummer>
+            <naam>Aanleiding en doel structuurvisie</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>In de PRS is het plangebied "Vogelenzang" aan de zuidoostkant van de kern Rhenen geheel binnen de rode contour opgenomen. Op deze locatie bevonden zich voorheen onder meer een kalkzandsteenfabriek en een busremise van Connexxion, welke beide inmiddels zijn verdwenen. Een groot deel van deze herontwikkelingslocatie zal worden ingevuld met nieuwe woningbouw, waarvoor de planvorming reeds in een vergevorderd stadium verkeert. Over deze planvorming vindt al langere tijd intensief overleg plaats tussen onder meer gemeente, provincie en ontwikkelaar.</p>  <p>Tussen het plangebied "Vogelenzang" en de rivier de Rijn is in de PRS een (“reguliere”) ecologische verbindingszone opgenomen. Tevens is dit gebied onderdeel van de Robuuste Verbindingszone Veluwe – Utrechtse Heuvelrug c.q. Blauwe Kamer – Palmerswaard. Teneinde deze verbinding (letterlijk) voldoende ruimte te geven om ook goed te kunnen functioneren als belangrijke schakel in de te realiseren robuuste verbinding tussen de Veluwe en de Utrechtse Heuvelrug is de gemeente Rhenen op verzoek van de provincie bereid gebleken de plangrenzen van het nieuwe woongebied "Vogelenzang" zodanig te wijzigen dat dit woongebied aan de kant van de rivier kleiner wordt. In ruil daarvoor zal het woongebied aan de oostkant richting zandwinplas ten koste van de Ecologische Hoofdstructuur (EHS) - nagenoeg - evenredig groter worden. Met deze uitruil van gronden zal de beoogde robuuste verbindingszone tussen de Veluwe en de Utrechtse Heuvelrug (in casu de verbinding tussen Blauwe Kamer en Palmerswaard) ter plaatse van deze smalle doorgang aanzienlijk meer ruimte krijgen en kunnen worden ingericht voor gebruik door onder meer het edelhert, waarmee een belangrijke barrière in deze verbindingszone kan worden weggenomen . De hiermee te realiseren winst voor de EHS is per saldo beduidend groter dan het verlies dat voor de EHS moet worden geïncasseerd met het inleveren van EHS-gronden (bestaande natuur) ten oosten van het plangebied (gedeeltelijk begroeide plasoever) ten behoeve van de bouw van enkele woningen aan de rand van de zandwinplas. In het ecologisch onderzoek dat in het kader van het bestemmingsplantraject voor de beoogde ontwikkelingen is uitgevoerd, is onder meer aangegeven dat de concreet aanwezige natuurwaarden op de bedoelde plasoever relatief laag zijn. Voorts is aangegeven dat met de realisering van enkele woningen langs deze plasrand in ieder geval voorkomen wordt dat de zandwinplas en het omliggende waardevolle gebied gemakkelijk openbaar toegankelijk wordt vanuit de nieuwe woonwijk.</p>  <p>De in de PRS opgenomen flexibiliteitsbepalingen (touwtje en afwijkingsbevoegdheid), die in de PRV zijn vertaald in een ontheffingsmogelijkheid voor Gedeputeerde Staten (in casu artikel 4.1, lid 5), kunnen in situaties als deze, waarbij EHS-gronden (dat wil zeggen gronden met ecologische kwaliteiten) in het geding zijn, niet worden toegepast . Daarom is voor dit specifieke geval formeel een partiële herziening van de PRS/PRV noodzakelijk.</p>  <p>Met deze structuurvisie wordt voorzien in de noodzakelijke aanpassing van de in de PRS/PRV ter plaatse van deze locatie opgenomen rode en groene contour. Door een uitwisseling van gronden aan de zuid- en oostkant van het plangebied "Vogelenzang" kan enerzijds een hinderlijke barrière worden weggenomen in de voorgestane robuuste (zuidelijke) verbinding met doelsoort edelhert tussen de Veluwe en de Utrechtse Heuvelrug en kan anderzijds ook optimaal invulling worden gegeven aan de ter plaatse beoogde nieuwe woningbouwlocatie. </p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x3e296cc995df46cf98b206cd771746f7">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>9</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>4</nummer>
+            <naam>Structuurvisiegebied en wijziging contouren</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml"><p>Het structuurvisiegebied is gebaseerd op het plangebied van de twee bestemmingsplannen die de gemeente ten behoeve van de realisering van de ecologische verbindingszone en de nieuwe woningbouwlocatie in voorbereiding heeft en op het gemeentelijke verzoek tot aanpassing van de rode bebouwingscontour. Het gebied omvat de gronden die door de aanpassing van de rode en groene contour respectievelijk binnen en buiten het stedelijk gebied van de kern Rhenen worden gebracht, zoals op de kaart inzichtelijk is gemaakt.         <br /></p><p>ad deelgebied 1:</p><p>Stedelijk gebied<br />De gronden in dit deel van het structuurvisiegebied worden door aanpassing van de rode (en groene) contour binnen de rode bebouwingscontour voor de kern Rhenen gebracht en krijgen hiermee de aanduiding "Stedelijk gebied". <br />Voor deze gronden geldt het beleid voor het stedelijk gebied, zoals dit is geformuleerd in de PRS en de PRV.<br />Door aanpassing van de rode en groene contour hebben deze gronden niet langer de aanduidingen "Landelijk Gebied 4" en "Groene contour".</p><p>ad deelgebied 2:</p><p>Groene contour/Landelijk Gebied 4/Robuuste verbinding<br />De gronden in dit deel van het structuurvisiegebied worden door aanpassing van de rode (en groene) contour buiten de rode bebouwingscontour voor de kern Rhenen gebracht en krijgen hiermee de aanduidingen "Landelijk Gebied 4" en "Groene contour".<br />Voor deze gronden geldt het beleid voor Landelijk Gebied 4 en voor gebieden binnen de groene contour (EHS: nieuwe natuur), zoals dit is geformuleerd in de PRS en de PRV.</p><p><br />Door aanpassing van de rode en groene contour hebben deze gronden niet langer de aanduiding "Stedelijk gebied".<br /><br /><img alt="deelgebieden" src="i_NL.IMRO.9999.SVP20120007-VA01_1.jpg" width="650" height="457" /></p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x146a5072067f4473846d243978779056">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>10</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>5</nummer>
+            <naam>Digitalisering</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         Op grond van de Wro moeten ruimtelijke plannen per 1 januari 2010 digitaal beschikbaar en raadpleegbaar zijn. Omdat het ontwerp van deze structuurvisie ná 1 januari 2010 ter inzage is gelegd, valt deze structuurvisie onder de digitaliseringsvereisten van de Wro.
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.xb6a7f151e3704205a297fe022d286453">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>11</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>6</nummer>
+            <naam>Milieueffectrapportage</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>In gevallen waarin de activiteit betrekking heeft op een functiewijziging in de natuur, recreatie of landbouw met een oppervlakte van 125 hectare of meer, moet worden beoordeeld of een planMER moet worden opgesteld voor een structuurvisie. Dit wordt voorgeschreven onder punt 9 van de D-lijst behorende bij het Besluit milieu-effectrapportage 1994. De beoordelingsplicht geldt, wanneer de in de D-lijst opgenomen drempelwaarden worden overschreden. Dat is in casu niet het geval: de voorgenomen activiteit heeft betrekking op een klein gebied, circa 14000 m2. De drempelwaarden worden niet overschreden en de beoordelingsplicht kan derhalve achterwege blijven. </p> <p>Ook wanneer de drempelwaarden niet worden overschreden, kunnen er nog andere factoren een rol spelen waardoor er alsnog een milieueffectrapportage opgesteld moet worden. Deze factoren worden genoemd in bijlage III van de Europese Richtlijn milieueffectrapportage. Het gaat onder meer om de kenmerken en plaats van het project en de kenmerken van het potentiële effect. Door de voorgenomen activiteit (uitruil van rode en groene gronden) ontstaat er letterlijk meer ruimte voor de robuuste ecologische verbindingszone. Een belangrijke barrière in de verbinding tussen de Veluwe en de Utrechtse Heuvelrug (in casu de verbinding tussen Blauwe Kamer en Palmerswaard) kan door de voorgenomen activiteit worden weggenomen. De hiermee te realiseren winst voor de EHS wordt per saldo beduidend groter geacht dan het verlies dat voor de EHS moet worden geïncasseerd met het inleveren van EHS-gronden (bestaande natuur) ten oosten van het plangebied (woningbouw aan rand van de zandwinplas). De voorgenomen functiewijziging van het gebied zal een positief effect hebben op de robuuste ecologische verbindingszone. De factoren genoemd in bijlage III geven derhalve geen aanleiding om een milieueffectrapportage op te stellen. </p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.xdfb3d10f33c649b6a1916d4fae4201e4">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>12</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>7</nummer>
+            <naam>Uitvoeringsparagraaf</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>Op grond van artikel 2.2, lid 2 van de Wro moet in een structuurvisie worden aangegeven op welke wijze de voorgenomen ontwikkelingen worden verwezenlijkt, waarbij in ieder geval wordt aangegeven welke ter beschikking staande ruimtelijke instrumenten worden ingezet.<br />Met de in deze structuurvisie vervatte formele aanpassing van de rode en de groene contour ter plaatse van het plangebied “Vogelenzang”, wordt conform het formele verzoek van burgemeester en wethouders van Rhenen bij brief van 7 januari 2010 invulling gegeven aan een onderlinge uitruil van gronden binnen het stedelijk gebied en het landelijk gebied. Als zodanig vormt deze structuurvisie met de bijbehorende herziening van de PRV een eerste (noodzakelijke) stap in het planologisch-juridische proces ten behoeve van de voorgestane realisering van de woonwijk “Vogelenzang” in samenhang met de realisering van een belangrijke schakel in de robuuste verbinding tussen de Veluwe en de Utrechtse Heuvelrug.<br />De gemeente Rhenen is inmiddels gestart met de voorbereidingen voor het opstellen van een<br />bestemmingsplan voor de nieuwe woonwijk "Vogelenzang" en een bestemmingsplan voor de ecologische verbindingszone aan de zuidzijde van deze nieuwe woonwijk. Deze bestemmingsplannen vormen de planologisch-juridische basis voor de realisering van de beoogde ontwikkelingen en zijn in overeenstemming met de in deze structuurvisie opgenomen contouraanpassing.</p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.xe9d5617051d34dc79338cb333eacfc80">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>13</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>besluitdocument</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>8</nummer>
+            <naam>Totstandkoming en burgerparticipatie</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.xc8bf829bb3a14d59b90ede288df3a1e3"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>De in deze structuurvisie vervatte aanpassing van de rode en groene contour aan de zuidoostzijde van de kern Rhenen is in nauwe samenspraak met het gemeentebestuur en de ontwikkelaar van de nieuwe woningbouwlocatie “Vogelenzang” overeengekomen.</p>  <p>Bij besluit van 25 januari 2012 hebben Provinciale Staten van Utrecht (PS) overeenkomstig het voorstel van Gedeputeerde Staten (GS) van 15 december 2011 besloten om de rode en groene contour van de kern Rhenen, zoals opgenomen in de PRS en de PRV, aan de zuidoostkant van de woningbouwlocatie "Vogelenzang" aan te gaan passen ten behoeve van een optimale realisering van de ecologische verbindingszone ten zuiden van dit plangebied. Voorts hebben zij hierbij besloten deze voorgestane contouraanpassing formeel gestalte te geven via het opstellen van een partiële herziening van de PRS en PRV.</p>  <p>Verdere procedure:</p><ul><li>Het door GS vastgestelde ontwerp van deze structuurvisie zal – samen met het ontwerp van de bijbehorende herziening van de PRV – na voorafgaande openbare kennisgeving gedurende 6 weken ter inzage worden gelegd. </li><li>Gedurende deze periode van terinzageligging kan een ieder schriftelijk of desgewenst mondeling (telefonisch) zienswijzen tegen het ontwerp indienen bij PS.<br />Gelet op de relatief zeer beperkte aard en strekking van deze structuurvisie wordt in dit geval afgezien van het houden van een hoorzitting door PS. </li><li>De resultaten van de terinzagelegging zullen worden verwerkt in een door GS vast te stellen concept Nota van beantwoording, die in de structuurvisie zal worden opgenomen. </li><li>Naar verwachting zullen PS deze structuurvisie en de bijbehorende herziening van de PRV uiteindelijk in december 2012 vaststellen.</li></ul>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32803e2eb">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>14</volgnummer>
+      <niveau>1</niveau>
+      <type>bijlage</type>
+      <typeTekst>bijlage</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer></nummer>
+            <naam>Nota van Beantwoording</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32eb2803e"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml"><p>Provincie Utrecht</p><p>Nota van Beantwoording</p><p>ten behoeve van de <b>partiële Provinciale Ruimtelijke Structuurvisie (pPRS) Vogelenzang</b> en ten behoeve van de <b>partiële herziening van de Provinciale Ruimtelijke Verordening behorende bij de pPRS Vogelenzang</b><br /><br /><br /></p><p>Vastgesteld door Provinciale Staten van Utrecht op 13 december 2012</p>      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x647acddd53834c59837f5c102463fe06">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>15</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>bijlage</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>1</nummer>
+            <naam>Inleiding (aanleiding en opzet)</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32803e2eb"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>Bij besluit van 25 januari 2012 hebben Provinciale Staten van Utrecht (PS) overeenkomstig het voorstel van Gedeputeerde Staten (GS) van 15 december 2011 besloten om de rode en groene contour van de kern Rhenen, zoals opgenomen in de Provinciale Ruimtelijke Structuurvisie (PRS) en de Provinciale Ruimtelijke Verordening (PRV), aan de zuidoostkant van de woningbouwlocatie "Vogelenzang" door een uitruil van gronden aan te gaan passen ten behoeve van een optimale realisering van de (robuuste) ecologische verbindingszone ten zuiden van deze nieuwbouwlocatie. Voorts is hierbij besloten de voorgestane contouraanpassing formeel gestalte te geven via het opstellen van een partiële herziening van de PRS en PRV.</p> <p>Op 13 juli 2012 hebben GS het ontwerp van de partiële PRS (pPRS) Vogelenzang en het ontwerp van de bijbehorende partiële herziening van de PRV (phPRV) vastgesteld.</p> <p>Na voorafgaande bekendmaking hebben beide ontwerpen met ingang van 17 augustus 2012 tot en met 27 september 2012 overeenkomstig de wettelijke bepalingen ter inzage gelegen.</p> <p>Naar aanleiding van deze terinzageligging hebben PS één (schriftelijke) zienswijze ontvangen.<br />Deze zienswijze is tijdig ontvangen en kan in die zin ontvankelijk worden bevonden.</p> <p>In paragraaf 2 van deze concept Nota van Beantwoording is de essentie van de ingekomen zienswijze samengevat en van een korte reactie voorzien. De hier verwoorde reactie op de zienswijze is een voorstel voor reactie van GS aan PS. Hierbij is tevens het advies van GS aan PS weergegeven over de vraag in hoeverre de zienswijze aanleiding geeft tot aanpassing van de ter inzage gelegde ontwerpen.</p> <p>Het definitieve standpunt zal worden ingenomen op het moment dat PS de pPRS Vogelenzang en de bijbehorende phPRV inclusief deze Nota van Beantwoording vaststellen (naar verwachting in de vergadering van PS van 13 december 2012). De vastgestelde Nota van Beantwoording zal als toelichting deel uitmaken van de beide partiële herzieningen.</p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x8d59eb7116be4dbcb6c76209240659f4">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>16</volgnummer>
+      <niveau>2</niveau>
+      <type>hoofdstuk</type>
+      <typeTekst>bijlage</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label>hoofdstuk</label>
+            <nummer>2</nummer>
+            <naam>Ingekomen zienswijze (samenvatting en reactie)</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32803e2eb"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p>De zienswijze is ingediend door: mevrouw X uit Y.</p><p><br />De essentie van de zienswijze kan als volgt worden weergegeven:</p><p>Aangegeven wordt dat de zienswijze betrekking heeft op het perceel grond aan de Radboudweg te Rhenen (kadastraal bekend onder nr. 1071, sectie E, met een grootte van 6350 m2), dat reclamant in eigendom heeft. Reclamant wenst op dit perceel een woning te realiseren. Reclamant toont zich van opvatting dat het genoemde perceel grond bij de vaststelling van het Streekplan Utrecht 2005-2015 in december 2004 ten onrechte buiten de zogenoemde rode contour is gebracht. Reclamant meent dat het betrokken perceel buiten het bestemmingsplan “Buitengebied” behoort te blijven en weer opgenomen moet worden binnen de rode contour (c.q. in het bestemmingsplan “Boslandweg-Oost”), aangezien het perceel een schakel is in de aaneengesloten huizenbouw die daar plaatsvond.</p><p><br />Reactie GS:<br />Vastgesteld moet worden dat de zienswijze betrekking heeft op een perceel grond aan de noordoostzijde van de kern Rhenen dat ver buiten het plangebied van de onderhavige pPRS Vogelenzang is gelegen. Ook anderszins ontbreekt enige inhoudelijke relatie met de pPRS Vogelenzang en de bijbehorende phPRV. Om deze reden moet de zienswijze als ongegrond worden aangemerkt.</p><p><br />Advies GS:<br />In de zienswijze kan géén aanleiding worden gezien tot aanpassing van het ter inzage gelegde ontwerp van de pPRS Vogelenzang en het ter inzage gelegde ontwerp van de bijbehorende phPRV.</p>
+      </tekst>
+   </TekstObject>
+   <TekstObject identificatie="NL.IMRO.PT.x4fba459170e5488b8ade580e9e8261fb">
+      <verwijzingNaarPlangebied>NL.IMRO.9999.SVP20120007-VA01</verwijzingNaarPlangebied>
+      <volgnummer>17</volgnummer>
+      <niveau>1</niveau>
+      <type>toelichting</type>
+      <typeTekst>toelichting</typeTekst>
+      <titelInfo>
+         <TitelInfo>
+            <label></label>
+            <nummer></nummer>
+            <naam>Toelichting</naam>
+         </TitelInfo>
+      </titelInfo>
+      <tekstMetadata xl:href="#NL.IMRO.9999.SVP20120007-VA01" />
+      <ouderID xl:href="#NL.IMRO.PT.122fcaa5-96e5-411c-8784-58f32803e2eb"/>
+      <tekst xmlns="http://www.w3.org/1999/xhtml">
+         <p><b>Verkeer (hoofdwegen)</b></p><p>Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. </p>  <p>Leentje leerde Lotje lopen langs de lange lindelaan. Qwertyuiop asdfghjkl zxcvbnm. Mnbvcxz lkjhgfdsa poiuytrewq. Qazwsxedcrfv tgbyhnujm ikolp. Plmoknijbuhvygctfx rdzeswaq. Blahblah blahblah blahblah. Leentje leerde Lotje lopen langs de lange lindelaan. Qwertyuiop asdfghjkl zxcvbnm. Mnbvcxz lkjhgfdsa poiuytrewq. Qazwsxedcrfv tgbyhnujm ikolp. Plmoknijb uhvygctfx rdzeswaq. Blahblah blahblah blahblah. Leentje leerde Lotje lopen langs de lange lindelaan. Qwertyuiop asdfghjkl zxcvbnm. Mnbvcxz lkjhgfdsa poiuytrewq. Qazwsxedcrfv tgbyhnujm ikolp. Plmoknijb uhvygctfx rdzeswaq. Blahblah blahblah blahblah. Leentje leerde Lotje lopen langs de lange lindelaan. Qwertyuiop asdfghjkl zxcvbnm. Mnbvcxz lkjhgfdsa poiuytrewq. Qazwsxedcrfv tgbyhnujm ikolp. Plmoknijb uhvygctfx rdzeswaq. Blahblah blahblah blahblah. Leentje leerde Lotje lopen langs de lange lindelaan. Qwertyuiop asdfghjkl zxcvbnm. Mnbvcxz lkjhgfdsa poiuytrewq. Qazwsxedcrfv tgbyhnujm ikolp. Plmoknijb uhvygctfx rdzeswaq. Blahblah blahblah blahblah. Leentje leerde Lotje lopen langs de lange lindelaan. Qwertyuiop asdfghjkl zxcvbnm. Mnbvcxz lkjhgfdsa poiuytrewq. Qazwsxedcrfv tgbyhnujm ikolp. Plmoknijb uhvygctfx rdzeswaq. Blahblah blahblah blahblah.</p> <p><b>Beleid</b></p><p>Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen. Dit is dummytekst bedoeld als bladvulling voor voorbeeldplannen.</p>
+      </tekst>
+   </TekstObject>
+</FeatureCollectionIMROPT>

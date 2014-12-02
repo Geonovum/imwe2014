@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imro:FeatureCollectionIMRO gml:id="Collectie" xmlns:imro="http://www.geonovum.nl/imro/2012/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geonovum.nl/imro/2012/1.1 http://schemas.geonovum.nl/imro/2012/1.1/IMRO2012.xsd">
+	<imro:featureMember>
+		<imro:MetadataIMRObestand gml:id="Metadata">
+			<imro:datasetTitel>Test voorbereidingsbesluit Durperveld</imro:datasetTitel>
+			<imro:creatiedatum>2011-11-23</imro:creatiedatum>
+			<imro:bronbeheerder>gemeente Durperdam</imro:bronbeheerder>
+			<imro:codeerVerantwoordelijke>Geonovum</imro:codeerVerantwoordelijke>
+			<imro:naamApplicatieschema>IMRO2012</imro:naamApplicatieschema>
+			<imro:codeReferentiesysteem>28992</imro:codeReferentiesysteem>
+			<imro:toepassingsschaal>1000</imro:toepassingsschaal>
+			<imro:applicatieIdentificatie>Textpad 5.4.2</imro:applicatieIdentificatie>
+			<imro:versieXMLschema>0.0.1</imro:versieXMLschema>
+		</imro:MetadataIMRObestand>
+	</imro:featureMember>
+	<imro:featureMember>
+	<imro:Besluitgebied_X gml:id="NL.IMRO.0999.BP2012000001-VB01">
+		<imro:identificatie>
+			<imro:NEN3610ID>
+				<imro:namespace>NL.IMRO</imro:namespace>
+				<imro:lokaalID>0999.BP2012000001</imro:lokaalID>
+				<imro:versie>VB01</imro:versie>
+			</imro:NEN3610ID>
+		</imro:identificatie>
+		<imro:typePlan>voorbereidingsbesluit</imro:typePlan>
+		<imro:beleidsmatigVerantwoordelijkeOverheid>gemeentelijke overheid</imro:beleidsmatigVerantwoordelijkeOverheid>
+		<imro:naamOverheid>gemeente Durperdam</imro:naamOverheid>
+		<imro:overheidsCode>0999</imro:overheidsCode>
+		<imro:naam>Voorbereidingsbesluit Durperveld</imro:naam>
+		<imro:planstatusInfo>
+			<imro:PlanstatusEnDatum>
+				<imro:planstatus>vastgesteld</imro:planstatus>
+				<imro:datum>2012-07-01</imro:datum>
+			</imro:PlanstatusEnDatum>
+		</imro:planstatusInfo>
+		<imro:besluitnummer>20120701XXXVB/1/VBDD1</imro:besluitnummer>
+		<imro:verwijzingNaarVaststellingsbesluit>vb_NL.IMRO.0999.BP2012000001-VB01.pdf</imro:verwijzingNaarVaststellingsbesluit>
+		<imro:verwijzingNaarTekstInfo>
+			<imro:TekstReferentieBG_XGB>
+				<imro:verwijzingNaarTekst>r_NL.IMRO.0999.BP2012000001-VB01.htm</imro:verwijzingNaarTekst>
+				<imro:typeTekst>voorschriften/regels</imro:typeTekst>
+			</imro:TekstReferentieBG_XGB>
+		</imro:verwijzingNaarTekstInfo>		
+		<imro:verwijzingNaarTekstInfo>
+			<imro:TekstReferentieBG_XGB>
+				<imro:verwijzingNaarTekst>d_NL.IMRO.0999.BP2012000001-VB01.pdf</imro:verwijzingNaarTekst>
+				<imro:typeTekst>besluitdocument</imro:typeTekst>
+			</imro:TekstReferentieBG_XGB>
+		</imro:verwijzingNaarTekstInfo>		
+		<imro:ondergrondInfo>
+			<imro:OndergrondReferentie>
+				<imro:ondergrondtype>grootschalige basiskaart (GBK)</imro:ondergrondtype>
+				<imro:ondergronddatum>2007-03-01</imro:ondergronddatum>
+			</imro:OndergrondReferentie>
+		</imro:ondergrondInfo>
+		<imro:verwijzingNorm>IMRO2012</imro:verwijzingNorm>
+		<imro:verwijzingNorm>PRGB2012</imro:verwijzingNorm>
+			<imro:geometrie>
+				<gml:Surface gml:id="d1e138" srsName="urn:ogc:def:crs:EPSG::28992">
+					<gml:patches>
+						<gml:PolygonPatch>
+							<gml:exterior>
+								<gml:Ring>
+									<gml:curveMember>
+										<gml:Curve gml:id="d1e150">
+											<gml:segments>
+												<gml:LineStringSegment>
+													<gml:posList>222815.555 433772.664 222817.238
+												433792.989 222815.977 433792.418 222814.661
+												433791.987 222813.278 433791.697 222811.116
+												433791.552 222715.978 433797.298</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222715.978 433797.298 222665.613
+												433796.283 222616.297 433786.01</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222616.297 433786.01 222609.722
+												433783.838 222584.961 433773.624</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222584.961 433773.624 222577.248
+												433770.084 222569.627 433766.351</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222569.627 433766.351 222549.016
+												433756.423 222532.901 433748.769 222529.713
+												433747.401 222499.667 433731.448 222490.989
+												433725.196 222471.708 433712.543 222418.968
+												433683.379 222372.248 433657.13 222222.273
+												433573.967 222230.238 433560.977 222241.873
+												433542.934 222244.355 433535.935 222258.182
+												433513.001 222267.344 433498.523 222275.742
+												433484.182 222312.702 433422.964 222318.041
+												433414.735 222349.083 433363.401 222379.012
+												433313.412 222402.04 433280.316 222424.149
+												433251.747 222456.184 433210.771 222470.71
+												433191.905 222477.523 433183.056 222494.707
+												433161.069 222513.085 433137.327 222525.072
+												433122.339 222546.161 433095.079 222563.978
+												433072.439 222595.977 433031.237 222609.949
+												433013.676 222617.29 433005.968 222628.664
+												432994.947 222631.646 432992.262 222633.902
+												432990.521 222636.455 432989.194 222642.877
+												432986.422 222645.853 432985.442 222649.345
+												432984.518 222652.106 432980.077 222660.478
+												432979.416 222718.524 432973.625 222728.467
+												432971.839 222732.969 432971.258 222737.493
+												432970.827 222742.236 432970.539 222746.991
+												432970.413 222751.907 432970.42 222756.825
+												432970.544 222766.298 432971.072 222771.259
+												432971.522 222776.21 432972.112 222781.32
+												432972.864 222786.412 432973.751 222795.765
+												432975.688 222800.181 432976.774 222804.563
+												432977.992 222813.261 432980.621 222818.199
+												432982.387 222823.101 432984.258 222828.038
+												432986.261 222832.93 432988.38 222837.042
+												432990.323 222841.091 432992.407 222849.064
+												432996.885 222870.81 433010.419 222891.05
+												433022.879 222892.868 433024.24 222928.879
+												433046.402 222955.044 433062.718 222964.075
+												433068.174 222971.132 433071.914 222975.889
+												433074.187 222980.663 433076.288 222987.836
+												433079.181 222992.525 433080.844 222997.28
+												433082.332 223001.739 433083.557 223006.239
+												433084.641 223012.256 433085.893 223016.578
+												433086.506 223019.813 433087.096</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223019.813 433087.096 223024.229
+												433088.598 223028.796 433089.543</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223028.796 433089.543 223042.626
+												433091.897 223048.629 433091.924 223050.805
+												433092.769</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223050.805 433092.769 223054.122
+												433094.946 223056.872 433097.807</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223056.872 433097.807 223057.402
+												433098.538</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223057.402 433098.538 223058.611
+												433100.578 223059.537 433102.761</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223059.537 433102.761 223060.139
+												433104.871 223060.506 433123.703 223060.463
+												433125.817 223059.878 433132.568 223059.483
+												433138.448 223054.967 433194.135 223047.304
+												433285.787</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223047.304 433285.787 223046.313
+												433300.25 223045.561 433314.728</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223045.561 433314.728 223045.053
+												433330.333 223044.902 433345.946</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223044.902 433345.946 223045.074
+												433361.137 223045.487 433375.945</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223045.487 433375.945 223046.13
+												433391.017 223046.992 433406.078</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223046.992 433406.078 223048.079
+												433419.155 223049.347 433432.216</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223049.347 433432.216 223051.009
+												433446.773 223054.585 433475.643 223055.753
+												433482.713</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223055.753 433482.713 223055.983
+												433484.411 223055.975 433486.124</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223055.975 433486.124 223056.535
+												433490.802 223058.492 433505.309 223060.201
+												433519.968 223060.537 433522.31 223063.958
+												433551.379 223067.973 433587.708 223071.725
+												433624.292 223073.773 433645.312 223075.723
+												433669.028 223079.752 433714.95 223083.809
+												433759.412 223085.659 433782.582 223085.973
+												433793.033</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223085.973 433793.033 223085.814
+												433796.589 223084.464 433799.882</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223084.464 433799.882 223083.12
+												433800.444 223067.403 433804.459 223066.732
+												433804.626</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223066.732 433804.626 223057.595
+												433805.976 223048.391 433806.736</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223048.391 433806.736 223033.806
+												433807.112 223019.219 433806.783</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223019.219 433806.783 223009.593
+												433805.971 223000 433804.831</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223000 433804.831 222996.125
+												433804.172</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222996.125 433804.172 222978.08
+												433800.849 222960.429 433795.842</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222960.429 433795.842 222948.897
+												433791.823 222935.058 433787.378 222932.329
+												433786.657</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222932.329 433786.657 222919.784
+												433783.553 222907.128 433780.941</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222907.128 433780.941 222888.311
+												433778.718 222877.069 433777.705 222856.802
+												433777.332</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222856.802 433777.332 222855.144
+												433777.263 222853.497 433777.055</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>222853.497 433777.055 222849.214
+												433775.827 222845.314 433773.671</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>222845.314 433773.671 222841.797
+												433771.775 222837.92 433770.804</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>222837.92 433770.804 222836.514
+												433770.696 222835.103 433770.711</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222835.103 433770.711 222820.759
+												433770.403 222819.208 433770.554 222818.468
+												433770.763 222817.353 433771.223 222816.46
+												433771.809 222815.555 433772.664</gml:posList>
+												</gml:LineStringSegment>
+											</gml:segments>
+										</gml:Curve>
+									</gml:curveMember>
+								</gml:Ring>
+							</gml:exterior>
+						</gml:PolygonPatch>
+					</gml:patches>
+				</gml:Surface>
+			</imro:geometrie>
+	</imro:Besluitgebied_X>
+	</imro:featureMember>
+	<imro:featureMember>
+	<imro:Besluitvlak_X gml:id="NL.IMRO.bv01">
+		<imro:identificatie>
+			<imro:NEN3610ID>
+				<imro:namespace>NL.IMRO</imro:namespace>
+				<imro:lokaalID>bv01</imro:lokaalID>
+			</imro:NEN3610ID>
+		</imro:identificatie>
+		<imro:typePlanobject>besluitvlak_X</imro:typePlanobject>
+		<imro:naam>besluitvlak Voorbereidingsbesluit</imro:naam>
+		<imro:verwijzingNaarTekstInfo>
+			<imro:TekstReferentie_XGB>
+				<imro:verwijzingNaarTekst>d_NL.IMRO.0999.BP2012000001-VB01.pdf</imro:verwijzingNaarTekst>
+				<imro:typeTekst>besluittekst</imro:typeTekst>
+			</imro:TekstReferentie_XGB>
+		</imro:verwijzingNaarTekstInfo>
+			<imro:geometrie>
+				<gml:Surface gml:id="d1e139" srsName="urn:ogc:def:crs:EPSG::28992">
+					<gml:patches>
+						<gml:PolygonPatch>
+							<gml:exterior>
+								<gml:Ring>
+									<gml:curveMember>
+										<gml:Curve gml:id="d1e151">
+											<gml:segments>
+												<gml:LineStringSegment>
+													<gml:posList>222815.555 433772.664 222817.238
+												433792.989 222815.977 433792.418 222814.661
+												433791.987 222813.278 433791.697 222811.116
+												433791.552 222715.978 433797.298</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222715.978 433797.298 222665.613
+												433796.283 222616.297 433786.01</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222616.297 433786.01 222609.722
+												433783.838 222584.961 433773.624</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222584.961 433773.624 222577.248
+												433770.084 222569.627 433766.351</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222569.627 433766.351 222549.016
+												433756.423 222532.901 433748.769 222529.713
+												433747.401 222499.667 433731.448 222490.989
+												433725.196 222471.708 433712.543 222418.968
+												433683.379 222372.248 433657.13 222222.273
+												433573.967 222230.238 433560.977 222241.873
+												433542.934 222244.355 433535.935 222258.182
+												433513.001 222267.344 433498.523 222275.742
+												433484.182 222312.702 433422.964 222318.041
+												433414.735 222349.083 433363.401 222379.012
+												433313.412 222402.04 433280.316 222424.149
+												433251.747 222456.184 433210.771 222470.71
+												433191.905 222477.523 433183.056 222494.707
+												433161.069 222513.085 433137.327 222525.072
+												433122.339 222546.161 433095.079 222563.978
+												433072.439 222595.977 433031.237 222609.949
+												433013.676 222617.29 433005.968 222628.664
+												432994.947 222631.646 432992.262 222633.902
+												432990.521 222636.455 432989.194 222642.877
+												432986.422 222645.853 432985.442 222649.345
+												432984.518 222652.106 432980.077 222660.478
+												432979.416 222718.524 432973.625 222728.467
+												432971.839 222732.969 432971.258 222737.493
+												432970.827 222742.236 432970.539 222746.991
+												432970.413 222751.907 432970.42 222756.825
+												432970.544 222766.298 432971.072 222771.259
+												432971.522 222776.21 432972.112 222781.32
+												432972.864 222786.412 432973.751 222795.765
+												432975.688 222800.181 432976.774 222804.563
+												432977.992 222813.261 432980.621 222818.199
+												432982.387 222823.101 432984.258 222828.038
+												432986.261 222832.93 432988.38 222837.042
+												432990.323 222841.091 432992.407 222849.064
+												432996.885 222870.81 433010.419 222891.05
+												433022.879 222892.868 433024.24 222928.879
+												433046.402 222955.044 433062.718 222964.075
+												433068.174 222971.132 433071.914 222975.889
+												433074.187 222980.663 433076.288 222987.836
+												433079.181 222992.525 433080.844 222997.28
+												433082.332 223001.739 433083.557 223006.239
+												433084.641 223012.256 433085.893 223016.578
+												433086.506 223019.813 433087.096</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223019.813 433087.096 223024.229
+												433088.598 223028.796 433089.543</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223028.796 433089.543 223042.626
+												433091.897 223048.629 433091.924 223050.805
+												433092.769</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223050.805 433092.769 223054.122
+												433094.946 223056.872 433097.807</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223056.872 433097.807 223057.402
+												433098.538</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223057.402 433098.538 223058.611
+												433100.578 223059.537 433102.761</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223059.537 433102.761 223060.139
+												433104.871 223060.506 433123.703 223060.463
+												433125.817 223059.878 433132.568 223059.483
+												433138.448 223054.967 433194.135 223047.304
+												433285.787</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223047.304 433285.787 223046.313
+												433300.25 223045.561 433314.728</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223045.561 433314.728 223045.053
+												433330.333 223044.902 433345.946</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223044.902 433345.946 223045.074
+												433361.137 223045.487 433375.945</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223045.487 433375.945 223046.13
+												433391.017 223046.992 433406.078</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223046.992 433406.078 223048.079
+												433419.155 223049.347 433432.216</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223049.347 433432.216 223051.009
+												433446.773 223054.585 433475.643 223055.753
+												433482.713</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223055.753 433482.713 223055.983
+												433484.411 223055.975 433486.124</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223055.975 433486.124 223056.535
+												433490.802 223058.492 433505.309 223060.201
+												433519.968 223060.537 433522.31 223063.958
+												433551.379 223067.973 433587.708 223071.725
+												433624.292 223073.773 433645.312 223075.723
+												433669.028 223079.752 433714.95 223083.809
+												433759.412 223085.659 433782.582 223085.973
+												433793.033</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223085.973 433793.033 223085.814
+												433796.589 223084.464 433799.882</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223084.464 433799.882 223083.12
+												433800.444 223067.403 433804.459 223066.732
+												433804.626</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>223066.732 433804.626 223057.595
+												433805.976 223048.391 433806.736</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223048.391 433806.736 223033.806
+												433807.112 223019.219 433806.783</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>223019.219 433806.783 223009.593
+												433805.971 223000 433804.831</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>223000 433804.831 222996.125
+												433804.172</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222996.125 433804.172 222978.08
+												433800.849 222960.429 433795.842</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222960.429 433795.842 222948.897
+												433791.823 222935.058 433787.378 222932.329
+												433786.657</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222932.329 433786.657 222919.784
+												433783.553 222907.128 433780.941</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222907.128 433780.941 222888.311
+												433778.718 222877.069 433777.705 222856.802
+												433777.332</gml:posList>
+												</gml:LineStringSegment>
+												<gml:Arc>
+													<gml:posList>222856.802 433777.332 222855.144
+												433777.263 222853.497 433777.055</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>222853.497 433777.055 222849.214
+												433775.827 222845.314 433773.671</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>222845.314 433773.671 222841.797
+												433771.775 222837.92 433770.804</gml:posList>
+												</gml:Arc>
+												<gml:Arc>
+													<gml:posList>222837.92 433770.804 222836.514
+												433770.696 222835.103 433770.711</gml:posList>
+												</gml:Arc>
+												<gml:LineStringSegment>
+													<gml:posList>222835.103 433770.711 222820.759
+												433770.403 222819.208 433770.554 222818.468
+												433770.763 222817.353 433771.223 222816.46
+												433771.809 222815.555 433772.664</gml:posList>
+												</gml:LineStringSegment>
+											</gml:segments>
+										</gml:Curve>
+									</gml:curveMember>
+								</gml:Ring>
+							</gml:exterior>
+						</gml:PolygonPatch>
+					</gml:patches>
+				</gml:Surface>
+			</imro:geometrie>
+		<imro:besluitgebied xlink:href="#NL.IMRO.0999.BP2012000001-VB01"/>
+	</imro:Besluitvlak_X>
+	</imro:featureMember>
+	</imro:FeatureCollectionIMRO>
