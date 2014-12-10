@@ -346,12 +346,14 @@ Waarden uit IMWE2008 met Welstandsnota objecten voor gemeente Landgraaf. -->
         kan door viewers worden geïnterpreteerd om categorieën als “zie ook” of “zie verder” te vullen.
         -->
         <!--<imwept:externeVerwijzing>????</imwept:externeVerwijzing>-->
-
+	
+		<!-- Tekst element met een voorbeeld van het gebruik van een afbeelding in de HTML ( <img> )-->
+		
         <imwept:tekst>
             <![CDATA[<p>De gemeente streeft ernaar veel voorkomende kleine objecten snel te beoordelen om zo de burger
             tegemoet te komen. Het gaat daarbij om relatief eenvoudige en meetbare criteria, die de planindiener vooraf
-            zo veel mogelijk duidelijkheid geven.
-            Objectcriteria zijn opgesteld voor aanbouwen, bijgebouwen, gevelwijzigingen, dakkapellen, erfafscheidingen,
+            zo veel mogelijk duidelijkheid geven.</p>
+            <img src='dakkapel.jpg'><p>Objectcriteria zijn opgesteld voor aanbouwen, bijgebouwen, gevelwijzigingen, dakkapellen, erfafscheidingen,
             dakramen panelen en collectoren, installaties en reclame.</p>
             <p><strong>Vergunning</strong><br />De bovengenoemde bouwwerken zijn deels vergunningvrij binnen bepaalde randvoorwaarden.
             Dat betekent dat een deel van deze plannen (met name aan achterkanten) niet vooraf wordt getoetst aan redelijke eisen van
