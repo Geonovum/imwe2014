@@ -33,6 +33,7 @@
             <imwe:naamApplicatieschema>IMWE2014</imwe:naamApplicatieschema>
 
             <!-- EPSG code van projectie. -->
+            <!-- pja >28992< is genoeg -->
             <imwe:codeReferentiesysteem>EPSG:28992</imwe:codeReferentiesysteem>
 
             <!-- beoogde maximale schaal waarop het bestand waarheidsgetrouw gebruikt mag worden; -->
@@ -429,6 +430,7 @@
     <imwe:featureMember>
         <!-- data uit samples/imwe2008/imwe.nl-wn-landgraaf.xml (Welstandsnota gml:id="nl.imwe2008.WelstandsNota.126") -->
         <!-- 0882 is gemeentecode Landgraaf -->
+        <!-- pja moet zijn gml:id="NL.IMWE.0882.WelstandLandgraaf-v1"> -->
         <imwe:Welstandsnota gml:id="NL.IMWE.0882.WelstandLandgraaf.v1">
             <imwe:identificatie>
                 <imwe:NEN3610ID>
@@ -457,7 +459,7 @@
             <!--Zero or more repetitions:-->
             <!-- Het kan gewenst zijn om de naam van de locatie(s) waarover de
                 welstandsnota gaat kenbaar te maken. De naam van die locatie(s) worden hier ingevuld. -->
-            <imwe:locatieNaam>n.v.t. (beter: weglaten)</imwe:locatieNaam>
+                      <imwe:locatieNaam>n.v.t. (beter: weglaten)</imwe:locatieNaam>
 
             <!-- TODO: https://github.com/Geonovum/imwe2014/issues/5 ook bijv "vastgesteld"?-->
             <imwe:planstatusInfo>
