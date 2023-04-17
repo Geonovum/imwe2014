@@ -1,3 +1,5 @@
+-- Gearchiveerd, geen actieve ontwikkeling --
+
 Deze repository bevat software en tools ter ondersteuning van de IMWE 2014 standaard.
 
 Uit http://www.geonovum.nl/onderwerpen/welstand-standaard :
@@ -6,7 +8,7 @@ Uit http://www.geonovum.nl/onderwerpen/welstand-standaard :
 Toepassing van IMWE maakt het mogelijk welstandseisen te raadplegen op een digitale kaart.
 Hierdoor zijn welstandsinformatie, cultuurhistorie en het bestemmingsplan in één oogopslag te raadplegen."
 
-Onder andere worden via deze repository ontwikkeld:
+Onder andere werden via deze repository ontwikkeld:
 
 * de IMWE2014 XML proefbestanden
 * transformatie software (ETL) voor IMWE 2008 naar 2014 omzetting
